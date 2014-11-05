@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>158C9FD2-E61B-4C0A-AFB7-06BA85E5DA8A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FitTogether</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>396A8DA2E5FB79F8EA3B2100C9D061AF714921F1</key>
+		<string>https://github.com/mattwhitesides/MobileAppDev.git</string>
+		<key>430CDD03FABDF73DE403FD91E01CAF370C8B2904</key>
+		<string>https://github.com/FitTogether/FitTogether.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FitTogether/FitTogether.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>396A8DA2E5FB79F8EA3B2100C9D061AF714921F1</key>
+		<string>../../../..</string>
+		<key>430CDD03FABDF73DE403FD91E01CAF370C8B2904</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/FitTogether/FitTogether.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>430CDD03FABDF73DE403FD91E01CAF370C8B2904</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>396A8DA2E5FB79F8EA3B2100C9D061AF714921F1</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>430CDD03FABDF73DE403FD91E01CAF370C8B2904</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FitTogether</string>
+		</dict>
+	</array>
+</dict>
+</plist>
