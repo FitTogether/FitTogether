@@ -49,7 +49,7 @@ CREATE TABLE fitTogether.badge (
   requirement       BIGINT,
   type              VARCHAR(30),
 
-  PRIMARY KEY badgeName
+  PRIMARY KEY badgeName,
   FOREIGN KEY badgeType REFERENCES fitTogether.badgeTypes
 );
 
