@@ -1,0 +1,7 @@
+Fit Together 
+
+DB Access: 
+	IP Address: 104.131.104.20
+	Username: FitTogetherDev
+	Pass: teamBravo
+	DB Name: fitTogether
