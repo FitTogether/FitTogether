@@ -53,7 +53,7 @@ CREATE TABLE fitTogether.badge (
   FOREIGN KEY badgeType REFERENCES fitTogether.badgeTypes
 );
 
-CREATE TABLE fitTogether.badge (
+CREATE TABLE fitTogether.badgeType (
   badgeType         VARCHAR(30),
   discription       VARCHAR(30),
 
