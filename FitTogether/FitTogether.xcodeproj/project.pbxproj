@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F214806D1A1594FA00C6F805 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F214806C1A1594FA00C6F805 /* HealthKit.framework */; };
+		F21480701A15950F00C6F805 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F214806F1A15950F00C6F805 /* CloudKit.framework */; };
+		F21480731A159C9D00C6F805 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21480721A159C9D00C6F805 /* Settings.bundle */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B008E1A0A833800A5891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28B008C1A0A833800A5891F /* Main.storyboard */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
@@ -25,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F214806C1A1594FA00C6F805 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F214806E1A1594FA00C6F805 /* FitTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = FitTogether.entitlements; path = FitTogether/FitTogether.entitlements; sourceTree = "<group>"; };
+		F214806F1A15950F00C6F805 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F21480721A159C9D00C6F805 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F28B00811A0A833800A5891F /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B00851A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B00861A0A833800A5891F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F214806D1A1594FA00C6F805 /* HealthKit.framework in Frameworks */,
+				F21480701A15950F00C6F805 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F21480711A159C0F00C6F805 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F214806E1A1594FA00C6F805 /* FitTogether.entitlements */,
+				F21480721A159C9D00C6F805 /* Settings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
+				F214806F1A15950F00C6F805 /* CloudKit.framework */,
+				F214806C1A1594FA00C6F805 /* HealthKit.framework */,
 				F28B00831A0A833800A5891F /* FitTogether */,
-				F28B009B1A0A833800A5891F /* FitTogetherTests */,
+				F21480711A159C0F00C6F805 /* Resources */,
 				F28B00821A0A833800A5891F /* Products */,
+				F28B009B1A0A833800A5891F /* FitTogetherTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +179,15 @@
 				TargetAttributes = {
 					F28B00801A0A833800A5891F = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 4FNJNUQ3AD;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					F28B00971A0A833800A5891F = {
 						CreatedOnToolsVersion = 6.1;
@@ -189,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21480731A159C9D00C6F805 /* Settings.bundle in Resources */,
 				F28B008E1A0A833800A5891F /* Main.storyboard in Resources */,
 				F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */,
 				F28B00901A0A833800A5891F /* Images.xcassets in Resources */,
@@ -332,9 +363,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FitTogether/FitTogether.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FitTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -342,9 +377,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FitTogether/FitTogether.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FitTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
