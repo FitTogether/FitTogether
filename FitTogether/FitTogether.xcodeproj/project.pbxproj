@@ -11,9 +11,13 @@
 		F214806D1A1594FA00C6F805 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F214806C1A1594FA00C6F805 /* HealthKit.framework */; };
 		F21480701A15950F00C6F805 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F214806F1A15950F00C6F805 /* CloudKit.framework */; };
 		F21480731A159C9D00C6F805 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21480721A159C9D00C6F805 /* Settings.bundle */; };
+<<<<<<< HEAD
 =======
 		F269DD4B1A193C2F007EF641 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F269DD4A1A193C2F007EF641 /* Settings.bundle */; };
 >>>>>>> mattUISettingsPage
+=======
+		F269DD4D1A19407C007EF641 /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269DD4C1A19407C007EF641 /* TeamInfoViewController.swift */; };
+>>>>>>> mattUITeamInfo
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B008E1A0A833800A5891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28B008C1A0A833800A5891F /* Main.storyboard */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
@@ -37,9 +41,13 @@
 		F214806E1A1594FA00C6F805 /* FitTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = FitTogether.entitlements; path = FitTogether/FitTogether.entitlements; sourceTree = "<group>"; };
 		F214806F1A15950F00C6F805 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F21480721A159C9D00C6F805 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+<<<<<<< HEAD
 =======
 		F269DD4A1A193C2F007EF641 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 >>>>>>> mattUISettingsPage
+=======
+		F269DD4C1A19407C007EF641 /* TeamInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamInfoViewController.swift; path = ViewControllers/TeamInfoViewController.swift; sourceTree = "<group>"; };
+>>>>>>> mattUITeamInfo
 		F28B00811A0A833800A5891F /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B00851A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B00861A0A833800A5891F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +88,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		F269DD4E1A194081007EF641 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F269DD4C1A19407C007EF641 /* TeamInfoViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +120,7 @@
 		F28B00831A0A833800A5891F /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				F269DD4E1A194081007EF641 /* ViewControllers */,
 				F28B00861A0A833800A5891F /* AppDelegate.swift */,
 				F28B008C1A0A833800A5891F /* Main.storyboard */,
 				F28B008F1A0A833800A5891F /* Images.xcassets */,
@@ -254,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
+				F269DD4D1A19407C007EF641 /* TeamInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
