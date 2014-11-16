@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F269DD4B1A193C2F007EF641 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F269DD4A1A193C2F007EF641 /* Settings.bundle */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B008E1A0A833800A5891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28B008C1A0A833800A5891F /* Main.storyboard */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F269DD4A1A193C2F007EF641 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F28B00811A0A833800A5891F /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B00851A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B00861A0A833800A5891F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				F28B008F1A0A833800A5891F /* Images.xcassets */,
 				F28B00911A0A833800A5891F /* LaunchScreen.xib */,
 				F28B00841A0A833800A5891F /* Supporting Files */,
+				F269DD4A1A193C2F007EF641 /* Settings.bundle */,
 			);
 			path = FitTogether;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F269DD4B1A193C2F007EF641 /* Settings.bundle in Resources */,
 				F28B008E1A0A833800A5891F /* Main.storyboard in Resources */,
 				F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */,
 				F28B00901A0A833800A5891F /* Images.xcassets in Resources */,
