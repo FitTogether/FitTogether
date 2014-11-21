@@ -40,6 +40,7 @@
 		233471E91A1AEDE4002D7C36 /* dashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dashboardViewController.swift; sourceTree = "<group>"; };
 		233471EB1A1AFEB9002D7C36 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		233471ED1A1B00C2002D7C36 /* stormTrooperHelmet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stormTrooperHelmet.jpg; path = ../../../../stormTrooperHelmet.jpg; sourceTree = "<group>"; };
+		239F9D611A1ED36F0032E590 /* Dashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Dashboard.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		233471C41A1AEA4E002D7C36 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				239F9D611A1ED36F0032E590 /* Dashboard.entitlements */,
 				233471ED1A1B00C2002D7C36 /* stormTrooperHelmet.jpg */,
 				233471C71A1AEA4E002D7C36 /* AppDelegate.swift */,
 				233471CD1A1AEA4E002D7C36 /* Main.storyboard */,
@@ -167,6 +169,12 @@
 				TargetAttributes = {
 					233471C11A1AEA4E002D7C36 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 4FNJNUQ3AD;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					233471D81A1AEA4E002D7C36 = {
 						CreatedOnToolsVersion = 6.1;
@@ -344,6 +352,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Dashboard/Dashboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Dashboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +364,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Dashboard/Dashboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Dashboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +425,7 @@
 				233471E51A1AEA4E002D7C36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		233471E61A1AEA4E002D7C36 /* Build configuration list for PBXNativeTarget "DashboardTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +434,7 @@
 				233471E81A1AEA4E002D7C36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
