@@ -26,7 +26,7 @@
         <!--Dashboard-->
         <scene sceneID="PFH-Cy-ntV">
             <objects>
-                <viewController id="gXi-Ks-h7T" customClass="dashboardViewController" customModule="FitTogether" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gXi-Ks-h7T" customClass="dashboardViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="72V-ok-dRc"/>
                         <viewControllerLayoutGuide type="bottom" id="AIn-PS-Skg"/>
@@ -133,7 +133,7 @@
         <!--Profile-->
         <scene sceneID="rfv-YN-iZz">
             <objects>
-                <viewController id="Q37-or-oSm" customClass="profileViewController" customModule="FitTogether" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Q37-or-oSm" customClass="profileViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HBs-gz-c3u"/>
                         <viewControllerLayoutGuide type="bottom" id="2BH-8P-bVJ"/>
