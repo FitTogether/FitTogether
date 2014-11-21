@@ -26,7 +26,11 @@
         <!--Dashboard-->
         <scene sceneID="PFH-Cy-ntV">
             <objects>
+<<<<<<< HEAD
                 <viewController id="gXi-Ks-h7T" customClass="dashboardViewController" customModule="Dashboard" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController id="gXi-Ks-h7T" customClass="dashboardViewController" customModule="FitTogether" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> CJ's-Branch
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="72V-ok-dRc"/>
                         <viewControllerLayoutGuide type="bottom" id="AIn-PS-Skg"/>
@@ -133,7 +137,11 @@
         <!--Profile-->
         <scene sceneID="rfv-YN-iZz">
             <objects>
+<<<<<<< HEAD
                 <viewController id="Q37-or-oSm" customClass="profileViewController" customModule="Dashboard" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController id="Q37-or-oSm" customClass="profileViewController" customModule="FitTogether" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> CJ's-Branch
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HBs-gz-c3u"/>
                         <viewControllerLayoutGuide type="bottom" id="2BH-8P-bVJ"/>
