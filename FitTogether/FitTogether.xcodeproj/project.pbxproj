@@ -65,6 +65,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC0FF7EE1A1E7E0A0069062D /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Challenges;
+			sourceTree = "<group>";
+		};
 		F21480711A159C0F00C6F805 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +113,7 @@
 		F28B00831A0A833800A5891F /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				BC0FF7EE1A1E7E0A0069062D /* Challenges */,
 				F269DD4E1A194081007EF641 /* ViewControllers */,
 				F28B00861A0A833800A5891F /* AppDelegate.swift */,
 				F28B008C1A0A833800A5891F /* Main.storyboard */,
