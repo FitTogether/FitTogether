@@ -7,28 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */; };
-		232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BEBB81A1ED5D500075DC7 /* profileViewController.swift */; };
-		232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 232BEBB91A1ED5D500075DC7 /* stormTrooperHelmet.jpg */; };
-		232BEBBF1A1ED61A00075DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232BEBBD1A1ED61A00075DC7 /* Main.storyboard */; };
-
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
+		F28B00891A0A833800A5891F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00881A0A833800A5891F /* FirstViewController.swift */; };
+		F28B008B1A0A833800A5891F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B008A1A0A833800A5891F /* SecondViewController.swift */; };
+		F28B008E1A0A833800A5891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28B008C1A0A833800A5891F /* Main.storyboard */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
 		F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28B00911A0A833800A5891F /* LaunchScreen.xib */; };
+		F28B009F1A0A833800A5891F /* FitTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B009E1A0A833800A5891F /* FitTogetherTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F28B00991A0A833800A5891F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F28B00791A0A833800A5891F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F28B00801A0A833800A5891F;
+			remoteInfo = FitTogether;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-
-		232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dashboardViewController.swift; path = ../../FrontEnd/Dashboard/Dashboard/Dashboard/dashboardViewController.swift; sourceTree = "<group>"; };
-		232BEBB81A1ED5D500075DC7 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = profileViewController.swift; path = ../../FrontEnd/Dashboard/Dashboard/Dashboard/profileViewController.swift; sourceTree = "<group>"; };
-		232BEBB91A1ED5D500075DC7 /* stormTrooperHelmet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stormTrooperHelmet.jpg; path = ../../FrontEnd/Dashboard/Dashboard/Dashboard/stormTrooperHelmet.jpg; sourceTree = "<group>"; };
-		232BEBBE1A1ED61A00075DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../FrontEnd/Dashboard/Dashboard/Dashboard/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-
+		F28B00811A0A833800A5891F /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B00851A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B00861A0A833800A5891F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F28B00881A0A833800A5891F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F28B008A1A0A833800A5891F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F28B008D1A0A833800A5891F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F28B008F1A0A833800A5891F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F28B00921A0A833800A5891F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F28B00981A0A833800A5891F /* FitTogetherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitTogetherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,45 +45,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28B00951A0A833800A5891F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F21480711A159C0F00C6F805 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F214806E1A1594FA00C6F805 /* FitTogether.entitlements */,
-				F21480721A159C9D00C6F805 /* Settings.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		F269DD4E1A194081007EF641 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F269DD4C1A19407C007EF641 /* TeamInfoViewController.swift */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
-
 				F28B00831A0A833800A5891F /* FitTogether */,
-				F21480711A159C0F00C6F805 /* Resources */,
-				F28B00821A0A833800A5891F /* Products */,
 				F28B009B1A0A833800A5891F /* FitTogetherTests */,
+				F28B00821A0A833800A5891F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
 		F28B00821A0A833800A5891F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F28B00811A0A833800A5891F /* fittogethertwo.app */,
+				F28B00811A0A833800A5891F /* FitTogether.app */,
+				F28B00981A0A833800A5891F /* FitTogetherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,12 +79,10 @@
 		F28B00831A0A833800A5891F /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
-
-				232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */,
-				232BEBBD1A1ED61A00075DC7 /* Main.storyboard */,
-				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
 				F28B00861A0A833800A5891F /* AppDelegate.swift */,
-				232BEBB91A1ED5D500075DC7 /* stormTrooperHelmet.jpg */,
+				F28B00881A0A833800A5891F /* FirstViewController.swift */,
+				F28B008A1A0A833800A5891F /* SecondViewController.swift */,
+				F28B008C1A0A833800A5891F /* Main.storyboard */,
 				F28B008F1A0A833800A5891F /* Images.xcassets */,
 				F28B00911A0A833800A5891F /* LaunchScreen.xib */,
 				F28B00841A0A833800A5891F /* Supporting Files */,
@@ -125,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F28B00801A0A833800A5891F /* fittogethertwo */ = {
+		F28B00801A0A833800A5891F /* FitTogether */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F28B00A21A0A833800A5891F /* Build configuration list for PBXNativeTarget "fittogethertwo" */;
+			buildConfigurationList = F28B00A21A0A833800A5891F /* Build configuration list for PBXNativeTarget "FitTogether" */;
 			buildPhases = (
 				F28B007D1A0A833800A5891F /* Sources */,
 				F28B007E1A0A833800A5891F /* Frameworks */,
@@ -137,10 +130,28 @@
 			);
 			dependencies = (
 			);
-			name = fittogethertwo;
+			name = FitTogether;
 			productName = FitTogether;
-			productReference = F28B00811A0A833800A5891F /* fittogethertwo.app */;
+			productReference = F28B00811A0A833800A5891F /* FitTogether.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F28B00971A0A833800A5891F /* FitTogetherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28B00A51A0A833800A5891F /* Build configuration list for PBXNativeTarget "FitTogetherTests" */;
+			buildPhases = (
+				F28B00941A0A833800A5891F /* Sources */,
+				F28B00951A0A833800A5891F /* Frameworks */,
+				F28B00961A0A833800A5891F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F28B009A1A0A833800A5891F /* PBXTargetDependency */,
+			);
+			name = FitTogetherTests;
+			productName = FitTogetherTests;
+			productReference = F28B00981A0A833800A5891F /* FitTogetherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,18 +164,14 @@
 				TargetAttributes = {
 					F28B00801A0A833800A5891F = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 4FNJNUQ3AD;
-						SystemCapabilities = {
-
-							com.apple.iCloud = {
-								enabled = 1;
-							};
-						};
-
+					};
+					F28B00971A0A833800A5891F = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F28B00801A0A833800A5891F;
 					};
 				};
 			};
-			buildConfigurationList = F28B007C1A0A833800A5891F /* Build configuration list for PBXProject "fittogethertwo" */;
+			buildConfigurationList = F28B007C1A0A833800A5891F /* Build configuration list for PBXProject "FitTogether" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -177,7 +184,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F28B00801A0A833800A5891F /* fittogethertwo */,
+				F28B00801A0A833800A5891F /* FitTogether */,
+				F28B00971A0A833800A5891F /* FitTogetherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,11 +195,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */,
+				F28B008E1A0A833800A5891F /* Main.storyboard in Resources */,
 				F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */,
 				F28B00901A0A833800A5891F /* Images.xcassets in Resources */,
-				232BEBBF1A1ED61A00075DC7 /* Main.storyboard in Resources */,
-
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28B00961A0A833800A5891F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,23 +215,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28B008B1A0A833800A5891F /* SecondViewController.swift in Sources */,
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
-				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
-				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
-
+				F28B00891A0A833800A5891F /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28B00941A0A833800A5891F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28B009F1A0A833800A5891F /* FitTogetherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F28B009A1A0A833800A5891F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F28B00801A0A833800A5891F /* FitTogether */;
+			targetProxy = F28B00991A0A833800A5891F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		232BEBBD1A1ED61A00075DC7 /* Main.storyboard */ = {
+		F28B008C1A0A833800A5891F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				232BEBBE1A1ED61A00075DC7 /* Base */,
+				F28B008D1A0A833800A5891F /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		F28B00911A0A833800A5891F /* LaunchScreen.xib */ = {
@@ -313,13 +340,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FitTogether/FitTogether.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FitTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -327,18 +350,50 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FitTogether/FitTogether.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FitTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F28B00A61A0A833800A5891F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FitTogetherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitTogether.app/FitTogether";
+			};
+			name = Debug;
+		};
+		F28B00A71A0A833800A5891F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FitTogetherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitTogether.app/FitTogether";
+			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F28B007C1A0A833800A5891F /* Build configuration list for PBXProject "fittogethertwo" */ = {
+		F28B007C1A0A833800A5891F /* Build configuration list for PBXProject "FitTogether" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F28B00A01A0A833800A5891F /* Debug */,
@@ -347,15 +402,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F28B00A21A0A833800A5891F /* Build configuration list for PBXNativeTarget "fittogethertwo" */ = {
+		F28B00A21A0A833800A5891F /* Build configuration list for PBXNativeTarget "FitTogether" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F28B00A31A0A833800A5891F /* Debug */,
 				F28B00A41A0A833800A5891F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-
+		};
+		F28B00A51A0A833800A5891F /* Build configuration list for PBXNativeTarget "FitTogetherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28B00A61A0A833800A5891F /* Debug */,
+				F28B00A71A0A833800A5891F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
