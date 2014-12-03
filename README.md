@@ -11,4 +11,4 @@ Use this: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-br
 Be Sure To Add a Git Ignore File To Reduce Git Issues
 ===============
 
-Here is a basic ignor file for XCode: https://www.gitignore.io/api/xcode
+Here is a basic ignore file for XCode: https://www.gitignore.io/api/xcode
