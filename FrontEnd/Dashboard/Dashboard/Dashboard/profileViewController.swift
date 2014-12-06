@@ -13,7 +13,15 @@ class profileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var cKit: CloudKitHelper = CloudKitHelper()
+        
+        var records: AnyObject = cKit.retriveRecords("ID", queryRecordType: "Team")
+        
+        println(records)
+        
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -23,6 +31,19 @@ class profileViewController: UIViewController {
     }
     
 
+    func displayAlertWithTitle(title: String, message: String){
+        let controller = UIAlertController(title: title,
+            message: message,
+            preferredStyle: .Alert)
+        
+        controller.addAction(UIAlertAction(title: "OK",
+            style: .Default,
+            handler: nil))
+        
+        presentViewController(controller, animated: true, completion: nil)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
