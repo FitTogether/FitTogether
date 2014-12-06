@@ -39,7 +39,7 @@ class dashboardViewController: UIViewController {
         shape.path = UIBezierPath(ovalInRect: rect).CGPath
         
         // Add the shape layer as a sub layer of our view
-        circleView.layer.addSublayer(shape)
+        //circleView.layer.addSublayer(shape)
         
         
         // Inner arc
