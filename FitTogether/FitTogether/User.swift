@@ -24,9 +24,9 @@ class User {
                 NSLog("Error \(error)")
             } else {
                 NSLog("Got Record \(record)")
-                if let team = {
-                    println("Cool")
-                }
+//                if let team = {
+//                    println("Cool")
+//                }
                 let records: [NSString : NSString] = ["Name": "DudeBrah", "Team": "No Team"]
                 self.cKit.saveRecord(records, tableName: "User", forKey: "Team", isPrivate: true)
             }

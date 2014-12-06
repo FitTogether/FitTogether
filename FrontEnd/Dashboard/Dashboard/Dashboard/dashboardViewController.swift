@@ -61,7 +61,7 @@ class dashboardViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        var user = User()
+        //var user = User()
         
     }
 
