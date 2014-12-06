@@ -60,6 +60,9 @@ class dashboardViewController: UIViewController {
         progress.addAnimation(newAnimation, forKey: "strokeEnd Animation")
         
         // Do any additional setup after loading the view.
+        
+        var user = User()
+        
     }
 
     override func didReceiveMemoryWarning() {
