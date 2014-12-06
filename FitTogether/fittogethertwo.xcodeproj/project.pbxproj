@@ -12,6 +12,8 @@
 		232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 232BEBB91A1ED5D500075DC7 /* stormTrooperHelmet.jpg */; };
 		232BEBBF1A1ED61A00075DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232BEBBD1A1ED61A00075DC7 /* Main.storyboard */; };
 		232BEBC21A1EDBDF00075DC7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */; };
+		F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */; };
+		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
 		F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28B00911A0A833800A5891F /* LaunchScreen.xib */; };
@@ -24,6 +26,8 @@
 		232BEBBE1A1ED61A00075DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../FrontEnd/Dashboard/Dashboard/Dashboard/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		232BEBC01A1ED96000075DC7 /* FitTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FitTogether.entitlements; sourceTree = "<group>"; };
 		232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+		F273C90E1A33988300D7B908 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F28B00811A0A833800A5891F /* fittogethertwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fittogethertwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B00851A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B00861A0A833800A5891F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +72,10 @@
 			children = (
 				232BEBC01A1ED96000075DC7 /* FitTogether.entitlements */,
 				232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */,
+				F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */,
 				232BEBBD1A1ED61A00075DC7 /* Main.storyboard */,
 				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
+				F273C90E1A33988300D7B908 /* User.swift */,
 				F28B00861A0A833800A5891F /* AppDelegate.swift */,
 				232BEBB91A1ED5D500075DC7 /* stormTrooperHelmet.jpg */,
 				F28B008F1A0A833800A5891F /* Images.xcassets */,
@@ -183,6 +189,8 @@
 			files = (
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
+				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
+				F273C90F1A33988300D7B908 /* User.swift in Sources */,
 				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
