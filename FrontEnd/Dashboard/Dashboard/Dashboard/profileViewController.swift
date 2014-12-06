@@ -13,14 +13,8 @@ class profileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var cKit: CloudKitHelper = CloudKitHelper()
-        
-        var records: AnyObject = cKit.retriveRecords("ID", queryRecordType: "Team")
-        
-        println(records)
-        
 
+        
         
         // Do any additional setup after loading the view.
     }
