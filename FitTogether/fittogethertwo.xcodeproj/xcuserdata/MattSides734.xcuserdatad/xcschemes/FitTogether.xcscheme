@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F28B00801A0A833800A5891F"
-            BuildableName = "FitTogether.app"
-            BlueprintName = "FitTogether"
-            ReferencedContainer = "container:FitTogether.xcodeproj">
+            BuildableName = "fittogethertwo.app"
+            BlueprintName = "fittogethertwo"
+            ReferencedContainer = "container:fittogethertwo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F28B00801A0A833800A5891F"
-            BuildableName = "FitTogether.app"
-            BlueprintName = "FitTogether"
-            ReferencedContainer = "container:FitTogether.xcodeproj">
+            BuildableName = "fittogethertwo.app"
+            BlueprintName = "fittogethertwo"
+            ReferencedContainer = "container:fittogethertwo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

@@ -14,7 +14,7 @@ class profileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        let hk = HealthKitHelper()
         
         // Do any additional setup after loading the view.
     }

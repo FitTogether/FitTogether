@@ -17,6 +17,9 @@
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
 		F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28B00911A0A833800A5891F /* LaunchScreen.xib */; };
+		F29F1F751A33C846004ED7C4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29F1F741A33C846004ED7C4 /* HealthKit.framework */; };
+		F29F1F771A33C86C004ED7C4 /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F1F761A33C86C004ED7C4 /* HealthKitHelper.swift */; };
+		F29F1F791A33CB72004ED7C4 /* HealthStoreUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F1F781A33CB72004ED7C4 /* HealthStoreUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		F28B00921A0A833800A5891F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
+		F29F1F741A33C846004ED7C4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F29F1F761A33C86C004ED7C4 /* HealthKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitHelper.swift; path = ../HealthKitHelper.swift; sourceTree = "<group>"; };
+		F29F1F781A33CB72004ED7C4 /* HealthStoreUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthStoreUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				232BEBC21A1EDBDF00075DC7 /* CloudKit.framework in Frameworks */,
+				F29F1F751A33C846004ED7C4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +59,7 @@
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
+				F29F1F741A33C846004ED7C4 /* HealthKit.framework */,
 				232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */,
 				F28B00831A0A833800A5891F /* FitTogether */,
 				F28B009B1A0A833800A5891F /* FitTogetherTests */,
@@ -73,6 +81,8 @@
 				232BEBC01A1ED96000075DC7 /* FitTogether.entitlements */,
 				232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */,
 				F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */,
+				F29F1F761A33C86C004ED7C4 /* HealthKitHelper.swift */,
+				F29F1F781A33CB72004ED7C4 /* HealthStoreUser.swift */,
 				232BEBBD1A1ED61A00075DC7 /* Main.storyboard */,
 				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
 				F273C90E1A33988300D7B908 /* User.swift */,
@@ -143,6 +153,9 @@
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 4FNJNUQ3AD;
 						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -191,6 +204,8 @@
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
 				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
 				F273C90F1A33988300D7B908 /* User.swift in Sources */,
+				F29F1F771A33C86C004ED7C4 /* HealthKitHelper.swift in Sources */,
+				F29F1F791A33CB72004ED7C4 /* HealthStoreUser.swift in Sources */,
 				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,10 +23,10 @@ class User {
             if error != nil {
                 NSLog("Error \(error)")
             } else {
-                NSLog("Got Record \(record)")
-                if let team = {
-                    println("Cool")
-                }
+//                NSLog("Got Record \(record)")
+//                if let team = {
+//                    println("Cool")
+//                }
                 let records: [NSString : NSString] = ["Name": "DudeBrah", "Team": "No Team"]
                 self.cKit.saveRecord(records, tableName: "User", forKey: "Team", isPrivate: true)
             }
