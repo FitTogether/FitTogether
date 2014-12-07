@@ -24,6 +24,7 @@
 		F2F614BF1A34EFE800CB65E6 /* threeRunningMen.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */; };
 		F2F614C51A35020600CB65E6 /* gearIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614C41A35020600CB65E6 /* gearIcon.png */; };
 		F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C61A3506D100CB65E6 /* TeamViewController.swift */; };
+		F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threeRunningMen.png; sourceTree = "<group>"; };
 		F2F614C41A35020600CB65E6 /* gearIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gearIcon.png; sourceTree = "<group>"; };
 		F2F614C61A3506D100CB65E6 /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
 				F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */,
 				F2F614C61A3506D100CB65E6 /* TeamViewController.swift */,
+				F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
 				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
 				F273C90F1A33988300D7B908 /* User.swift in Sources */,
+				F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */,
 				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
 				F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */,
 			);
