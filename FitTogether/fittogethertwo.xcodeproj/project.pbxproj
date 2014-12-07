@@ -19,6 +19,9 @@
 		F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28B00911A0A833800A5891F /* LaunchScreen.xib */; };
 		F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2F614B61A34E76800CB65E6 /* Settings.bundle */; };
 		F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */; };
+		F2F614BB1A34ED0300CB65E6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BA1A34ED0300CB65E6 /* logo.png */; };
+		F2F614BD1A34ED0B00CB65E6 /* runningmen.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BC1A34ED0B00CB65E6 /* runningmen.png */; };
+		F2F614BF1A34EFE800CB65E6 /* threeRunningMen.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
 		F2F614B61A34E76800CB65E6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F2F614BA1A34ED0300CB65E6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F2F614BC1A34ED0B00CB65E6 /* runningmen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runningmen.png; sourceTree = "<group>"; };
+		F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threeRunningMen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 		F2F614B41A34E70D00CB65E6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */,
+				F2F614BC1A34ED0B00CB65E6 /* runningmen.png */,
+				F2F614BA1A34ED0300CB65E6 /* logo.png */,
 				232BEBB91A1ED5D500075DC7 /* stormTrooperHelmet.jpg */,
 			);
 			name = Images;
@@ -221,9 +230,12 @@
 			files = (
 				232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */,
 				F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */,
+				F2F614BD1A34ED0B00CB65E6 /* runningmen.png in Resources */,
+				F2F614BB1A34ED0300CB65E6 /* logo.png in Resources */,
 				F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */,
 				F28B00901A0A833800A5891F /* Images.xcassets in Resources */,
 				232BEBBF1A1ED61A00075DC7 /* Main.storyboard in Resources */,
+				F2F614BF1A34EFE800CB65E6 /* threeRunningMen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

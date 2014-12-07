@@ -8,11 +8,19 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        submitButton.sendActionsForControlEvents(UIControlEvents.TouchUpInside)
+        return true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        inputTextField.delegate = self
         // Do any additional setup after loading the view.
     }
 
