@@ -18,6 +18,7 @@
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
 		F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28B00911A0A833800A5891F /* LaunchScreen.xib */; };
 		F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2F614B61A34E76800CB65E6 /* Settings.bundle */; };
+		F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
 		F2F614B61A34E76800CB65E6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */,
 				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
+				F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
 				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
