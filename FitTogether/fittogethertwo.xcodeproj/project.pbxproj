@@ -17,6 +17,7 @@
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
 		F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28B00911A0A833800A5891F /* LaunchScreen.xib */; };
+		F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2F614B61A34E76800CB65E6 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F28B00921A0A833800A5891F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
+		F2F614B61A34E76800CB65E6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
+				F2F614B61A34E76800CB65E6 /* Settings.bundle */,
 				232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */,
 				F28B00831A0A833800A5891F /* FitTogether */,
 				F28B009B1A0A833800A5891F /* FitTogetherTests */,
@@ -215,6 +218,7 @@
 			files = (
 				232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */,
 				F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */,
+				F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */,
 				F28B00901A0A833800A5891F /* Images.xcassets in Resources */,
 				232BEBBF1A1ED61A00075DC7 /* Main.storyboard in Resources */,
 			);
