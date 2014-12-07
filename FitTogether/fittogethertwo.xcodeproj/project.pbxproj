@@ -26,6 +26,7 @@
 		F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C61A3506D100CB65E6 /* TeamViewController.swift */; };
 		F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */; };
 		F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */; };
+		F2F614CD1A35191800CB65E6 /* TeamCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		F2F614C61A3506D100CB65E6 /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 		F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTeamViewController.swift; sourceTree = "<group>"; };
+		F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCreatedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				F2F614C61A3506D100CB65E6 /* TeamViewController.swift */,
 				F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */,
 				F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */,
+				F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */,
 				F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */,
 				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
+				F2F614CD1A35191800CB65E6 /* TeamCreatedViewController.swift in Sources */,
 				F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
