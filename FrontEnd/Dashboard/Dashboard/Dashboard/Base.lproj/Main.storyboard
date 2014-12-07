@@ -27,7 +27,7 @@
         <!--Dashboard-->
         <scene sceneID="PFH-Cy-ntV">
             <objects>
-                <viewController id="gXi-Ks-h7T" customClass="dashboardViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Dashboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gXi-Ks-h7T" customClass="dashboardViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="72V-ok-dRc"/>
                         <viewControllerLayoutGuide type="bottom" id="AIn-PS-Skg"/>
@@ -290,7 +290,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="submitButtonClicked:" destination="EfR-Wy-0gB" eventType="touchUpInside" id="tcE-eb-dOV"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="8dX-cw-0bm"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="wCF-af-dOU">
@@ -422,6 +422,7 @@
                     </view>
                     <connections>
                         <outlet property="inputTextField" destination="Tjs-il-4UN" id="dha-ZH-czR"/>
+                        <outlet property="submitButton" destination="Ppv-NX-9Ac" id="6Nt-Ex-SCf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKS-dX-s09" userLabel="First Responder" sceneMemberID="firstResponder"/>
