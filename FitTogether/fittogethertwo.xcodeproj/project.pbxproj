@@ -88,6 +88,14 @@
 			name = TableViewControllers;
 			sourceTree = "<group>";
 		};
+		F267EFB81A3613F8004CCE9F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F273C90E1A33988300D7B908 /* User.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +118,12 @@
 		F28B00831A0A833800A5891F /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				F267EFB81A3613F8004CCE9F /* Objects */,
 				F2F614B31A34E6F400CB65E6 /* Assets */,
 				F2F614B21A34E6D100CB65E6 /* CloudKit */,
 				F2F614B11A34E6B700CB65E6 /* ViewControllers */,
 				232BEBC01A1ED96000075DC7 /* FitTogether.entitlements */,
 				232BEBBD1A1ED61A00075DC7 /* Main.storyboard */,
-				F273C90E1A33988300D7B908 /* User.swift */,
 				F28B00861A0A833800A5891F /* AppDelegate.swift */,
 				F28B008F1A0A833800A5891F /* Images.xcassets */,
 				F28B00911A0A833800A5891F /* LaunchScreen.xib */,
