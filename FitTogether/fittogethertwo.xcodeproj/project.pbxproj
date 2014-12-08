@@ -17,11 +17,11 @@
 		F267EFBA1A3616EE004CCE9F /* columbiaCollege.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F267EFB91A3616EE004CCE9F /* columbiaCollege.jpg */; };
 		F267EFBC1A362133004CCE9F /* ChallengeTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267EFBB1A362133004CCE9F /* ChallengeTeamViewController.swift */; };
 		F267EFBE1A362561004CCE9F /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267EFBD1A362561004CCE9F /* TeamInfoViewController.swift */; };
-		F267EFC01A364355004CCE9F /* badgeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F267EFBF1A364355004CCE9F /* badgeIcon.png */; };
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
 		F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28B00911A0A833800A5891F /* LaunchScreen.xib */; };
+		F2DCE0441A36683F00B2305E /* badgeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DCE0431A36683F00B2305E /* badgeIcon.png */; };
 		F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2F614B61A34E76800CB65E6 /* Settings.bundle */; };
 		F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */; };
 		F2F614BB1A34ED0300CB65E6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BA1A34ED0300CB65E6 /* logo.png */; };
@@ -47,7 +47,6 @@
 		F267EFB91A3616EE004CCE9F /* columbiaCollege.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = columbiaCollege.jpg; sourceTree = "<group>"; };
 		F267EFBB1A362133004CCE9F /* ChallengeTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTeamViewController.swift; sourceTree = "<group>"; };
 		F267EFBD1A362561004CCE9F /* TeamInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
-		F267EFBF1A364355004CCE9F /* badgeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon.png; sourceTree = "<group>"; };
 		F273C90E1A33988300D7B908 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F28B00811A0A833800A5891F /* fittogethertwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fittogethertwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B00851A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		F28B00921A0A833800A5891F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
+		F2DCE0431A36683F00B2305E /* badgeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon.png; sourceTree = "<group>"; };
 		F2F614B61A34E76800CB65E6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2F614BA1A34ED0300CB65E6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		F2F614B51A34E71300CB65E6 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				F267EFBF1A364355004CCE9F /* badgeIcon.png */,
+				F2DCE0431A36683F00B2305E /* badgeIcon.png */,
 				F2F614C41A35020600CB65E6 /* gearIcon.png */,
 			);
 			name = Icons;
@@ -285,7 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F267EFC01A364355004CCE9F /* badgeIcon.png in Resources */,
+				F2DCE0441A36683F00B2305E /* badgeIcon.png in Resources */,
 				232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */,
 				F2F614CF1A351F1F00CB65E6 /* theDude.png in Resources */,
 				F267EFBA1A3616EE004CCE9F /* columbiaCollege.jpg in Resources */,
