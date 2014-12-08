@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EfR-Wy-0gB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EfR-Wy-0gB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -238,6 +238,7 @@
                         <viewControllerLayoutGuide type="bottom" id="636-4u-pew"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DCa-Ei-BVA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Created!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y7-Kj-ofL">
@@ -410,24 +411,24 @@
                                 <exclude reference="Ewa-Sa-dyA"/>
                                 <exclude reference="O0c-i0-wNE"/>
                                 <exclude reference="T4E-vH-bgt"/>
-                                <exclude reference="Uoy-JY-kHX"/>
-                                <exclude reference="rI7-Ff-Jf3"/>
+                                <exclude reference="Wxp-jf-CaG"/>
                                 <exclude reference="f2b-l4-lwf"/>
                                 <exclude reference="zI5-Bn-jCg"/>
+                                <exclude reference="Uoy-JY-kHX"/>
+                                <exclude reference="rI7-Ff-Jf3"/>
+                                <exclude reference="0Pz-HT-gO8"/>
+                                <exclude reference="7Fn-fu-jMR"/>
                                 <exclude reference="CKp-Qm-lvr"/>
                                 <exclude reference="EB4-Jx-DbG"/>
                                 <exclude reference="UYb-X3-OQL"/>
-                                <exclude reference="A5w-OS-HcS"/>
-                                <exclude reference="EKA-OO-aqQ"/>
-                                <exclude reference="slX-QN-9J7"/>
-                                <exclude reference="0Pz-HT-gO8"/>
-                                <exclude reference="7Fn-fu-jMR"/>
                                 <exclude reference="QzV-yY-7oi"/>
                                 <exclude reference="b8T-3U-VYT"/>
                                 <exclude reference="bvL-DI-1aa"/>
                                 <exclude reference="GUS-jX-VoK"/>
                                 <exclude reference="HGq-9Z-Z9w"/>
-                                <exclude reference="Wxp-jf-CaG"/>
+                                <exclude reference="A5w-OS-HcS"/>
+                                <exclude reference="EKA-OO-aqQ"/>
+                                <exclude reference="slX-QN-9J7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -445,24 +446,24 @@
                                 <include reference="Ewa-Sa-dyA"/>
                                 <include reference="O0c-i0-wNE"/>
                                 <include reference="T4E-vH-bgt"/>
-                                <include reference="Uoy-JY-kHX"/>
-                                <include reference="rI7-Ff-Jf3"/>
+                                <include reference="Wxp-jf-CaG"/>
                                 <include reference="f2b-l4-lwf"/>
                                 <include reference="zI5-Bn-jCg"/>
+                                <include reference="Uoy-JY-kHX"/>
+                                <include reference="rI7-Ff-Jf3"/>
+                                <include reference="0Pz-HT-gO8"/>
+                                <include reference="7Fn-fu-jMR"/>
                                 <include reference="CKp-Qm-lvr"/>
                                 <include reference="EB4-Jx-DbG"/>
                                 <include reference="UYb-X3-OQL"/>
-                                <include reference="A5w-OS-HcS"/>
-                                <include reference="EKA-OO-aqQ"/>
-                                <include reference="slX-QN-9J7"/>
-                                <include reference="0Pz-HT-gO8"/>
-                                <include reference="7Fn-fu-jMR"/>
                                 <include reference="QzV-yY-7oi"/>
                                 <include reference="b8T-3U-VYT"/>
                                 <include reference="bvL-DI-1aa"/>
                                 <include reference="GUS-jX-VoK"/>
                                 <include reference="HGq-9Z-Z9w"/>
-                                <include reference="Wxp-jf-CaG"/>
+                                <include reference="A5w-OS-HcS"/>
+                                <include reference="EKA-OO-aqQ"/>
+                                <include reference="slX-QN-9J7"/>
                             </mask>
                         </variation>
                     </view>
