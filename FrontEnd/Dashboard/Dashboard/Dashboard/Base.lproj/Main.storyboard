@@ -700,10 +700,10 @@
                                                 </mask>
                                                 <mask key="constraints">
                                                     <exclude reference="Kay-Gb-bxW"/>
-                                                    <exclude reference="s0s-0N-elI"/>
                                                     <exclude reference="SEL-ey-r3u"/>
-                                                    <exclude reference="GFy-DO-A9f"/>
+                                                    <exclude reference="s0s-0N-elI"/>
                                                     <exclude reference="7JL-5U-u0e"/>
+                                                    <exclude reference="GFy-DO-A9f"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -713,10 +713,10 @@
                                                 </mask>
                                                 <mask key="constraints">
                                                     <include reference="Kay-Gb-bxW"/>
-                                                    <include reference="s0s-0N-elI"/>
                                                     <include reference="SEL-ey-r3u"/>
-                                                    <include reference="GFy-DO-A9f"/>
+                                                    <include reference="s0s-0N-elI"/>
                                                     <include reference="7JL-5U-u0e"/>
+                                                    <include reference="GFy-DO-A9f"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -752,11 +752,11 @@
                                                     <exclude reference="V6g-Co-xAw"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="bcv-gM-WW1"/>
-                                                    <exclude reference="HfB-Z3-op1"/>
                                                     <exclude reference="1CH-RW-duk"/>
-                                                    <exclude reference="uC0-Ak-8CS"/>
+                                                    <exclude reference="HfB-Z3-op1"/>
+                                                    <exclude reference="bcv-gM-WW1"/>
                                                     <exclude reference="Mlh-4D-itF"/>
+                                                    <exclude reference="uC0-Ak-8CS"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -765,11 +765,11 @@
                                                     <include reference="V6g-Co-xAw"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="bcv-gM-WW1"/>
-                                                    <include reference="HfB-Z3-op1"/>
                                                     <include reference="1CH-RW-duk"/>
-                                                    <include reference="uC0-Ak-8CS"/>
+                                                    <include reference="HfB-Z3-op1"/>
+                                                    <include reference="bcv-gM-WW1"/>
                                                     <include reference="Mlh-4D-itF"/>
+                                                    <include reference="uC0-Ak-8CS"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -805,11 +805,11 @@
                                                     <exclude reference="TyD-FJ-x39"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="59f-7v-kf7"/>
                                                     <exclude reference="HS4-0S-9Bd"/>
                                                     <exclude reference="QcU-7j-d1J"/>
-                                                    <exclude reference="59f-7v-kf7"/>
-                                                    <exclude reference="lBm-Sf-Z55"/>
                                                     <exclude reference="TtP-uY-nS8"/>
+                                                    <exclude reference="lBm-Sf-Z55"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -818,11 +818,11 @@
                                                     <include reference="TyD-FJ-x39"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="59f-7v-kf7"/>
                                                     <include reference="HS4-0S-9Bd"/>
                                                     <include reference="QcU-7j-d1J"/>
-                                                    <include reference="59f-7v-kf7"/>
-                                                    <include reference="lBm-Sf-Z55"/>
                                                     <include reference="TtP-uY-nS8"/>
+                                                    <include reference="lBm-Sf-Z55"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -858,8 +858,8 @@
                                                     <exclude reference="pEP-M2-sWD"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="KJP-XI-0AL"/>
                                                     <exclude reference="D78-rs-ERb"/>
+                                                    <exclude reference="KJP-XI-0AL"/>
                                                     <exclude reference="mY7-u1-nWQ"/>
                                                     <exclude reference="R7t-eN-Kmj"/>
                                                     <exclude reference="TSq-zV-POd"/>
@@ -871,8 +871,8 @@
                                                     <include reference="pEP-M2-sWD"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="KJP-XI-0AL"/>
                                                     <include reference="D78-rs-ERb"/>
+                                                    <include reference="KJP-XI-0AL"/>
                                                     <include reference="mY7-u1-nWQ"/>
                                                     <include reference="R7t-eN-Kmj"/>
                                                     <include reference="TSq-zV-POd"/>
@@ -1354,8 +1354,7 @@
                                         <exclude reference="sOK-1x-zo6"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="285" width="368" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="pIf-uQ-YcZ"/>
                                         <include reference="sOK-1x-zo6"/>
@@ -1367,18 +1366,12 @@
                                 <color key="textColor" red="0.15686274509803921" green="0.3843137254901961" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="247" width="368" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Team Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CD7-gq-wfX">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.3843137254901961" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="209" width="368" height="30"/>
-                                </variation>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1533,7 +1526,7 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="44"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="widthClass=compact" ambiguous="YES">
                                     <rect key="frame" x="16" y="397" width="368" height="51"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
