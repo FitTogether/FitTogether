@@ -108,7 +108,6 @@
                                     <constraint firstItem="FOY-tE-GWa" firstAttribute="top" secondItem="lhu-6h-IgR" secondAttribute="bottom" constant="80" id="wb1-N3-P0b"/>
                                     <constraint firstItem="FOY-tE-GWa" firstAttribute="top" secondItem="lhu-6h-IgR" secondAttribute="bottom" constant="80" id="yNS-KU-HkK"/>
                                 </constraints>
-<<<<<<< HEAD
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="oos-S9-JqL"/>
@@ -116,10 +115,6 @@
                                         <exclude reference="n2O-zh-gQH"/>
                                         <exclude reference="wb1-N3-P0b"/>
                                     </mask>
-=======
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="101" width="600" height="650"/>
->>>>>>> designTouchUps
                                 </variation>
                             </view>
                         </subviews>
