@@ -27,6 +27,7 @@
 		F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */; };
 		F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */; };
 		F2F614CD1A35191800CB65E6 /* TeamCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */; };
+		F2F614CF1A351F1F00CB65E6 /* theDude.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614CE1A351F1F00CB65E6 /* theDude.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 		F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTeamViewController.swift; sourceTree = "<group>"; };
 		F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCreatedViewController.swift; sourceTree = "<group>"; };
+		F2F614CE1A351F1F00CB65E6 /* theDude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theDude.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		F2F614B41A34E70D00CB65E6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F2F614CE1A351F1F00CB65E6 /* theDude.png */,
 				F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */,
 				F2F614BC1A34ED0B00CB65E6 /* runningmen.png */,
 				F2F614BA1A34ED0300CB65E6 /* logo.png */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */,
+				F2F614CF1A351F1F00CB65E6 /* theDude.png in Resources */,
 				F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */,
 				F2F614BD1A34ED0B00CB65E6 /* runningmen.png in Resources */,
 				F2F614BB1A34ED0300CB65E6 /* logo.png in Resources */,
