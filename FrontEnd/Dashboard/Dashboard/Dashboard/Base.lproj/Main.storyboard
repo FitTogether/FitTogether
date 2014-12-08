@@ -574,9 +574,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="40" width="368" height="30"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team name: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuT-VF-sKZ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -591,8 +588,7 @@
                                         <exclude reference="Dd8-KW-qWy"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="90" width="100" height="20.5"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="Dd8-KW-qWy"/>
                                     </mask>
@@ -603,9 +599,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="116" y="90" width="268" height="20.5"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7k-c0-GfO">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -620,8 +613,7 @@
                                         <exclude reference="hLr-jP-cb5"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="130.5" width="100" height="20.5"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="hLr-jP-cb5"/>
                                     </mask>
@@ -640,8 +632,7 @@
                                         <exclude reference="UX2-j4-d6t"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="116" y="120.5" width="240" height="150"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="UX2-j4-d6t"/>
                                     </mask>
@@ -661,8 +652,7 @@
                                         <exclude reference="QqX-Fs-KBQ"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="465" width="368" height="35"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="QqX-Fs-KBQ"/>
                                     </mask>
@@ -681,8 +671,7 @@
                                         <exclude reference="0Pe-7M-jti"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="290.5" width="100" height="20.5"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="0Pe-7M-jti"/>
                                     </mask>
@@ -693,9 +682,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="116" y="290.5" width="268" height="20.5"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1521,8 +1507,8 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.5490196078431373" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" ambiguous="YES">
-                                    <rect key="frame" x="0.0" y="254" width="400" height="54.5"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="254" width="400" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Competion Length" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sn1-Tj-zHT">
@@ -1557,7 +1543,7 @@
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQY-DN-bU6">
                                 <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
-                                <variation key="widthClass=compact" ambiguous="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="394" width="400" height="162"/>
                                 </variation>
                             </pickerView>
