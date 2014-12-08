@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */; };
-		232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BEBB81A1ED5D500075DC7 /* profileViewController.swift */; };
 		232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 232BEBB91A1ED5D500075DC7 /* stormTrooperHelmet.jpg */; };
 		232BEBBF1A1ED61A00075DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232BEBBD1A1ED61A00075DC7 /* Main.storyboard */; };
 		232BEBC21A1EDBDF00075DC7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */; };
@@ -18,6 +17,8 @@
 		F267EFBC1A362133004CCE9F /* ChallengeTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267EFBB1A362133004CCE9F /* ChallengeTeamViewController.swift */; };
 		F267EFBE1A362561004CCE9F /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267EFBD1A362561004CCE9F /* TeamInfoViewController.swift */; };
 		F267EFC01A364355004CCE9F /* badgeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F267EFBF1A364355004CCE9F /* badgeIcon.png */; };
+		F267EFC21A364B82004CCE9F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267EFC11A364B82004CCE9F /* CollectionViewCell.swift */; };
+		F267EFC41A36537C004CCE9F /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F267EFC31A36537C004CCE9F /* profileViewController.swift */; };
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
@@ -37,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dashboardViewController.swift; path = ../../FrontEnd/Dashboard/Dashboard/Dashboard/dashboardViewController.swift; sourceTree = "<group>"; };
-		232BEBB81A1ED5D500075DC7 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = profileViewController.swift; path = ../../FrontEnd/Dashboard/Dashboard/Dashboard/profileViewController.swift; sourceTree = "<group>"; };
 		232BEBB91A1ED5D500075DC7 /* stormTrooperHelmet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stormTrooperHelmet.jpg; path = ../../FrontEnd/Dashboard/Dashboard/Dashboard/stormTrooperHelmet.jpg; sourceTree = "<group>"; };
 		232BEBBE1A1ED61A00075DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../FrontEnd/Dashboard/Dashboard/Dashboard/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		232BEBC01A1ED96000075DC7 /* FitTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FitTogether.entitlements; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		F267EFBB1A362133004CCE9F /* ChallengeTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTeamViewController.swift; sourceTree = "<group>"; };
 		F267EFBD1A362561004CCE9F /* TeamInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
 		F267EFBF1A364355004CCE9F /* badgeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon.png; sourceTree = "<group>"; };
+		F267EFC11A364B82004CCE9F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F267EFC31A36537C004CCE9F /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		F273C90E1A33988300D7B908 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F28B00811A0A833800A5891F /* fittogethertwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fittogethertwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B00851A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				F273C90E1A33988300D7B908 /* User.swift */,
+				F267EFC11A364B82004CCE9F /* CollectionViewCell.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -170,13 +173,13 @@
 			children = (
 				F256BF8A1A35F3A500C75418 /* TableViewControllers */,
 				232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */,
-				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
 				F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */,
 				F2F614C61A3506D100CB65E6 /* TeamViewController.swift */,
 				F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */,
 				F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */,
 				F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */,
 				F267EFBB1A362133004CCE9F /* ChallengeTeamViewController.swift */,
+				F267EFC31A36537C004CCE9F /* profileViewController.swift */,
 				F267EFBD1A362561004CCE9F /* TeamInfoViewController.swift */,
 			);
 			name = ViewControllers;
@@ -309,6 +312,7 @@
 			files = (
 				F267EFBE1A362561004CCE9F /* TeamInfoViewController.swift in Sources */,
 				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
+				F267EFC41A36537C004CCE9F /* profileViewController.swift in Sources */,
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
 				F267EFBC1A362133004CCE9F /* ChallengeTeamViewController.swift in Sources */,
@@ -317,7 +321,7 @@
 				F273C90F1A33988300D7B908 /* User.swift in Sources */,
 				F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */,
 				F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */,
-				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
+				F267EFC21A364B82004CCE9F /* CollectionViewCell.swift in Sources */,
 				F2F614CD1A35191800CB65E6 /* TeamCreatedViewController.swift in Sources */,
 				F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */,
 			);
