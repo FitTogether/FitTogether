@@ -1577,6 +1577,9 @@
                                         <include reference="sOK-1x-zo6"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="KMq-di-MPm" kind="show" id="Ekz-gF-uPG"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2x-0D-vwv">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>

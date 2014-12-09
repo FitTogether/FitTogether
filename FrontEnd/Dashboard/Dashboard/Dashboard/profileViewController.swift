@@ -13,7 +13,6 @@ class profileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         
         // Do any additional setup after loading the view.
@@ -24,7 +23,6 @@ class profileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     func displayAlertWithTitle(title: String, message: String){
         let controller = UIAlertController(title: title,
             message: message,
