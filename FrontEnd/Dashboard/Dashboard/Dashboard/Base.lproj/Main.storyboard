@@ -44,34 +44,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opponent" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaS-cC-7jB">
-                                <rect key="frame" x="300" y="72" width="284" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
                                 <rect key="frame" x="-1" y="99" width="601" height="173"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASS-Ei-5rG" userLabel="teamDaysWon">
-                                        <rect key="frame" x="0.0" y="1" width="301" height="85"/>
+                                </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="uNO-Nf-nKy" secondAttribute="centerX" id="1jf-yT-Vcb"/>
+                                            <constraint firstItem="MNA-Xk-CHm" firstAttribute="top" secondItem="uNO-Nf-nKy" secondAttribute="bottom" constant="8" id="8Sf-MX-0ZK"/>
+                                            <constraint firstAttribute="centerX" secondItem="MNA-Xk-CHm" secondAttribute="centerX" id="EKU-Aa-otn"/>
+                                            <constraint firstAttribute="bottom" secondItem="uNO-Nf-nKy" secondAttribute="bottom" constant="32" id="OQU-Bq-ZNn"/>
+                                            <constraint firstItem="uNO-Nf-nKy" firstAttribute="top" secondItem="1Ow-gH-rr3" secondAttribute="top" constant="32" id="URb-1L-EDU"/>
+                                            <constraint firstItem="uNO-Nf-nKy" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="1Ow-gH-rr3" secondAttribute="trailing" constant="-16" id="cJz-pn-ypk"/>
+                                            <constraint firstItem="uNO-Nf-nKy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Ow-gH-rr3" secondAttribute="leading" constant="16" id="koq-CA-PkP"/>
+                                            <constraint firstItem="MNA-Xk-CHm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="1Ow-gH-rr3" secondAttribute="trailing" constant="-16" id="xS8-t4-Dns"/>
+                                            <constraint firstItem="MNA-Xk-CHm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Ow-gH-rr3" secondAttribute="leading" constant="16" id="xfV-ne-Edg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQl-Jj-gDB" userLabel="oppAvgSteps">
+                                        <rect key="frame" x="302" y="87" width="299" height="85"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAc-EM-TCc">
-                                                <rect key="frame" x="123" y="32" width="56" height="21"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="73" y="32" width="55.5" height="20.5"/>
-                                                </variation>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days Won" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-dI-O21">
-                                                <rect key="frame" x="116" y="61" width="69" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXXX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4I-ae-YZx">
+                                                <rect key="frame" x="121" y="32" width="56" height="21"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="qAc-EM-TCc" secondAttribute="centerX" id="4Ai-PF-1aI"/>
@@ -97,8 +89,6 @@
                                                     <rect key="frame" x="72" y="32" width="55.5" height="20.5"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days Won" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNA-Xk-CHm">
-                                                <rect key="frame" x="115" y="61" width="69" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -221,26 +211,6 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="8Bh-CD-XBm" secondAttribute="centerX" id="10M-4c-zVK"/>
-                                    <constraint firstItem="CQl-Jj-gDB" firstAttribute="top" secondItem="1Ow-gH-rr3" secondAttribute="bottom" constant="1" id="4Do-eJ-P6N"/>
-                                    <constraint firstItem="1Th-TK-AKL" firstAttribute="top" secondItem="ASS-Ei-5rG" secondAttribute="bottom" constant="1" id="9ws-hK-zW9"/>
-                                    <constraint firstAttribute="height" constant="300" id="Bfk-Wn-chO"/>
-                                    <constraint firstAttribute="bottom" secondItem="1Th-TK-AKL" secondAttribute="bottom" constant="1" id="C2n-Gz-YwQ"/>
-                                    <constraint firstAttribute="centerX" secondItem="ASS-Ei-5rG" secondAttribute="trailing" id="Mas-R5-OFO"/>
-                                    <constraint firstAttribute="centerY" secondItem="8Bh-CD-XBm" secondAttribute="centerY" constant="75" id="NNE-EL-944"/>
-                                    <constraint firstItem="ASS-Ei-5rG" firstAttribute="top" secondItem="sWD-0j-koX" secondAttribute="top" constant="1" id="PjV-bu-d5P"/>
-                                    <constraint firstItem="CQl-Jj-gDB" firstAttribute="leading" secondItem="sWD-0j-koX" secondAttribute="centerX" constant="1" id="TKg-RB-UCC"/>
-                                    <constraint firstAttribute="centerX" secondItem="GYc-Dx-hwD" secondAttribute="centerX" constant="0.5" id="aTc-gh-KFv"/>
-                                    <constraint firstItem="1Ow-gH-rr3" firstAttribute="top" secondItem="sWD-0j-koX" secondAttribute="top" constant="1" id="anF-Uc-G5A"/>
-                                    <constraint firstItem="ASS-Ei-5rG" firstAttribute="leading" secondItem="sWD-0j-koX" secondAttribute="leading" id="dnn-nz-pHj"/>
-                                    <constraint firstItem="1Th-TK-AKL" firstAttribute="leading" secondItem="sWD-0j-koX" secondAttribute="leading" id="eew-Pc-Vnf"/>
-                                    <constraint firstAttribute="trailing" secondItem="1Ow-gH-rr3" secondAttribute="trailing" id="m3b-6I-yEb"/>
-                                    <constraint firstAttribute="centerY" secondItem="GYc-Dx-hwD" secondAttribute="centerY" constant="-11" id="p7i-ji-fVe"/>
-                                    <constraint firstAttribute="centerX" secondItem="1Th-TK-AKL" secondAttribute="trailing" id="qFm-g7-90z"/>
-                                    <constraint firstAttribute="trailing" secondItem="CQl-Jj-gDB" secondAttribute="trailing" id="xAb-rT-5Yx"/>
-                                    <constraint firstItem="1Ow-gH-rr3" firstAttribute="leading" secondItem="sWD-0j-koX" secondAttribute="centerX" constant="1" id="yHK-hK-BcM"/>
-                                </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Bfk-Wn-chO"/>
@@ -722,7 +692,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGd-Sk-T0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="385.5" y="2357"/>
         </scene>
         <!--Settings-->
         <scene sceneID="LU1-f8-tWK">
