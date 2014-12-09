@@ -13,11 +13,13 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var teamNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var fakeData = ["Beer", "Eggs", "Milk", "Beer", "Steak", "Beer", "The Lord of the Rings on Blu-Ray", "Beer", "98˚ Greatest Hits Album", "Chicken", "Beer", "Beer", "Beer", "Beer"]
+    var fakeData = ["Bart", "Adam", "Chris", "Dave", "Justin", "Scott", "Pete", "Matt", "Tyler", "Aaron", "Jill", "Jack", "Frank", "Tim"]
+    
+    var fakeSteps = ["2000", "3000", "1000", "5000", "4000", "9000", "8000", "9000", "0", "11000", "7000", "4000", "6000", "4000"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         // Do any additional setup after loading the view.
     }
     
@@ -35,9 +37,14 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
-        
+        var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         cell.textLabel.text = self.fakeData[indexPath.row]
+        
+       // var imageName = UIImage(named: fakeData[indexPath.row])
+        var imageName = UIImage(named: "theDude.png")
+        cell.imageView.image = imageName
+        
+        cell.detailTextLabel?.text = self.fakeSteps[indexPath.row]
         
         return cell
     }
