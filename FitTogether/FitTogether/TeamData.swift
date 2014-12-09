@@ -10,21 +10,20 @@ import UIKit
 
 class TeamData: NSObject {
     
-    var ckHelper = CloudKitHelper()
+    //grab team data for iCloud
+    //store team data into array?
+    
+    var userData:[(name: String, amtOfStepsWalked: Int)] = []
+    
     
     override init() {
-        
-        ckHelper.retriveRecords("ID", queryRecordType: "Team")
+        userData.append(name: "Justin Schubring", amtOfStepsWalked: 4000)
+        userData.append(name: "John Doe", amtOfStepsWalked: 3456)
+        userData.append(name: "John Snow", amtOfStepsWalked: 12345)
+        userData.append(name: "Alan Rickman", amtOfStepsWalked: 0001)
         super.init()
     }
     
-    
-    func passArrayOfData()-> [(name: String, amtOfStepsWalked: Int)]{
-        
-        var anArray:[(name: String, amtOfStepsWalked: Int)] = [(name: "Bart", amtOfStepsWalked: 2000), (name: "Adam", amtOfStepsWalked: 3000), (name: "Chris", amtOfStepsWalked: 1000), (name: "Dave", amtOfStepsWalked: 5000), (name: "Justin", amtOfStepsWalked: 4000), (name: "Scott", amtOfStepsWalked: 9000), (name: "Pete", amtOfStepsWalked: 8000), (name: "Matt", amtOfStepsWalked: 9000), (name: "Tyler", amtOfStepsWalked: 0), (name: "Aaron", amtOfStepsWalked: 11000), (name: "Jill", amtOfStepsWalked: 6000), (name: "Jack", amtOfStepsWalked: 4000), (name: "Frank", amtOfStepsWalked: 1000), (name: "Tim", amtOfStepsWalked: 4000)]
-        
-        return anArray
-    }
     
     //func to sort team members by A - Z
     //func will return array of sorted team members to be used by controller
