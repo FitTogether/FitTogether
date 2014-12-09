@@ -1927,9 +1927,9 @@
         <image name="threeRunningMen.png" width="309" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pue-c2-M8N"/>
-        <segue reference="srM-Ki-F7v"/>
-        <segue reference="aOk-IB-dY0"/>
+        <segue reference="Cem-VI-By3"/>
+        <segue reference="DfF-Cj-bzE"/>
+        <segue reference="3Eu-gx-5lo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
 </document>
