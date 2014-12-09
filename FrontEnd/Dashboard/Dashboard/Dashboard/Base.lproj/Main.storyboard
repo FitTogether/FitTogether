@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EfR-Wy-0gB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EfR-Wy-0gB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -978,6 +978,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1R3-ua-PmC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oKn-N0-xT5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-Fn-n0m">
@@ -1133,26 +1134,26 @@
                                 <exclude reference="4al-MZ-f9r"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="3SJ-Aw-5JX"/>
+                                <exclude reference="J40-0U-qtl"/>
+                                <exclude reference="5yZ-cg-60z"/>
+                                <exclude reference="FjH-SH-AmI"/>
+                                <exclude reference="lL2-de-GDZ"/>
+                                <exclude reference="ECg-Le-kUA"/>
+                                <exclude reference="kqP-mF-7mi"/>
+                                <exclude reference="piC-22-Ffz"/>
                                 <exclude reference="QdG-Jy-nf8"/>
                                 <exclude reference="Uxr-dg-2lg"/>
                                 <exclude reference="dPl-5M-XZX"/>
                                 <exclude reference="puF-cd-cBE"/>
-                                <exclude reference="5yZ-cg-60z"/>
-                                <exclude reference="FjH-SH-AmI"/>
-                                <exclude reference="lL2-de-GDZ"/>
-                                <exclude reference="PpX-rL-Gmj"/>
-                                <exclude reference="vWY-tE-zJW"/>
                                 <exclude reference="O4V-Bw-l6G"/>
                                 <exclude reference="Vbd-5m-oSw"/>
                                 <exclude reference="b6l-53-hh4"/>
+                                <exclude reference="PpX-rL-Gmj"/>
+                                <exclude reference="vWY-tE-zJW"/>
                                 <exclude reference="GsU-RM-HmG"/>
                                 <exclude reference="KzB-Jh-Kz7"/>
                                 <exclude reference="OIf-f2-zGf"/>
-                                <exclude reference="3SJ-Aw-5JX"/>
-                                <exclude reference="J40-0U-qtl"/>
-                                <exclude reference="ECg-Le-kUA"/>
-                                <exclude reference="kqP-mF-7mi"/>
-                                <exclude reference="piC-22-Ffz"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1166,26 +1167,26 @@
                                 <include reference="4al-MZ-f9r"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="3SJ-Aw-5JX"/>
+                                <include reference="J40-0U-qtl"/>
+                                <include reference="5yZ-cg-60z"/>
+                                <exclude reference="FjH-SH-AmI"/>
+                                <include reference="lL2-de-GDZ"/>
+                                <include reference="ECg-Le-kUA"/>
+                                <include reference="kqP-mF-7mi"/>
+                                <include reference="piC-22-Ffz"/>
                                 <include reference="QdG-Jy-nf8"/>
                                 <include reference="Uxr-dg-2lg"/>
                                 <include reference="dPl-5M-XZX"/>
                                 <include reference="puF-cd-cBE"/>
-                                <include reference="5yZ-cg-60z"/>
-                                <exclude reference="FjH-SH-AmI"/>
-                                <include reference="lL2-de-GDZ"/>
-                                <include reference="PpX-rL-Gmj"/>
-                                <include reference="vWY-tE-zJW"/>
                                 <include reference="O4V-Bw-l6G"/>
                                 <include reference="Vbd-5m-oSw"/>
                                 <include reference="b6l-53-hh4"/>
+                                <include reference="PpX-rL-Gmj"/>
+                                <include reference="vWY-tE-zJW"/>
                                 <include reference="GsU-RM-HmG"/>
                                 <include reference="KzB-Jh-Kz7"/>
                                 <include reference="OIf-f2-zGf"/>
-                                <include reference="3SJ-Aw-5JX"/>
-                                <include reference="J40-0U-qtl"/>
-                                <include reference="ECg-Le-kUA"/>
-                                <include reference="kqP-mF-7mi"/>
-                                <include reference="piC-22-Ffz"/>
                             </mask>
                         </variation>
                     </view>
@@ -1893,7 +1894,7 @@
         <image name="threeRunningMen.png" width="309" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pue-c2-M8N"/>
+        <segue reference="Wd7-dF-O0s"/>
         <segue reference="srM-Ki-F7v"/>
         <segue reference="aOk-IB-dY0"/>
     </inferredMetricsTieBreakers>
