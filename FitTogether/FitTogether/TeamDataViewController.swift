@@ -10,8 +10,12 @@ import UIKit
 
 class TeamDataViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+//    @IBOutlet weak var teamNameLabel: UILabel!
+//    @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var teamNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    
     
     var teamData = TeamData()
     var fakeData:[(name: String, amtOfStepsWalked: String)]?
@@ -43,12 +47,12 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         
         let item = self.fakeData![indexPath.row]
-        cell.textLabel.text = item.name
+        cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = item.amtOfStepsWalked
         
         // var imageName = UIImage(named: fakeData[indexPath.row])
         var imageName = UIImage(named: "theDude.png")
-        cell.imageView.image = imageName
+        cell.imageView?.image = imageName
         
         
         return cell
@@ -61,10 +65,33 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     
     /* Segmented Control */
     //
-    @IBAction func segmentedControl_Tapped(sender: UISegmentedControl) {
+//    @IBAction func segmentedControl_Tapped(sender: UISegmentedControl) {
+//        
+//        switch sender.selectedSegmentIndex
+//        {
+//        case 0:
+//            //List users by A - Z
+//            fakeData = teamData.AtoZ()
+//            self.tableView.reloadData()
+//            
+//        case 1:
+//            //List users by Most Steps
+//            fakeData = teamData.HighToLow()
+//            tableView.reloadData()
+//        case 2:
+//            //List users by Least Steps
+//            fakeData = teamData.LowToHigh()
+//            tableView.reloadData()
+//        default:
+//            break
+//            
+//        }
+//    }
+
+    
+    @IBAction func segmentedControl_Tapped(sender: AnyObject) {
         
-        switch sender.selectedSegmentIndex
-        {
+        switch sender.selectedSegmentIndex {
         case 0:
             //List users by A - Z
             fakeData = teamData.AtoZ()
@@ -83,5 +110,4 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
             
         }
     }
-    
 }
