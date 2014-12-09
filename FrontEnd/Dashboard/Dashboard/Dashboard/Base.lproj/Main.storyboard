@@ -309,9 +309,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="16" y="72" width="368" height="20.5"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mizzou IT4500 Team Zulu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQn-Jb-vWu">
                                 <rect key="frame" x="234" y="314" width="133" height="22"/>
@@ -333,8 +330,25 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theDude.png" translatesAutoresizingMaskIntoConstraints="NO" id="aVN-ea-9y2">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="16" y="102.5" width="368" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="A7A-y5-4IB">
+                                        <variation key="widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="IXU-29-Tuo">
+                                        <variation key="widthClass=compact" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A7A-y5-4IB"/>
+                                        <exclude reference="IXU-29-Tuo"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="A7A-y5-4IB"/>
+                                        <include reference="IXU-29-Tuo"/>
+                                    </mask>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-02-AQ8">
@@ -346,6 +360,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aVN-ea-9y2" firstAttribute="centerX" secondItem="90t-xP-guz" secondAttribute="centerX" id="4v7-0J-hRR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aVN-ea-9y2" secondAttribute="trailing" constant="64" id="5ML-cR-gCD">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
@@ -390,6 +405,7 @@
                                 <exclude reference="BS4-9f-Zk3"/>
                                 <exclude reference="WtJ-0E-vNt"/>
                                 <exclude reference="pb1-4l-K3s"/>
+                                <exclude reference="4v7-0J-hRR"/>
                                 <exclude reference="5ML-cR-gCD"/>
                                 <exclude reference="7V5-t5-woD"/>
                                 <exclude reference="RKU-Wd-P9f"/>
@@ -411,14 +427,15 @@
                                 <include reference="BS4-9f-Zk3"/>
                                 <include reference="WtJ-0E-vNt"/>
                                 <include reference="pb1-4l-K3s"/>
-                                <include reference="5ML-cR-gCD"/>
-                                <include reference="7V5-t5-woD"/>
+                                <include reference="4v7-0J-hRR"/>
+                                <exclude reference="5ML-cR-gCD"/>
+                                <exclude reference="7V5-t5-woD"/>
                                 <include reference="RKU-Wd-P9f"/>
                                 <include reference="9xa-xa-8lC"/>
                                 <include reference="ifB-6Q-GGZ"/>
                                 <include reference="8ab-Tj-btc"/>
                                 <include reference="Klh-KS-RBr"/>
-                                <include reference="Pr2-Km-JlH"/>
+                                <exclude reference="Pr2-Km-JlH"/>
                                 <include reference="Q45-qP-yM2"/>
                                 <include reference="7en-Xt-9tY"/>
                             </mask>
@@ -433,6 +450,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="aVN-ea-9y2" id="L02-zq-Zzt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCj-5G-lHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -695,10 +715,18 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="teamDescLabel" destination="lGh-iW-GJB" id="EaZ-LN-YR5"/>
+                        <outlet property="teamNameLabel" destination="lHd-Ux-yRb" id="RA6-Gj-3gr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGd-Sk-T0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="385.5" y="2357"/>
+=======
+            <point key="canvasLocation" x="3571.5" y="1644"/>
+>>>>>>> designTouchUps2
         </scene>
         <!--Settings-->
         <scene sceneID="LU1-f8-tWK">
@@ -1507,6 +1535,9 @@
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ktn-mV-A6Y" id="ts3-Yi-Iqg"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTN-xS-Ket">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -1684,6 +1715,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Join a Team" id="2SD-5i-tex"/>
+                    <connections>
+                        <outlet property="codeTextField" destination="v66-cW-efL" id="uE6-jy-W09"/>
+                        <outlet property="teamCode" destination="uTN-xS-Ket" id="z3o-oX-8e3"/>
+                        <outlet property="teamDesc" destination="0Z4-qj-TTL" id="ytn-4b-6hf"/>
+                        <outlet property="teamName" destination="abS-Dx-t3m" id="lfn-WZ-mTn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXQ-mm-PRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1692,7 +1729,7 @@
         <!--Create a Team-->
         <scene sceneID="NfI-lh-sJz">
             <objects>
-                <viewController id="f8h-C0-TkL" sceneMemberID="viewController">
+                <viewController id="f8h-C0-TkL" customClass="CreateTeamViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cO3-FI-Fpm"/>
                         <viewControllerLayoutGuide type="bottom" id="Wat-f8-1QO"/>
@@ -1723,18 +1760,28 @@
                                         <include reference="sOK-1x-zo6"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="KMq-di-MPm" kind="show" identifier="showTeamCreatedSegue" id="f2R-B6-Q5q"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2x-0D-vwv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2x-0D-vwv">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.3843137254901961" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="f8h-C0-TkL" id="WHI-uC-EcE"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Team Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CD7-gq-wfX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Team Name" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CD7-gq-wfX">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.3843137254901961" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameEditDone:" destination="f8h-C0-TkL" eventType="editingDidEnd" id="N8d-yU-tha"/>
+                                    <outlet property="delegate" destination="f8h-C0-TkL" id="B2z-Ge-jBr"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1794,6 +1841,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Create a Team" id="ONg-FT-utB"/>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="A2x-0D-vwv" id="Pkx-dI-Vro"/>
+                        <outlet property="teamNameTextField" destination="CD7-gq-wfX" id="vMk-TA-AVg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bB9-aa-rRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2138,9 +2189,9 @@
         <image name="threeRunningMen.png" width="309" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="aOk-IB-dY0"/>
         <segue reference="pue-c2-M8N"/>
         <segue reference="srM-Ki-F7v"/>
-        <segue reference="aOk-IB-dY0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
 </document>
