@@ -13,7 +13,6 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var teamNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-<<<<<<< Updated upstream
     var fakeData = ["Bart", "Adam", "Chris", "Dave", "Justin", "Scott", "Pete", "Matt", "Tyler", "Aaron", "Jill", "Jack", "Frank", "Tim"]
     
     var fakeSteps = ["2000", "3000", "1000", "5000", "4000", "9000", "8000", "9000", "0", "11000", "7000", "4000", "6000", "4000"]
@@ -21,22 +20,6 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-=======
-    var teamData = TeamData()
-    
-    var fakeData = TeamData.passArrayOfData()
- /*   var fakeData = ["Bart", "Adam", "Chris", "Dave", "Justin", "Scott", "Pete", "Matt", "Tyler", "Aaron", "Jill", "Jack", "Frank", "Tim"]
-    
-    var fakeSteps = ["2000", "3000", "1000", "5000", "4000", "9000", "8000", "9000", "0", "11000", "7000", "4000", "6000", "4000"]
-    
-  */
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        var ckHelper = CloudKitHelper()
-        var userArray: AnyObject = ckHelper.retriveRecords("ID", queryRecordType: "Team")
-        NSLog("Elements in array: \(userArray)")
->>>>>>> Stashed changes
         // Do any additional setup after loading the view.
     }
     
@@ -50,33 +33,18 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-<<<<<<< Updated upstream
         return fakeData.count
-=======
-        //return fakeData.count
-        return teamData.userData.count
->>>>>>> Stashed changes
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
-<<<<<<< Updated upstream
         cell.textLabel.text = self.fakeData[indexPath.row]
-=======
-        
-     //   cell.textLabel.text = self.fakeData[indexPath.row]
-       //cell.textLabel.text = self.teamData.userData[indexPath.row]
->>>>>>> Stashed changes
         
        // var imageName = UIImage(named: fakeData[indexPath.row])
         var imageName = UIImage(named: "theDude.png")
         cell.imageView.image = imageName
         
-<<<<<<< Updated upstream
         cell.detailTextLabel?.text = self.fakeSteps[indexPath.row]
-=======
-     //   cell.detailTextLabel?.text = self.fakeSteps[indexPath.row]
->>>>>>> Stashed changes
         
         return cell
     }
