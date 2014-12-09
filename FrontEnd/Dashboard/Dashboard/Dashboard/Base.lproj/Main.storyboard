@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EfR-Wy-0gB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EfR-Wy-0gB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -289,19 +289,19 @@
                                 <exclude reference="Z4g-02-AQ8"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="9xa-xa-8lC"/>
-                                <exclude reference="ifB-6Q-GGZ"/>
+                                <exclude reference="BS4-9f-Zk3"/>
+                                <exclude reference="WtJ-0E-vNt"/>
+                                <exclude reference="pb1-4l-K3s"/>
                                 <exclude reference="4v7-0J-hRR"/>
                                 <exclude reference="5ML-cR-gCD"/>
                                 <exclude reference="7V5-t5-woD"/>
                                 <exclude reference="RKU-Wd-P9f"/>
+                                <exclude reference="9xa-xa-8lC"/>
+                                <exclude reference="ifB-6Q-GGZ"/>
+                                <exclude reference="8ab-Tj-btc"/>
                                 <exclude reference="Klh-KS-RBr"/>
                                 <exclude reference="Pr2-Km-JlH"/>
                                 <exclude reference="Q45-qP-yM2"/>
-                                <exclude reference="8ab-Tj-btc"/>
-                                <exclude reference="BS4-9f-Zk3"/>
-                                <exclude reference="WtJ-0E-vNt"/>
-                                <exclude reference="pb1-4l-K3s"/>
                                 <exclude reference="7en-Xt-9tY"/>
                             </mask>
                         </variation>
@@ -311,19 +311,19 @@
                                 <include reference="Z4g-02-AQ8"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="9xa-xa-8lC"/>
-                                <include reference="ifB-6Q-GGZ"/>
+                                <include reference="BS4-9f-Zk3"/>
+                                <include reference="WtJ-0E-vNt"/>
+                                <include reference="pb1-4l-K3s"/>
                                 <include reference="4v7-0J-hRR"/>
                                 <exclude reference="5ML-cR-gCD"/>
                                 <exclude reference="7V5-t5-woD"/>
                                 <include reference="RKU-Wd-P9f"/>
+                                <include reference="9xa-xa-8lC"/>
+                                <include reference="ifB-6Q-GGZ"/>
+                                <include reference="8ab-Tj-btc"/>
                                 <include reference="Klh-KS-RBr"/>
                                 <exclude reference="Pr2-Km-JlH"/>
                                 <include reference="Q45-qP-yM2"/>
-                                <include reference="8ab-Tj-btc"/>
-                                <include reference="BS4-9f-Zk3"/>
-                                <include reference="WtJ-0E-vNt"/>
-                                <include reference="pb1-4l-K3s"/>
                                 <include reference="7en-Xt-9tY"/>
                             </mask>
                         </variation>
@@ -1974,9 +1974,9 @@
         <image name="threeRunningMen.png" width="309" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="aOk-IB-dY0"/>
         <segue reference="pue-c2-M8N"/>
         <segue reference="srM-Ki-F7v"/>
-        <segue reference="aOk-IB-dY0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
 </document>
