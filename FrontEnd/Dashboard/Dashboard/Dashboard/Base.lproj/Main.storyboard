@@ -38,13 +38,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-o2-T0U">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Team Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-o2-T0U">
                                 <rect key="frame" x="16" y="72" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opponent" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaS-cC-7jB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Opponent" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaS-cC-7jB">
                                 <rect key="frame" x="505" y="72" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -132,6 +132,8 @@
                                 <exclude reference="av3-LB-VjY"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Ond-xN-PEK"/>
+                                <exclude reference="hme-LX-tsC"/>
                                 <exclude reference="1NT-Kv-Y5T"/>
                                 <exclude reference="ua5-lw-DVT"/>
                                 <exclude reference="ICp-7U-y6Y"/>
@@ -139,8 +141,6 @@
                                 <exclude reference="cG5-4G-77z"/>
                                 <exclude reference="nL5-2n-Iud"/>
                                 <exclude reference="qeQ-ny-Ibp"/>
-                                <exclude reference="Ond-xN-PEK"/>
-                                <exclude reference="hme-LX-tsC"/>
                                 <exclude reference="edq-lE-P6w"/>
                                 <exclude reference="re0-7p-cJW"/>
                             </mask>
@@ -151,6 +151,8 @@
                                 <include reference="av3-LB-VjY"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Ond-xN-PEK"/>
+                                <include reference="hme-LX-tsC"/>
                                 <include reference="1NT-Kv-Y5T"/>
                                 <include reference="ua5-lw-DVT"/>
                                 <include reference="ICp-7U-y6Y"/>
@@ -158,8 +160,6 @@
                                 <include reference="cG5-4G-77z"/>
                                 <include reference="nL5-2n-Iud"/>
                                 <include reference="qeQ-ny-Ibp"/>
-                                <include reference="Ond-xN-PEK"/>
-                                <include reference="hme-LX-tsC"/>
                                 <include reference="edq-lE-P6w"/>
                                 <include reference="re0-7p-cJW"/>
                             </mask>
@@ -1767,7 +1767,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="threeRunningMen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nra-PX-vIa">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="widthClass=compact" ambiguous="YES">
                                     <rect key="frame" x="16" y="454" width="368" height="146"/>
                                 </variation>
                             </imageView>
