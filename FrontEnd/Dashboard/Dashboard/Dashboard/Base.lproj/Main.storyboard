@@ -19,7 +19,7 @@
                     <connections>
                         <segue destination="WcJ-YV-EEb" kind="relationship" relationship="viewControllers" id="rxb-kV-l4Y"/>
                         <segue destination="WVK-uJ-Y0j" kind="relationship" relationship="viewControllers" id="V2i-HG-hM8"/>
-                        <segue destination="DJI-hW-zaO" kind="relationship" relationship="viewControllers" id="aTJ-z5-ddB"/>
+                        <segue destination="DJI-hW-zaO" kind="relationship" relationship="viewControllers" id="GSa-ja-rl9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -699,7 +699,7 @@
             </objects>
             <point key="canvasLocation" x="2716.5" y="940"/>
         </scene>
-        <!--Team Created View Controller-->
+        <!--Created Team-->
         <scene sceneID="cdP-aN-EhU">
             <objects>
                 <viewController id="KMq-di-MPm" customClass="TeamCreatedViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
@@ -794,7 +794,8 @@
                                         <exclude reference="QqX-Fs-KBQ"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="421" width="368" height="35"/>
                                     <mask key="constraints">
                                         <include reference="QqX-Fs-KBQ"/>
                                     </mask>
@@ -937,10 +938,15 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Created Team" id="be5-SB-he9"/>
+                    <connections>
+                        <outlet property="teamDescLabel" destination="lGh-iW-GJB" id="2vd-Fz-AjJ"/>
+                        <outlet property="teamNameLabel" destination="lHd-Ux-yRb" id="m0P-Z3-GQ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGd-Sk-T0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="385.5" y="2357"/>
+            <point key="canvasLocation" x="3535.5" y="1644"/>
         </scene>
         <!--Settings-->
         <scene sceneID="LU1-f8-tWK">
@@ -1798,7 +1804,8 @@
                                         <exclude reference="uWe-a0-Bzl"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="421" width="368" height="35"/>
                                     <mask key="constraints">
                                         <include reference="uWe-a0-Bzl"/>
                                     </mask>
@@ -1810,6 +1817,9 @@
                                 <color key="textColor" red="0.13725490196078433" green="0.42352941176470588" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="264.5" width="368" height="136.5"/>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1934,7 +1944,7 @@
         <!--Create a Team-->
         <scene sceneID="NfI-lh-sJz">
             <objects>
-                <viewController id="f8h-C0-TkL" sceneMemberID="viewController">
+                <viewController id="f8h-C0-TkL" customClass="CreateTeamViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cO3-FI-Fpm"/>
                         <viewControllerLayoutGuide type="bottom" id="Wat-f8-1QO"/>
@@ -1965,14 +1975,17 @@
                                         <include reference="sOK-1x-zo6"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="KMq-di-MPm" kind="show" id="0cY-Xw-asA"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2x-0D-vwv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2x-0D-vwv">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.3843137254901961" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Team Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CD7-gq-wfX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Team Name" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CD7-gq-wfX">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.3843137254901961" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2036,6 +2049,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Create a Team" id="ONg-FT-utB"/>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="A2x-0D-vwv" id="rwv-qW-E1G"/>
+                        <outlet property="teamNameTextField" destination="CD7-gq-wfX" id="623-mZ-TMy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bB9-aa-rRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2381,9 +2398,9 @@
         <image name="threeRunningMen.png" width="309" height="146"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Wd7-dF-O0s"/>
-        <segue reference="aOk-IB-dY0"/>
-        <segue reference="srM-Ki-F7v"/>
+        <segue reference="Cem-VI-By3"/>
+        <segue reference="DfF-Cj-bzE"/>
+        <segue reference="3Eu-gx-5lo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
 </document>
