@@ -43,12 +43,12 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         
         let item = self.fakeData![indexPath.row]
-        cell.textLabel.text = item.name
+        cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = item.amtOfStepsWalked
         
         // var imageName = UIImage(named: fakeData[indexPath.row])
         var imageName = UIImage(named: "theDude.png")
-        cell.imageView.image = imageName
+        cell.imageView?.image = imageName
         
         
         return cell
