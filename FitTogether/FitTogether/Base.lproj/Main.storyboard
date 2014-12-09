@@ -8,7 +8,7 @@
         <!--Search Table View Controller-->
         <scene sceneID="g1b-vz-VFI">
             <objects>
-                <viewController id="G7O-Kg-nnS" customClass="SearchTableViewController" customModule="FitTogether" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G7O-Kg-nnS" customClass="SearchTableViewController" customModule="FitTogether" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DuI-Fk-muG"/>
                         <viewControllerLayoutGuide type="bottom" id="Ixc-1i-0M8"/>
@@ -59,6 +59,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="MyLabel" destination="orW-y1-XgR" id="mwN-bY-BqJ"/>
+                                            <segue destination="hTH-bd-4Lf" kind="show" id="fUf-Fl-xvt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -227,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tjQ-Ea-miD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="423" y="-153"/>
+            <point key="canvasLocation" x="454" y="-153"/>
         </scene>
     </scenes>
 </document>

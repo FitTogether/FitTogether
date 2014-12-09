@@ -90,6 +90,7 @@
 		F269DD4E1A194081007EF641 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F28B00861A0A833800A5891F /* AppDelegate.swift */,
 				F269DD4C1A19407C007EF641 /* TeamInfoViewController.swift */,
 				BCDD568D1A36CAE300C23840 /* SearchTableViewController.swift */,
 				BCDD568F1A36CB3B00C23840 /* arrayData.swift */,
@@ -124,7 +125,6 @@
 			children = (
 				BC0FF7EE1A1E7E0A0069062D /* Challenges */,
 				F269DD4E1A194081007EF641 /* ViewControllers */,
-				F28B00861A0A833800A5891F /* AppDelegate.swift */,
 				F28B008C1A0A833800A5891F /* Main.storyboard */,
 				F28B008F1A0A833800A5891F /* Images.xcassets */,
 				F28B00911A0A833800A5891F /* LaunchScreen.xib */,
