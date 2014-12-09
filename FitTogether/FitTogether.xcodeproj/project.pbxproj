@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCDD568E1A36CAE300C23840 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD568D1A36CAE300C23840 /* SearchTableViewController.swift */; };
+		BCDD56901A36CB3B00C23840 /* arrayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD568F1A36CB3B00C23840 /* arrayData.swift */; };
+		BCDD56921A36D64600C23840 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD56911A36D64600C23840 /* MyTableViewCell.swift */; };
 		F214806D1A1594FA00C6F805 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F214806C1A1594FA00C6F805 /* HealthKit.framework */; };
 		F21480701A15950F00C6F805 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F214806F1A15950F00C6F805 /* CloudKit.framework */; };
 		F21480731A159C9D00C6F805 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21480721A159C9D00C6F805 /* Settings.bundle */; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BCDD568D1A36CAE300C23840 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		BCDD568F1A36CB3B00C23840 /* arrayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = arrayData.swift; sourceTree = "<group>"; };
+		BCDD56911A36D64600C23840 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		F214806C1A1594FA00C6F805 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		F214806E1A1594FA00C6F805 /* FitTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = FitTogether.entitlements; path = FitTogether/FitTogether.entitlements; sourceTree = "<group>"; };
 		F214806F1A15950F00C6F805 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -85,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				F269DD4C1A19407C007EF641 /* TeamInfoViewController.swift */,
+				BCDD568D1A36CAE300C23840 /* SearchTableViewController.swift */,
+				BCDD568F1A36CB3B00C23840 /* arrayData.swift */,
+				BCDD56911A36D64600C23840 /* MyTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -260,7 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
+				BCDD568E1A36CAE300C23840 /* SearchTableViewController.swift in Sources */,
 				F269DD4D1A19407C007EF641 /* TeamInfoViewController.swift in Sources */,
+				BCDD56921A36D64600C23840 /* MyTableViewCell.swift in Sources */,
+				BCDD56901A36CB3B00C23840 /* arrayData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
