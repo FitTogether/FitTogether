@@ -10,21 +10,23 @@
 import UIKit
 
 class profileViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        imageView.layer.cornerRadius = 100.0
+        imageView.layer.borderWidth = 3.0
+        imageView.layer.borderColor = UIColor(red: 0.90, green: 0.20, blue: 0.15, alpha: 0.8).CGColor
         
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     func displayAlertWithTitle(title: String, message: String){
         let controller = UIAlertController(title: title,
             message: message,
@@ -40,11 +42,11 @@ class profileViewController: UIViewController {
     
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
 
