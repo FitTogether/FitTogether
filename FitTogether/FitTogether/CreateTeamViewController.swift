@@ -8,14 +8,7 @@
 
 import UIKit
 
-class CreateTeamViewController: UIViewController, UITextFieldDelegate {
-    @IBOutlet weak var teamNameTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
-    
-    
-    @IBAction func nameEditDone(sender: AnyObject) {
-        
-    }
+class CreateTeamViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,23 +21,6 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let teamName = teamNameTextField.text as NSString
-        let description = descriptionTextField.text as NSString
-        
-        var teamCreated = segue.destinationViewController as TeamCreatedViewController
-        teamCreated.teamDesc = description
-        teamCreated.teamName = teamName
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if (textField == self.descriptionTextField) {
-            textField.resignFirstResponder()
-        } else if (textField == self.teamNameTextField) {
-            self.descriptionTextField.becomeFirstResponder()
-        }
-        return true
-    }
 
     /*
     // MARK: - Navigation

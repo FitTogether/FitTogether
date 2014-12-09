@@ -10,16 +10,9 @@ import UIKit
 
 class TeamCreatedViewController: UIViewController {
 
-    var teamName: NSString?
-    var teamDesc: NSString?
-    @IBOutlet weak var teamNameLabel: UILabel!
-    @IBOutlet weak var teamDescLabel: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        teamNameLabel.text = teamName
-        teamDescLabel.text = teamDesc
+
         // Do any additional setup after loading the view.
     }
 

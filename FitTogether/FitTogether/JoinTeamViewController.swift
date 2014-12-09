@@ -8,18 +8,10 @@
 
 import UIKit
 
-class JoinTeamViewController: UIViewController, UITextFieldDelegate {
-    @IBOutlet weak var teamName: UILabel!
-    @IBOutlet weak var teamCode: UILabel!
-    @IBOutlet weak var teamDesc: UITextView!
-    @IBOutlet weak var codeTextField: UITextField!
+class JoinTeamViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        teamCode.text = "Team Code"
-        teamName.text = ""
-        teamDesc.text = ""
 
         // Do any additional setup after loading the view.
     }
@@ -27,13 +19,6 @@ class JoinTeamViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        teamCode.text = codeTextField.text
-        teamName.text = "Mizzou IT 4500 Team Zulu"
-        teamDesc.text = "We are the team of Mizzou students in the Mobile App Dev IT4500 Columbia, MO"
-        return true
     }
     
 

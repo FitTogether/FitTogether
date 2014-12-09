@@ -33,13 +33,13 @@ class dashboardViewController: UIViewController {
         shape.lineWidth = 5.0
         
         // Make a rect to draw our shape in
-        let rect = CGRectMake(100.0, 100.0, 100.0, 100.0)
+        let rect = CGRectMake(0.0, 0.0, 100.0, 100.0)
         
         // Set the path for the shape layer
         shape.path = UIBezierPath(ovalInRect: rect).CGPath
         
         // Add the shape layer as a sub layer of our view
-        circleView.layer.addSublayer(shape)
+        //circleView.layer.addSublayer(shape)
         
         
         // Inner arc
@@ -47,8 +47,7 @@ class dashboardViewController: UIViewController {
         progress.strokeColor = UIColor.orangeColor().CGColor
         progress.lineWidth = shape.lineWidth
         progress.path = UIBezierPath(ovalInRect: rect).CGPath
-        //fill in our circle
-        circleView.layer.addSublayer(progress)
+        view.layer.addSublayer(progress)
         
         // Animate the shape change
         let duration = NSNumber(float: 2.0)

@@ -10,13 +10,11 @@
 import UIKit
 
 class profileViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.layer.cornerRadius = 100.0
-        imageView.layer.borderWidth = 3.0
-        imageView.layer.borderColor = UIColor(red: 0.90, green: 0.20, blue: 0.15, alpha: 0.8).CGColor
+
+        
         
         // Do any additional setup after loading the view.
     }
