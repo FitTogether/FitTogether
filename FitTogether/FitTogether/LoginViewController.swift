@@ -20,6 +20,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Text Field Styling
+        self.inputTextField.layer.borderColor = UIColor.whiteColor().CGColor
+        self.inputTextField.layer.borderWidth = 2.0
+        self.inputTextField.layer.cornerRadius = (self.inputTextField.frame.height/2)
+
+        //Submit Button Styling
+        self.submitButton.layer.borderColor = UIColor(red: (244/255), green: (67/255), blue: (54/255), alpha: 1.0).CGColor
+        self.submitButton.layer.cornerRadius = (self.submitButton.frame.height/2)
+        
         inputTextField.delegate = self
         // Do any additional setup after loading the view.
     }
