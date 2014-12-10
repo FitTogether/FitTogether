@@ -15,6 +15,7 @@ class dashboardViewController: UIViewController {
     let progress = CAShapeLayer()
     let progressLayer = CAShapeLayer()
     let steps = 4532
+    var timer: NSTimer?
     
     //function that converts degrees to radians
     func DegreesToRadians (value:Float) -> Float {
@@ -79,11 +80,10 @@ class dashboardViewController: UIViewController {
         newAnimation.delegate = self
         newAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         progress.addAnimation(newAnimation, forKey: "strokeEnd Animation")
-        
-        
+
         //Label Animation
         let interval = Double(8/steps)
-        NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: "update", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: "update", userInfo: nil, repeats: true)
         
         
         // Do any additional setup after loading the view.
@@ -116,12 +116,19 @@ class dashboardViewController: UIViewController {
                 stepNum = stepNum + 1
                 stepsLabel.text = "\(stepNum)"
             }
+        } else {
+            timer?.invalidate()
         }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        stepsLabel.text = "\(steps)"
+        timer?.invalidate()
     }
     
 
