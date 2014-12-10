@@ -10,9 +10,6 @@ import UIKit
 
 class TeamDataViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-//    @IBOutlet weak var teamNameLabel: UILabel!
-//    @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var teamNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,9 +20,9 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         fakeData = teamData.passArrayOfData()
-        var ckHelper = CloudKitHelper()
-        var userArray: AnyObject = ckHelper.retriveRecords("ID", queryRecordType: "Team")
-        NSLog("Elements in array: \(userArray)")
+        //var ckHelper = CloudKitHelper()
+        //var userArray: AnyObject = ckHelper.retriveRecords("ID", queryRecordType: "Team")
+        //NSLog("Elements in array: \(userArray)")
         // Do any additional setup after loading the view.
     }
     
