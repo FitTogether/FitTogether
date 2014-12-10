@@ -16,6 +16,11 @@
 		567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F81A3625130029FB55 /* TeamDataViewController.swift */; };
 		F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */; };
 		F243548B1A3775E800AD26CC /* badgeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F243548A1A3775E800AD26CC /* badgeIcon.png */; };
+		F243548D1A37BF4900AD26CC /* theDude2.png in Resources */ = {isa = PBXBuildFile; fileRef = F243548C1A37BF4900AD26CC /* theDude2.png */; };
+		F243548F1A37D2E300AD26CC /* badgeIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = F243548E1A37D2E300AD26CC /* badgeIcon2.png */; };
+		F243549B1A37E7BF00AD26CC /* dashboard_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = F243549A1A37E7BF00AD26CC /* dashboard_grey.png */; };
+		F243549F1A37E8F900AD26CC /* team_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = F243549E1A37E8F900AD26CC /* team_grey.png */; };
+		F24354A11A37E94500AD26CC /* profile_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = F24354A01A37E94500AD26CC /* profile_grey.png */; };
 		F256BF891A35F39500C75418 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F256BF881A35F39500C75418 /* SettingsTableViewController.swift */; };
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
@@ -44,6 +49,11 @@
 		567AF6F81A3625130029FB55 /* TeamDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataViewController.swift; sourceTree = "<group>"; };
 		F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		F243548A1A3775E800AD26CC /* badgeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon.png; sourceTree = "<group>"; };
+		F243548C1A37BF4900AD26CC /* theDude2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theDude2.png; sourceTree = "<group>"; };
+		F243548E1A37D2E300AD26CC /* badgeIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon2.png; sourceTree = "<group>"; };
+		F243549A1A37E7BF00AD26CC /* dashboard_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard_grey.png; sourceTree = "<group>"; };
+		F243549E1A37E8F900AD26CC /* team_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = team_grey.png; sourceTree = "<group>"; };
+		F24354A01A37E94500AD26CC /* profile_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_grey.png; sourceTree = "<group>"; };
 		F256BF881A35F39500C75418 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		F273C90E1A33988300D7B908 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F28B00811A0A833800A5891F /* fittogethertwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fittogethertwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +90,7 @@
 		F256BF851A35EAB300C75418 /* Badges */ = {
 			isa = PBXGroup;
 			children = (
+				F243548E1A37D2E300AD26CC /* badgeIcon2.png */,
 				F243548A1A3775E800AD26CC /* badgeIcon.png */,
 			);
 			name = Badges;
@@ -199,6 +210,7 @@
 		F2F614B41A34E70D00CB65E6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F243548C1A37BF4900AD26CC /* theDude2.png */,
 				F2F614CE1A351F1F00CB65E6 /* theDude.png */,
 				F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */,
 				F2F614BC1A34ED0B00CB65E6 /* runningmen.png */,
@@ -211,6 +223,9 @@
 		F2F614B51A34E71300CB65E6 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				F24354A01A37E94500AD26CC /* profile_grey.png */,
+				F243549E1A37E8F900AD26CC /* team_grey.png */,
+				F243549A1A37E7BF00AD26CC /* dashboard_grey.png */,
 				F2F614C41A35020600CB65E6 /* gearIcon.png */,
 			);
 			name = Icons;
@@ -280,13 +295,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F243548B1A3775E800AD26CC /* badgeIcon.png in Resources */,
+				F243548D1A37BF4900AD26CC /* theDude2.png in Resources */,
 				232BEBBC1A1ED5D500075DC7 /* stormTrooperHelmet.jpg in Resources */,
 				F2F614CF1A351F1F00CB65E6 /* theDude.png in Resources */,
 				F2F614BD1A34ED0B00CB65E6 /* runningmen.png in Resources */,
 				F2F614BB1A34ED0300CB65E6 /* logo.png in Resources */,
+				F24354A11A37E94500AD26CC /* profile_grey.png in Resources */,
 				F2F614C51A35020600CB65E6 /* gearIcon.png in Resources */,
+				F243549B1A37E7BF00AD26CC /* dashboard_grey.png in Resources */,
+				F243548F1A37D2E300AD26CC /* badgeIcon2.png in Resources */,
 				F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */,
 				F28B00901A0A833800A5891F /* Images.xcassets in Resources */,
+				F243549F1A37E8F900AD26CC /* team_grey.png in Resources */,
 				232BEBBF1A1ED61A00075DC7 /* Main.storyboard in Resources */,
 				F2F614BF1A34EFE800CB65E6 /* threeRunningMen.png in Resources */,
 			);

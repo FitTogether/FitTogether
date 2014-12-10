@@ -22,7 +22,7 @@ class TeamData: NSObject {
     
     
     
-    var ckHelper = CloudKitHelper()
+    //var ckHelper = CloudKitHelper()
     
     
     
@@ -30,7 +30,7 @@ class TeamData: NSObject {
         
         
         
-        ckHelper.retriveRecords("ID", queryRecordType: "Team")
+        //ckHelper.retriveRecords("ID", queryRecordType: "Team")
         
         super.init()
         
