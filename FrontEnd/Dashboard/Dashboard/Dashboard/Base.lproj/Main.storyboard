@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BTZ-RG-6Kz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -2989,7 +2989,6 @@
         <!--Challenge Team-->
         <scene sceneID="InT-0z-Ioy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i9F-iI-3bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="BTZ-RG-6Kz" customClass="ChallengeTeamSearchViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nqM-gB-eXb"/>
@@ -3072,16 +3071,16 @@
                                 <exclude reference="Rch-40-KtF"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7Cg-vM-2Wn"/>
-                                <exclude reference="RXb-Cm-DFs"/>
-                                <exclude reference="fcZ-a2-gd6"/>
+                                <exclude reference="ecK-Hz-yR4"/>
                                 <exclude reference="Arb-RK-oll"/>
                                 <exclude reference="Ftd-1i-G0t"/>
                                 <exclude reference="Nvi-y5-EiB"/>
+                                <exclude reference="7Cg-vM-2Wn"/>
+                                <exclude reference="RXb-Cm-DFs"/>
+                                <exclude reference="fcZ-a2-gd6"/>
                                 <exclude reference="WZA-mq-Q5H"/>
                                 <exclude reference="pd0-tG-ghf"/>
                                 <exclude reference="u1c-bl-QtS"/>
-                                <exclude reference="ecK-Hz-yR4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -3091,16 +3090,16 @@
                                 <include reference="Rch-40-KtF"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7Cg-vM-2Wn"/>
-                                <include reference="RXb-Cm-DFs"/>
-                                <include reference="fcZ-a2-gd6"/>
+                                <include reference="ecK-Hz-yR4"/>
                                 <include reference="Arb-RK-oll"/>
                                 <include reference="Ftd-1i-G0t"/>
                                 <include reference="Nvi-y5-EiB"/>
+                                <include reference="7Cg-vM-2Wn"/>
+                                <include reference="RXb-Cm-DFs"/>
+                                <include reference="fcZ-a2-gd6"/>
                                 <include reference="WZA-mq-Q5H"/>
                                 <include reference="pd0-tG-ghf"/>
                                 <include reference="u1c-bl-QtS"/>
-                                <include reference="ecK-Hz-yR4"/>
                             </mask>
                         </variation>
                     </view>
@@ -3109,6 +3108,7 @@
                         <outlet property="tableView" destination="Rch-40-KtF" id="CJ8-hc-oxw"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i9F-iI-3bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4623" y="1040"/>
         </scene>
@@ -3311,7 +3311,6 @@
         <!--Navigation Controller-->
         <scene sceneID="gHc-Ye-dLU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kyj-yn-uU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qO7-W6-qUW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="1lC-fb-X1l">
@@ -3324,6 +3323,7 @@
                         <segue destination="BTZ-RG-6Kz" kind="relationship" relationship="rootViewController" id="rlJ-YL-Tf0"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyj-yn-uU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4623" y="192"/>
         </scene>
