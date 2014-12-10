@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HealthKit
 
 class dashboardViewController: UIViewController {
 
@@ -14,11 +15,16 @@ class dashboardViewController: UIViewController {
     let shape = CAShapeLayer()
     let progress = CAShapeLayer()
     let progressLayer = CAShapeLayer()
-    let steps = 6000
-    let dailyGoal = 6000
+    
+    //Steps Label and progress bar animation
     var timer: NSTimer?
     var timer2: NSTimer?
     
+    
+    //Health Kit Stuff
+    var hk = HealthKitData()
+    let steps = 4000
+    let dailyGoal = 6000
     let daysCompleted = 25
     let daysTotal = 30
     
