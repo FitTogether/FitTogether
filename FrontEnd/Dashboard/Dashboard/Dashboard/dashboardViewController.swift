@@ -14,29 +14,55 @@ class dashboardViewController: UIViewController {
     let shape = CAShapeLayer()
     let progress = CAShapeLayer()
     let progressLayer = CAShapeLayer()
-    let steps = 4532
+    let steps = 6000
+    let dailyGoal = 6000
     var timer: NSTimer?
+    var timer2: NSTimer?
     
-    //function that converts degrees to radians
-    func DegreesToRadians (value:Float) -> Float {
-        return value * Float(M_PI) / 180.0
-    }
+    let daysCompleted = 25
+    let daysTotal = 30
     
     @IBOutlet weak var avgStepView: UIView!
-   
     @IBOutlet weak var circleView: UIView!
+    @IBOutlet weak var progressBarView: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createProgressCircle()
+        initProgressBar()
+    }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        stepsLabel.text = "\(steps)"
+        timer?.invalidate()
+    }
+    
+    //Bottom Day Count Progress Bar
+    func initProgressBar() {
+        let interval = Double(8/Double(daysCompleted * daysCompleted))
+        timer2 = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: "update2", userInfo: nil, repeats: true)
+    }
+    
+    func update2() {
+        progressBarView.progress += 8.0/Float(daysCompleted * daysCompleted *  8)
+        if progressBarView.progress >= Float(daysCompleted)/Float(daysTotal) {
+            timer2?.invalidate()
+        }
+    }
+    
+    //Create Circle and Animation
+    func createProgressCircle() {
+        
         //Calculate frames bounds
         let frameWidth = circleView.frame.width
-        println(frameWidth)
         let frameHeight = circleView.frame.height
         let lineWidth: CGFloat = 30
         let rectSize: CGFloat = 120
-        let offsetX = ((frameWidth/2) - (rectSize) + 10)
-        let offsetY = (frameHeight/2)
         
         //CIRCLE!!!
         // Customize the appearance of the shape layer
@@ -47,14 +73,18 @@ class dashboardViewController: UIViewController {
         // Make a rect to draw our shape in
         let rect = CGRectMake(0, 0, rectSize, rectSize)
         
-        // Set the path for the shape layer
-        let pi = (2 * CGFloat(M_PI) * 1 - CGFloat(M_PI_2))
-        let fullEndAngle = CGFloat(M_PI + (M_PI/2))
-        let progressBar = fullEndAngle * 0.75
-
+        // Set the offset for the shape layer
+        let offsetX = ((frameWidth/2) - (rectSize) + 10)
+        let offsetY = (frameHeight/2)
+        
+        //Set the progress of the animation
+        let start = CGFloat(-1.57079637050629)
+        let precentageDone = Float(steps) / Float(dailyGoal)
+        let end = DegreesToRadians((360 * precentageDone) - 90)
+        
         //Note the offsets are completely not dynamic and work mainly on iPhone 6
-        var path = UIBezierPath(arcCenter: CGPointMake(offsetX, offsetY), radius: rectSize as CGFloat, startAngle: pi, endAngle: progressBar , clockwise: true)
-
+        var path = UIBezierPath(arcCenter: CGPointMake(offsetX, offsetY), radius: rectSize as CGFloat, startAngle: start, endAngle: end , clockwise: true)
+        
         
         // Add the shape layer as a sub layer of our view
         circleView.layer.addSublayer(shape)
@@ -80,55 +110,31 @@ class dashboardViewController: UIViewController {
         newAnimation.delegate = self
         newAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         progress.addAnimation(newAnimation, forKey: "strokeEnd Animation")
-
+        
         //Label Animation
         let interval = Double(8/steps)
         timer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: "update", userInfo: nil, repeats: true)
-        
-        
-        // Do any additional setup after loading the view.
-//        
-//        CAShapeLayer *circle=[CAShapeLayer layer];
-//        circle.path=[UIBezierPath bezierPathWithArcCenter:CGPointMake(29, 29) radius:27 startAngle:2*M_PI*0-M_PI_2 endAngle:2*M_PI*1-M_PI_2 clockwise:YES].CGPath;
-//        circle.fillColor=[UIColor clearColor].CGColor;
-//        circle.strokeColor=[UIColor greenColor].CGColor;
-//        circle.lineWidth=4;
-//        
-//        CABasicAnimation *animation=[CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-//        animation.duration=10;
-//        animation.removedOnCompletion=NO;
-//        animation.fromValue=@(0);
-//        animation.toValue=@(1);
-//        animation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-//        [circle addAnimation:animation forKey:@"drawCircleAnimation"];
-//        
-//        [imageCircle.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
-//        [imageCircle.layer addSublayer:circle];
-        
-        //var user = User()
-        
     }
     
+    //Number counting function
     @IBOutlet weak var stepsLabel: UILabel!
     func update() {
         if var stepNum = stepsLabel.text?.toInt() {
             if stepNum <= steps {
                 stepNum = stepNum + 1
                 stepsLabel.text = "\(stepNum)"
+                if stepNum == steps {
+                    timer?.invalidate()
+                }
             }
         } else {
             timer?.invalidate()
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    override func viewDidDisappear(animated: Bool) {
-        stepsLabel.text = "\(steps)"
-        timer?.invalidate()
+    //function that converts degrees to radians
+    func DegreesToRadians (value:Float) -> CGFloat {
+        return CGFloat(value * Float(M_PI) / 180.0)
     }
     
 
