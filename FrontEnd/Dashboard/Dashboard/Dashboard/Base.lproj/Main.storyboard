@@ -683,7 +683,6 @@
         <!--Team-->
         <scene sceneID="Ldg-wV-jtz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fej-Yt-tfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="Team" id="axK-HH-I4p" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Team" id="kah-OL-lM3"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -696,6 +695,7 @@
                         <segue destination="uUb-nL-80m" kind="relationship" relationship="rootViewController" id="GN2-8Q-GT2"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fej-Yt-tfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2091" y="192"/>
         </scene>
@@ -2295,6 +2295,7 @@
                         <viewControllerLayoutGuide type="bottom" id="LjA-D3-GQC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XZ0-RG-dnk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="McX-xx-4sc">
@@ -2387,6 +2388,7 @@
                                 <exclude reference="Ojp-0S-fNV"/>
                                 <exclude reference="XSI-Pj-vxQ"/>
                                 <exclude reference="uJ6-03-pwG"/>
+                                <exclude reference="HOK-h8-jRi"/>
                                 <exclude reference="1MP-eB-CQc"/>
                                 <exclude reference="2sM-dJ-jwt"/>
                                 <exclude reference="4hT-6z-DoM"/>
@@ -2394,7 +2396,6 @@
                                 <exclude reference="40y-08-4Fm"/>
                                 <exclude reference="7UU-fq-y1U"/>
                                 <exclude reference="O4o-nj-SgE"/>
-                                <exclude reference="HOK-h8-jRi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -2408,6 +2409,7 @@
                                 <include reference="Ojp-0S-fNV"/>
                                 <include reference="XSI-Pj-vxQ"/>
                                 <include reference="uJ6-03-pwG"/>
+                                <include reference="HOK-h8-jRi"/>
                                 <include reference="1MP-eB-CQc"/>
                                 <include reference="2sM-dJ-jwt"/>
                                 <include reference="4hT-6z-DoM"/>
@@ -2415,7 +2417,6 @@
                                 <include reference="40y-08-4Fm"/>
                                 <include reference="7UU-fq-y1U"/>
                                 <include reference="O4o-nj-SgE"/>
-                                <include reference="HOK-h8-jRi"/>
                             </mask>
                         </variation>
                     </view>
