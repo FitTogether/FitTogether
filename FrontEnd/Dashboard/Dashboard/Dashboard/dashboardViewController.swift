@@ -162,8 +162,10 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var stepGoalVC = segue.destinationViewController.visibleViewController as DailyStepGoalViewController
-        stepGoalVC.delegate = self
+        if segue.identifier == "dailyStepCountSegue" {
+            var stepGoalVC = segue.destinationViewController.visibleViewController as DailyStepGoalViewController
+            stepGoalVC.delegate = self
+        }
     }
     
     //Called when daily step goal changes pickerview
