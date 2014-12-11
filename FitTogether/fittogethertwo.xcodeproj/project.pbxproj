@@ -27,6 +27,7 @@
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
+		F2D9CAEF1A3A112700609476 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CAEE1A3A112700609476 /* Team.swift */; };
 		F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615B1A38F0AA00A5277C /* TabBarController.swift */; };
 		F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615D1A38F27000A5277C /* HealthKitData.swift */; };
 		F2ED61601A38F44400A5277C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ED615F1A38F44400A5277C /* HealthKit.framework */; };
@@ -70,6 +71,7 @@
 		F28B008F1A0A833800A5891F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
+		F2D9CAEE1A3A112700609476 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		F2ED615B1A38F0AA00A5277C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F2ED615D1A38F27000A5277C /* HealthKitData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitData.swift; sourceTree = "<group>"; };
 		F2ED615F1A38F44400A5277C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -124,6 +126,7 @@
 				F273C90E1A33988300D7B908 /* User.swift */,
 				567AF6F61A3624B00029FB55 /* TeamData.swift */,
 				F2ED615D1A38F27000A5277C /* HealthKitData.swift */,
+				F2D9CAEE1A3A112700609476 /* Team.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			files = (
 				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
 				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,
+				F2D9CAEF1A3A112700609476 /* Team.swift in Sources */,
 				F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */,
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,

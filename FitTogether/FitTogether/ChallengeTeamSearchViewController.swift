@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -15,13 +16,25 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     var teamData = TeamData()
     var fakeData:[(name: String, amtOfStepsWalked: String)]?
     
+    var ck = CloudKitHelper()
+    var ckData: AnyObject?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fakeData = teamData.passArrayOfData()
-        //var ckHelper = CloudKitHelper()
-        //var userArray: AnyObject = ckHelper.retriveRecords("ID", queryRecordType: "Team")
-        //NSLog("Elements in array: \(userArray)")
-        // Do any additional setup after loading the view.
+        
+        ckData = ck.retriveRecords("ID", queryRecordType: "Team")
+
+        if ck.error {
+            println("Nah")
+        }
+
+        for data: CKRecord in ckData as Array {
+            println(data.objectForKey("Name"))
+        }
+        
+        //println(ckData)
+        
     }
     
     override func didReceiveMemoryWarning() {

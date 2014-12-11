@@ -15,6 +15,7 @@ class CloudKitHelper {
     var container : CKContainer
     var publicDB : CKDatabase
     let privateDB : CKDatabase
+    var error: Bool = false
     
     init() {
         container = CKContainer.defaultContainer()
@@ -87,22 +88,26 @@ class CloudKitHelper {
         let query = CKQuery(recordType: queryRecordType, predicate: predicate)
         query.sortDescriptors = [sort]
     
-        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: { (record, error) -> Void in
+        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: { (results, error) -> Void in
             if error != nil {
                 NSLog("Error \(error)")
                 queryError = error
+                self.error = true
                 return
             } else {
-                NSLog("Retrived \(record)")
-                queryRecord = record
+                NSLog("Retrived \(results)")
+                queryRecord = results
                 return
             }
         })
+    
         
         if queryRecord != nil {
+            self.error = false
             return queryRecord!
         }
         if queryError != nil {
+            self.error = true
             return queryError!
         }
         return "Error"
