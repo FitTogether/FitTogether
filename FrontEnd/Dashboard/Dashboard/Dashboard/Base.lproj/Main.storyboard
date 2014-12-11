@@ -2013,6 +2013,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BTZ-RG-6Kz" kind="show" id="2oj-ZQ-1zM"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="PendingChallenges" textLabel="plO-Kn-4Xl" detailTextLabel="fcH-QX-Rdx" style="IBUITableViewCellStyleValue1" id="QMM-Ow-xvU">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -3177,6 +3180,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Wo9-ZV-Gfv" kind="show" id="85I-q7-R9h"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -3430,25 +3436,6 @@
             <point key="canvasLocation" x="3820.5" y="192"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="s2R-hp-prm">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JM1-Hu-iPy" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="auD-Ki-nO1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Wo9-ZV-Gfv" kind="relationship" relationship="rootViewController" id="8Yf-6g-aJj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iib-aD-AvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5424" y="192"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="gHc-Ye-dLU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qO7-W6-qUW" sceneMemberID="viewController">
@@ -3498,8 +3485,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DfF-Cj-bzE"/>
-        <segue reference="3Eu-gx-5lo"/>
-        <segue reference="Cem-VI-By3"/>
+        <segue reference="2oj-ZQ-1zM"/>
+        <segue reference="srM-Ki-F7v"/>
+        <segue reference="aOk-IB-dY0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
 </document>
