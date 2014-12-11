@@ -1,32 +1,18 @@
 //
-//  TabBarController.swift
+//  TeamCreatedViewController.swift
 //  fittogethertwo
 //
-//  Created by Matthew Whitesides on 12/10/14.
+//  Created by Matthew Whitesides on 12/7/14.
 //  Copyright (c) 2014 Fit Together. All rights reserved.
 //
 
 import UIKit
 
-class TabBarController: UITabBarController {
+class TeamCreatedViewController: UIViewController {
 
-    var teamName: NSString?
-    var teamDesc: NSString?
-    @IBOutlet weak var teamNameLabel: UILabel!
-    @IBOutlet weak var teamDescLabel: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD:FitTogether/FitTogether/TeamCreatedViewController.swift
-        
-        teamNameLabel.text = teamName
-        teamDescLabel.text = teamDesc
-=======
 
-        //Starts at middle tab
-        self.selectedIndex = 1
-        
->>>>>>> FETCH_HEAD:FitTogether/FitTogether/TabBarController.swift
         // Do any additional setup after loading the view.
     }
 
