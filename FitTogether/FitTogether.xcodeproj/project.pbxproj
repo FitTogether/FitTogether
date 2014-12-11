@@ -10,8 +10,8 @@
 		BCDD568E1A36CAE300C23840 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD568D1A36CAE300C23840 /* SearchTableViewController.swift */; };
 		BCDD56901A36CB3B00C23840 /* arrayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD568F1A36CB3B00C23840 /* arrayData.swift */; };
 		BCDD56921A36D64600C23840 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD56911A36D64600C23840 /* MyTableViewCell.swift */; };
-		F214806D1A1594FA00C6F805 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F214806C1A1594FA00C6F805 /* HealthKit.framework */; };
-		F21480701A15950F00C6F805 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F214806F1A15950F00C6F805 /* CloudKit.framework */; };
+		BCDD56941A3762D200C23840 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD56931A3762D200C23840 /* HealthKit.framework */; };
+		BCDD56961A37631E00C23840 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD56951A37631E00C23840 /* CloudKit.framework */; };
 		F21480731A159C9D00C6F805 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21480721A159C9D00C6F805 /* Settings.bundle */; };
 		F269DD4D1A19407C007EF641 /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269DD4C1A19407C007EF641 /* TeamInfoViewController.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
@@ -35,9 +35,9 @@
 		BCDD568D1A36CAE300C23840 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		BCDD568F1A36CB3B00C23840 /* arrayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = arrayData.swift; sourceTree = "<group>"; };
 		BCDD56911A36D64600C23840 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
-		F214806C1A1594FA00C6F805 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BCDD56931A3762D200C23840 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BCDD56951A37631E00C23840 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F214806E1A1594FA00C6F805 /* FitTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = FitTogether.entitlements; path = FitTogether/FitTogether.entitlements; sourceTree = "<group>"; };
-		F214806F1A15950F00C6F805 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F21480721A159C9D00C6F805 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F269DD4C1A19407C007EF641 /* TeamInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamInfoViewController.swift; path = ViewControllers/TeamInfoViewController.swift; sourceTree = "<group>"; };
 		F28B00811A0A833800A5891F /* FitTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,8 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F214806D1A1594FA00C6F805 /* HealthKit.framework in Frameworks */,
-				F21480701A15950F00C6F805 /* CloudKit.framework in Frameworks */,
+				BCDD56941A3762D200C23840 /* HealthKit.framework in Frameworks */,
+				BCDD56961A37631E00C23840 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +102,8 @@
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
-				F214806F1A15950F00C6F805 /* CloudKit.framework */,
-				F214806C1A1594FA00C6F805 /* HealthKit.framework */,
+				BCDD56951A37631E00C23840 /* CloudKit.framework */,
+				BCDD56931A3762D200C23840 /* HealthKit.framework */,
 				F28B00831A0A833800A5891F /* FitTogether */,
 				F21480711A159C0F00C6F805 /* Resources */,
 				F28B00821A0A833800A5891F /* Products */,
