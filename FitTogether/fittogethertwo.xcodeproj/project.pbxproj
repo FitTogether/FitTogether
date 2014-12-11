@@ -27,6 +27,11 @@
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
+		F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615B1A38F0AA00A5277C /* TabBarController.swift */; };
+		F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615D1A38F27000A5277C /* HealthKitData.swift */; };
+		F2ED61601A38F44400A5277C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ED615F1A38F44400A5277C /* HealthKit.framework */; };
+		F2ED61621A393A7800A5277C /* DailyStepGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */; };
+		F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */; };
 		F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2F614B61A34E76800CB65E6 /* Settings.bundle */; };
 		F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */; };
 		F2F614BB1A34ED0300CB65E6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BA1A34ED0300CB65E6 /* logo.png */; };
@@ -36,7 +41,6 @@
 		F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C61A3506D100CB65E6 /* TeamViewController.swift */; };
 		F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */; };
 		F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */; };
-		F2F614CD1A35191800CB65E6 /* TeamCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */; };
 		F2F614CF1A351F1F00CB65E6 /* theDude.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614CE1A351F1F00CB65E6 /* theDude.png */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +70,11 @@
 		F28B008F1A0A833800A5891F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
+		F2ED615B1A38F0AA00A5277C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F2ED615D1A38F27000A5277C /* HealthKitData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitData.swift; sourceTree = "<group>"; };
+		F2ED615F1A38F44400A5277C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStepGoalViewController.swift; sourceTree = "<group>"; };
+		F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepGoalProtocol.swift; sourceTree = "<group>"; };
 		F2F614B61A34E76800CB65E6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2F614BA1A34ED0300CB65E6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -75,7 +84,6 @@
 		F2F614C61A3506D100CB65E6 /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 		F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTeamViewController.swift; sourceTree = "<group>"; };
-		F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCreatedViewController.swift; sourceTree = "<group>"; };
 		F2F614CE1A351F1F00CB65E6 /* theDude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theDude.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				232BEBC21A1EDBDF00075DC7 /* CloudKit.framework in Frameworks */,
+				F2ED61601A38F44400A5277C /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,18 +117,21 @@
 			name = TableViewControllers;
 			sourceTree = "<group>";
 		};
-		F267EFB81A3613F8004CCE9F /* Objects */ = {
+		F267EFB81A3613F8004CCE9F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */,
 				F273C90E1A33988300D7B908 /* User.swift */,
 				567AF6F61A3624B00029FB55 /* TeamData.swift */,
+				F2ED615D1A38F27000A5277C /* HealthKitData.swift */,
 			);
-			name = Objects;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
+				F2ED615F1A38F44400A5277C /* HealthKit.framework */,
 				F2F614B61A34E76800CB65E6 /* Settings.bundle */,
 				232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */,
 				F28B00831A0A833800A5891F /* FitTogether */,
@@ -139,9 +151,8 @@
 		F28B00831A0A833800A5891F /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
-				F267EFB81A3613F8004CCE9F /* Objects */,
+				F267EFB81A3613F8004CCE9F /* Models */,
 				F2F614B31A34E6F400CB65E6 /* Assets */,
-				F2F614B21A34E6D100CB65E6 /* CloudKit */,
 				F2F614B11A34E6B700CB65E6 /* ViewControllers */,
 				232BEBC01A1ED96000075DC7 /* FitTogether.entitlements */,
 				232BEBBD1A1ED61A00075DC7 /* Main.storyboard */,
@@ -177,9 +188,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F2ED61631A394DB000A5277C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
 		F2F614B11A34E6B700CB65E6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2ED61631A394DB000A5277C /* Delegates */,
 				F256BF8A1A35F3A500C75418 /* TableViewControllers */,
 				232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */,
 				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
@@ -187,20 +207,13 @@
 				F2F614C61A3506D100CB65E6 /* TeamViewController.swift */,
 				F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */,
 				F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */,
-				F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */,
 				567AF6F81A3625130029FB55 /* TeamDataViewController.swift */,
 				F265796E1A38DB1B00E7E643 /* ChallengeTeamViewController.swift */,
 				F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */,
+				F2ED615B1A38F0AA00A5277C /* TabBarController.swift */,
+				F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		F2F614B21A34E6D100CB65E6 /* CloudKit */ = {
-			isa = PBXGroup;
-			children = (
-				F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */,
-			);
-			name = CloudKit;
 			sourceTree = "<group>";
 		};
 		F2F614B31A34E6F400CB65E6 /* Assets */ = {
@@ -270,6 +283,9 @@
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 4FNJNUQ3AD;
 						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -326,6 +342,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
+				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,
+				F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */,
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
 				F24E2AD11A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift in Sources */,
@@ -333,11 +351,12 @@
 				567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */,
 				F256BF891A35F39500C75418 /* SettingsTableViewController.swift in Sources */,
 				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
+				F2ED61621A393A7800A5277C /* DailyStepGoalViewController.swift in Sources */,
 				F273C90F1A33988300D7B908 /* User.swift in Sources */,
 				F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */,
 				F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */,
+				F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */,
 				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
-				F2F614CD1A35191800CB65E6 /* TeamCreatedViewController.swift in Sources */,
 				567AF6F71A3624B00029FB55 /* TeamData.swift in Sources */,
 				F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */,
 			);
