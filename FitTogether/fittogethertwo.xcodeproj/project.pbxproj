@@ -41,7 +41,6 @@
 		F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C61A3506D100CB65E6 /* TeamViewController.swift */; };
 		F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */; };
 		F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */; };
-		F2F614CD1A35191800CB65E6 /* TeamCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */; };
 		F2F614CF1A351F1F00CB65E6 /* theDude.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614CE1A351F1F00CB65E6 /* theDude.png */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +84,6 @@
 		F2F614C61A3506D100CB65E6 /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 		F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTeamViewController.swift; sourceTree = "<group>"; };
-		F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCreatedViewController.swift; sourceTree = "<group>"; };
 		F2F614CE1A351F1F00CB65E6 /* theDude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theDude.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,7 +207,6 @@
 				F2F614C61A3506D100CB65E6 /* TeamViewController.swift */,
 				F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */,
 				F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */,
-				F2F614CC1A35191800CB65E6 /* TeamCreatedViewController.swift */,
 				567AF6F81A3625130029FB55 /* TeamDataViewController.swift */,
 				F265796E1A38DB1B00E7E643 /* ChallengeTeamViewController.swift */,
 				F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */,
@@ -360,7 +357,6 @@
 				F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */,
 				F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */,
 				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
-				F2F614CD1A35191800CB65E6 /* TeamCreatedViewController.swift in Sources */,
 				567AF6F71A3624B00029FB55 /* TeamData.swift in Sources */,
 				F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */,
 			);
