@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -50,7 +50,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
                                 <rect key="frame" x="-1" y="99" width="601" height="173"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASS-Ei-5rG" userLabel="teamDaysWon">
@@ -125,6 +125,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="62" y="61" width="75" height="18"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -157,6 +160,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="63" y="61" width="75" height="18"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -222,7 +228,7 @@
                                     <rect key="frame" x="-1" y="99" width="401" height="170.5"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
                                 <rect key="frame" x="0.0" y="271" width="600" height="285"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khl-bs-IvO">
@@ -1764,7 +1770,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+<<<<<<< HEAD
                                             <segue destination="BTZ-RG-6Kz" kind="show" id="yqg-5h-ykg"/>
+=======
+                                            <segue destination="BTZ-RG-6Kz" kind="show" id="2oj-ZQ-1zM"/>
+>>>>>>> Ty_Develop
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="PendingChallenges" textLabel="plO-Kn-4Xl" detailTextLabel="fcH-QX-Rdx" style="IBUITableViewCellStyleValue1" id="QMM-Ow-xvU">
@@ -2465,6 +2475,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+<<<<<<< HEAD
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Created!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZH-m1-a1I">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -2477,6 +2488,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+=======
+>>>>>>> Ty_Develop
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2523,9 +2536,12 @@
                                 <exclude reference="eXK-C8-vTg"/>
                                 <exclude reference="lvU-V1-2cG"/>
                                 <exclude reference="voV-Yb-9Sg"/>
+<<<<<<< HEAD
                                 <exclude reference="Bu2-oh-E04"/>
                                 <exclude reference="Vq6-Dw-BmV"/>
                                 <exclude reference="d8R-Wq-r4P"/>
+=======
+>>>>>>> Ty_Develop
                                 <exclude reference="SfY-Hu-PiB"/>
                                 <exclude reference="SpE-2c-Iji"/>
                                 <exclude reference="l6e-AF-uNb"/>
@@ -2557,9 +2573,12 @@
                                 <include reference="eXK-C8-vTg"/>
                                 <include reference="lvU-V1-2cG"/>
                                 <include reference="voV-Yb-9Sg"/>
+<<<<<<< HEAD
                                 <include reference="Bu2-oh-E04"/>
                                 <include reference="Vq6-Dw-BmV"/>
                                 <include reference="d8R-Wq-r4P"/>
+=======
+>>>>>>> Ty_Develop
                                 <exclude reference="SfY-Hu-PiB"/>
                                 <include reference="SpE-2c-Iji"/>
                                 <include reference="l6e-AF-uNb"/>
@@ -2986,6 +3005,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Wo9-ZV-Gfv" kind="show" id="85I-q7-R9h"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -3239,25 +3261,6 @@
             <point key="canvasLocation" x="3820.5" y="192"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="s2R-hp-prm">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JM1-Hu-iPy" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="auD-Ki-nO1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Wo9-ZV-Gfv" kind="relationship" relationship="rootViewController" id="8Yf-6g-aJj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iib-aD-AvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5424" y="192"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="gHc-Ye-dLU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qO7-W6-qUW" sceneMemberID="viewController">
@@ -3306,10 +3309,17 @@
         <image name="theDude2.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="pue-c2-M8N"/>
         <segue reference="aOk-IB-dY0"/>
         <segue reference="yqg-5h-ykg"/>
         <segue reference="Cem-VI-By3"/>
+=======
+        <segue reference="DfF-Cj-bzE"/>
+        <segue reference="2oj-ZQ-1zM"/>
+        <segue reference="srM-Ki-F7v"/>
+        <segue reference="aOk-IB-dY0"/>
+>>>>>>> Ty_Develop
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
 </document>
