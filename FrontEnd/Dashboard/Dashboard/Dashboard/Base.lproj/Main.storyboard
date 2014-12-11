@@ -1455,32 +1455,7 @@
                                 <color key="textColor" red="0.13725490196078433" green="0.42352941176470588" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="204" width="368" height="191.5"/>
-                                </variation>
                             </textView>
-<<<<<<< HEAD
-=======
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter team code to join: " borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v66-cW-efL">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="MbQ-Rn-jUI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="MbQ-Rn-jUI"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="114" width="338" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="MbQ-Rn-jUI"/>
-                                    </mask>
-                                </variation>
-                            </textField>
->>>>>>> parent of 616bf4b... storybord junk
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1534,7 +1509,6 @@
                                 <exclude reference="0Z4-qj-TTL"/>
                             </mask>
                             <mask key="constraints">
-<<<<<<< HEAD
                                 <exclude reference="UJk-yo-4x7"/>
                                 <exclude reference="PQK-cN-aeI"/>
                                 <exclude reference="ekz-2T-TI8"/>
@@ -1549,30 +1523,15 @@
                                 <exclude reference="m4m-N5-1eL"/>
                                 <exclude reference="3XC-lF-5II"/>
                                 <exclude reference="YOi-wd-zMB"/>
-=======
-                                <exclude reference="ArG-L7-rjd"/>
-                                <exclude reference="C1s-hf-Hmx"/>
-                                <exclude reference="Vk5-aC-bON"/>
-                                <exclude reference="m4m-N5-1eL"/>
-                                <exclude reference="6OS-fW-L8t"/>
-                                <exclude reference="738-W6-bKZ"/>
-                                <exclude reference="ANh-uH-MPQ"/>
-                                <exclude reference="dmb-Yg-bZH"/>
-                                <exclude reference="ekz-2T-TI8"/>
-                                <exclude reference="vgj-GP-c3K"/>
-                                <exclude reference="AJx-4O-Uuq"/>
-                                <exclude reference="mUk-oJ-NFN"/>
-                                <exclude reference="zmq-Ai-OYj"/>
-                                <exclude reference="1EZ-Rd-uqO"/>
-                                <exclude reference="SPi-uO-bZM"/>
->>>>>>> parent of 616bf4b... storybord junk
                                 <exclude reference="mKv-aG-pII"/>
                                 <exclude reference="8vP-KF-YSw"/>
                                 <exclude reference="RLa-Qd-nr0"/>
                                 <exclude reference="fEH-3b-AVD"/>
                                 <exclude reference="rYx-sZ-8lb"/>
                                 <exclude reference="twy-dD-mH9"/>
-                                <exclude reference="UJk-yo-4x7"/>
+                                <exclude reference="AJx-4O-Uuq"/>
+                                <exclude reference="mUk-oJ-NFN"/>
+                                <exclude reference="zmq-Ai-OYj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1585,7 +1544,6 @@
                                 <include reference="0Z4-qj-TTL"/>
                             </mask>
                             <mask key="constraints">
-<<<<<<< HEAD
                                 <include reference="UJk-yo-4x7"/>
                                 <include reference="PQK-cN-aeI"/>
                                 <include reference="ekz-2T-TI8"/>
@@ -1600,30 +1558,15 @@
                                 <include reference="m4m-N5-1eL"/>
                                 <include reference="3XC-lF-5II"/>
                                 <include reference="YOi-wd-zMB"/>
-=======
-                                <include reference="ArG-L7-rjd"/>
-                                <exclude reference="C1s-hf-Hmx"/>
-                                <exclude reference="Vk5-aC-bON"/>
-                                <include reference="m4m-N5-1eL"/>
-                                <exclude reference="6OS-fW-L8t"/>
-                                <exclude reference="738-W6-bKZ"/>
-                                <exclude reference="ANh-uH-MPQ"/>
-                                <include reference="dmb-Yg-bZH"/>
-                                <include reference="ekz-2T-TI8"/>
-                                <exclude reference="vgj-GP-c3K"/>
-                                <include reference="AJx-4O-Uuq"/>
-                                <include reference="mUk-oJ-NFN"/>
-                                <include reference="zmq-Ai-OYj"/>
-                                <include reference="1EZ-Rd-uqO"/>
-                                <exclude reference="SPi-uO-bZM"/>
->>>>>>> parent of 616bf4b... storybord junk
                                 <include reference="mKv-aG-pII"/>
                                 <exclude reference="8vP-KF-YSw"/>
                                 <include reference="RLa-Qd-nr0"/>
                                 <include reference="fEH-3b-AVD"/>
                                 <include reference="rYx-sZ-8lb"/>
                                 <include reference="twy-dD-mH9"/>
-                                <include reference="UJk-yo-4x7"/>
+                                <include reference="AJx-4O-Uuq"/>
+                                <include reference="mUk-oJ-NFN"/>
+                                <include reference="zmq-Ai-OYj"/>
                             </mask>
                         </variation>
                     </view>
@@ -1680,30 +1623,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-<<<<<<< HEAD
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a team name and description. The name will be used by other teams to challenge you." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbP-53-QYq">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Created!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZH-m1-a1I">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your new team, Team Zulu." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcj-XO-Mj9">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="384" width="368" height="167"/>
-                                </variation>
-                            </label>
->>>>>>> parent of 616bf4b... storybord junk
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1729,36 +1648,16 @@
                                 <exclude reference="CD7-gq-wfX"/>
                             </mask>
                             <mask key="constraints">
-<<<<<<< HEAD
                                 <exclude reference="0RR-OP-5tn"/>
                                 <exclude reference="eXK-C8-vTg"/>
                                 <exclude reference="lvU-V1-2cG"/>
                                 <exclude reference="SpE-2c-Iji"/>
                                 <exclude reference="l6e-AF-uNb"/>
-=======
-                                <exclude reference="JGY-Ly-7f7"/>
-                                <exclude reference="PNw-OO-iAh"/>
-                                <exclude reference="Ymd-eH-dmD"/>
-                                <exclude reference="oJ7-YO-cMn"/>
-                                <exclude reference="SfY-Hu-PiB"/>
-                                <exclude reference="SpE-2c-Iji"/>
-                                <exclude reference="l6e-AF-uNb"/>
-                                <exclude reference="eXK-C8-vTg"/>
-                                <exclude reference="lvU-V1-2cG"/>
-                                <exclude reference="voV-Yb-9Sg"/>
->>>>>>> parent of 616bf4b... storybord junk
                                 <exclude reference="0dD-dV-KWd"/>
                                 <exclude reference="AMK-hx-rUW"/>
                                 <exclude reference="Uiq-Ry-KhM"/>
                                 <exclude reference="knd-sg-F8J"/>
                                 <exclude reference="yod-3d-YQF"/>
-                                <exclude reference="4qy-OM-5Ak"/>
-                                <exclude reference="hvD-av-I8S"/>
-                                <exclude reference="mii-Da-2xp"/>
-                                <exclude reference="Bu2-oh-E04"/>
-                                <exclude reference="Vq6-Dw-BmV"/>
-                                <exclude reference="d8R-Wq-r4P"/>
-                                <exclude reference="IX8-57-vgS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1768,36 +1667,16 @@
                                 <include reference="CD7-gq-wfX"/>
                             </mask>
                             <mask key="constraints">
-<<<<<<< HEAD
                                 <include reference="0RR-OP-5tn"/>
                                 <include reference="eXK-C8-vTg"/>
                                 <include reference="lvU-V1-2cG"/>
                                 <include reference="SpE-2c-Iji"/>
                                 <include reference="l6e-AF-uNb"/>
-=======
-                                <include reference="JGY-Ly-7f7"/>
-                                <include reference="PNw-OO-iAh"/>
-                                <include reference="Ymd-eH-dmD"/>
-                                <include reference="oJ7-YO-cMn"/>
-                                <exclude reference="SfY-Hu-PiB"/>
-                                <include reference="SpE-2c-Iji"/>
-                                <include reference="l6e-AF-uNb"/>
-                                <include reference="eXK-C8-vTg"/>
-                                <include reference="lvU-V1-2cG"/>
-                                <include reference="voV-Yb-9Sg"/>
->>>>>>> parent of 616bf4b... storybord junk
                                 <include reference="0dD-dV-KWd"/>
                                 <include reference="AMK-hx-rUW"/>
                                 <include reference="Uiq-Ry-KhM"/>
                                 <include reference="knd-sg-F8J"/>
                                 <include reference="yod-3d-YQF"/>
-                                <include reference="4qy-OM-5Ak"/>
-                                <include reference="hvD-av-I8S"/>
-                                <include reference="mii-Da-2xp"/>
-                                <include reference="Bu2-oh-E04"/>
-                                <include reference="Vq6-Dw-BmV"/>
-                                <include reference="d8R-Wq-r4P"/>
-                                <exclude reference="IX8-57-vgS"/>
                             </mask>
                         </variation>
                     </view>
