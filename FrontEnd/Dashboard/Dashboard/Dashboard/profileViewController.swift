@@ -30,13 +30,14 @@ class profileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var orangeColor = UIColor(red: 0.90, green: 0.20, blue: 0.15, alpha: 0.8).CGColor
+        //var orangeColor = UIColor(red: 0.90, green: 0.20, blue: 0.15, alpha: 0.8).CGColor
+        var blueColor = UIColor(red: (33/355), green: (150/255), blue: (243/255), alpha: 0.9).CGColor
         
         //Rounded Border
         imageView.backgroundColor = UIColor.clearColor()
         imageView.layer.cornerRadius = (imageView.frame.height/2)
         imageView.layer.borderWidth = 3.0
-        imageView.layer.borderColor = orangeColor
+        imageView.layer.borderColor = blueColor
         imageView.layer.masksToBounds = true
     
 //        CALayer             *layer = [CALayer layer];

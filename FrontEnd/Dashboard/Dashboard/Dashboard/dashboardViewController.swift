@@ -7,29 +7,42 @@
 //
 
 import UIKit
+import HealthKit
 
-class dashboardViewController: UIViewController {
+class dashboardViewController: UIViewController, writeValueBackDelegate {
 
     //circle to be animated
     let shape = CAShapeLayer()
     let progress = CAShapeLayer()
     let progressLayer = CAShapeLayer()
-    let steps = 6000
-    let dailyGoal = 6000
+    
+    //Steps Label and progress bar animation
     var timer: NSTimer?
     var timer2: NSTimer?
     
+    
+    //Health Kit Stuff
+    var hk = HealthKitData()
+    let steps = 4000
+    var dailyGoal = 6000
     let daysCompleted = 25
     let daysTotal = 30
     
     @IBOutlet weak var avgStepView: UIView!
     @IBOutlet weak var circleView: UIView!
     @IBOutlet weak var progressBarView: UIProgressView!
+    @IBOutlet weak var dailyGoalLabel: UILabel!
+    @IBOutlet weak var dailyGoalHiddenButton: UIButton!
+    
+    //Daily Goal Select
+    var pickerSelect = "0"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createProgressCircle()
         initProgressBar()
+        println(pickerSelect)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +54,7 @@ class dashboardViewController: UIViewController {
         stepsLabel.text = "\(steps)"
         timer?.invalidate()
     }
-    
+
     //Bottom Day Count Progress Bar
     func initProgressBar() {
         let interval = Double(8/Double(daysCompleted * daysCompleted))
@@ -74,8 +87,10 @@ class dashboardViewController: UIViewController {
         let rect = CGRectMake(0, 0, rectSize, rectSize)
         
         // Set the offset for the shape layer
-        let offsetX = ((frameWidth/2) - (rectSize) + 10)
-        let offsetY = (frameHeight/2)
+//        let offsetX = ((frameWidth/2) - (rectSize) + 10)
+//        let offsetY = (frameHeight/2)
+        let offsetX: CGFloat = 190.0
+        let offsetY: CGFloat = 142.0
         
         //Set the progress of the animation
         let start = CGFloat(-1.57079637050629)
@@ -100,16 +115,7 @@ class dashboardViewController: UIViewController {
         //fill in our circle
         circleView.layer.addSublayer(progress)
         
-        // Animate the shape change
-        //let duration = NSNumber(float: 2.0)
-        var newAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        newAnimation.duration = 8.0
-        newAnimation.removedOnCompletion = false
-        newAnimation.fromValue = NSNumber(float: 0)
-        newAnimation.toValue = NSNumber(float: 1.0)
-        newAnimation.delegate = self
-        newAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-        progress.addAnimation(newAnimation, forKey: "strokeEnd Animation")
+        animatCircle()
         
         //Label Animation
         let interval = Double(8/steps)
@@ -132,11 +138,42 @@ class dashboardViewController: UIViewController {
         }
     }
     
+    func animatCircle() {
+        // Animate the shape change
+        //let duration = NSNumber(float: 2.0)
+        var newAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        newAnimation.duration = 8.0
+        newAnimation.removedOnCompletion = false
+        newAnimation.fromValue = NSNumber(float: 0)
+        newAnimation.toValue = NSNumber(float: 1.0)
+        newAnimation.delegate = self
+        newAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        progress.addAnimation(newAnimation, forKey: "strokeEnd Animation")
+    }
+    
     //function that converts degrees to radians
     func DegreesToRadians (value:Float) -> CGFloat {
         return CGFloat(value * Float(M_PI) / 180.0)
     }
     
+    @IBAction func hiddenButtonClicked(sender: AnyObject) {
+        var stepPickerView = DailyStepGoalViewController(nibName: "DailyStepGoalViewController", bundle: nil)
+        navigationController?.pushViewController(stepPickerView, animated: true )
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var stepGoalVC = segue.destinationViewController.visibleViewController as DailyStepGoalViewController
+        stepGoalVC.delegate = self
+    }
+    
+    //Called when daily step goal changes pickerview
+    func writeValueBack(value: Int) {
+        dailyGoalLabel.text = "Daily Goal: \(value)"
+        dailyGoal = value
+        circleView.layer.removeAllAnimations()
+        progress.removeAllAnimations()
+        createProgressCircle()
+    }
 
     /*
     // MARK: - Navigation
