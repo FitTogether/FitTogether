@@ -5,6 +5,14 @@
 //  Created by CJ Voege on 11/17/14.
 //  Copyright (c) 2014 CJ Voege. All rights reserved.
 //
+//
+//  dashbordViewController.swift
+//  Dashboard
+//
+//  Created by Matthew Whitesides on 12/10/14.
+//  Copyright (c) 2014 Matthew Whitesides. All rights reserved.
+//
+// TEST COMMETIRWJO
 
 import UIKit
 import HealthKit
@@ -28,6 +36,16 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     let daysCompleted = 25
     let daysTotal = 30
     
+    //Top Half Outlets
+    @IBOutlet weak var opponetName: UILabel!
+    @IBOutlet weak var teamName: UILabel!
+    @IBOutlet weak var teamDaysWon: UILabel!
+    @IBOutlet weak var teamAvgSteps: UILabel!
+    @IBOutlet weak var opponetDaysWon: UILabel!
+    @IBOutlet weak var opponetAvgSteps: UILabel!
+    
+    
+    //Bottom Half Outlets
     @IBOutlet weak var avgStepView: UIView!
     @IBOutlet weak var circleView: UIView!
     @IBOutlet weak var progressBarView: UIProgressView!
@@ -40,6 +58,7 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initTeamLabels()
         createProgressCircle()
         initProgressBar()
         println(pickerSelect)
@@ -48,6 +67,18 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initTeamLabels() {
+        //Todo Health Kit 
+        teamName.text = "Team Zulu"
+        opponetName.text = "Columbia College CS"
+        
+        teamDaysWon.text = "15"
+        opponetDaysWon.text = "7"
+        
+        teamAvgSteps.text = "4431"
+        opponetAvgSteps.text = "3338"
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -176,15 +207,5 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
         progress.removeAllAnimations()
         createProgressCircle()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -12,9 +12,13 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var teamNameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     
+    @IBOutlet weak var teamCreatedLabel: UILabel!
+    @IBOutlet weak var teamCreatedDescription: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        teamCreatedLabel.text = ""
+        teamCreatedDescription.text = ""
         
         // Do any additional setup after loading the view.
     }
@@ -22,15 +26,6 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let teamName = teamNameTextField.text as NSString
-        let description = descriptionTextField.text as NSString
-        
-        var teamCreated = segue.destinationViewController as TeamCreatedViewController
-        teamCreated.teamDesc = description
-        teamCreated.teamName = teamName
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -42,6 +37,12 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    @IBAction func createTeamPressed(sender: AnyObject) {
+        teamNameTextField.resignFirstResponder()
+        descriptionTextField.resignFirstResponder()
+        teamCreatedLabel.text = "Team Created!"
+        teamCreatedDescription.text = "Welcome to your new team, \(teamNameTextField.text)."
+    }
     /*
     // MARK: - Navigation
     
