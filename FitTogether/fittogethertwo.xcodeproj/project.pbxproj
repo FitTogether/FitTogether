@@ -30,6 +30,8 @@
 		F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615B1A38F0AA00A5277C /* TabBarController.swift */; };
 		F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615D1A38F27000A5277C /* HealthKitData.swift */; };
 		F2ED61601A38F44400A5277C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ED615F1A38F44400A5277C /* HealthKit.framework */; };
+		F2ED61621A393A7800A5277C /* DailyStepGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */; };
+		F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */; };
 		F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2F614B61A34E76800CB65E6 /* Settings.bundle */; };
 		F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */; };
 		F2F614BB1A34ED0300CB65E6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BA1A34ED0300CB65E6 /* logo.png */; };
@@ -72,6 +74,8 @@
 		F2ED615B1A38F0AA00A5277C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F2ED615D1A38F27000A5277C /* HealthKitData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitData.swift; sourceTree = "<group>"; };
 		F2ED615F1A38F44400A5277C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStepGoalViewController.swift; sourceTree = "<group>"; };
+		F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepGoalProtocol.swift; sourceTree = "<group>"; };
 		F2F614B61A34E76800CB65E6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2F614BA1A34ED0300CB65E6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -186,9 +190,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F2ED61631A394DB000A5277C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
 		F2F614B11A34E6B700CB65E6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2ED61631A394DB000A5277C /* Delegates */,
 				F256BF8A1A35F3A500C75418 /* TableViewControllers */,
 				232BEBB71A1ED5D500075DC7 /* dashboardViewController.swift */,
 				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
@@ -201,6 +214,7 @@
 				F265796E1A38DB1B00E7E643 /* ChallengeTeamViewController.swift */,
 				F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */,
 				F2ED615B1A38F0AA00A5277C /* TabBarController.swift */,
+				F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -332,6 +346,7 @@
 			files = (
 				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
 				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,
+				F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */,
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
 				F24E2AD11A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift in Sources */,
@@ -339,6 +354,7 @@
 				567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */,
 				F256BF891A35F39500C75418 /* SettingsTableViewController.swift in Sources */,
 				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
+				F2ED61621A393A7800A5277C /* DailyStepGoalViewController.swift in Sources */,
 				F273C90F1A33988300D7B908 /* User.swift in Sources */,
 				F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */,
 				F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */,

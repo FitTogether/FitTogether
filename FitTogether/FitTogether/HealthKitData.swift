@@ -17,7 +17,7 @@ class HealthKitData {
     
     init() {
         requestAuthorisationForHealthStore()
-        println("Hey \(self.dailySteps)")
+        println("Hey \(dailySteps)")
     }
     
     private func requestAuthorisationForHealthStore() {
@@ -60,4 +60,19 @@ class HealthKitData {
         healthStore.executeQuery(query)
     }
     
+    func saveSampleToHealthStore(sample: HKObject) {
+        println("Saving weight")
+        self.healthStore.saveObject(sample, withCompletion: {
+            (success, error) in
+            if success {
+                println("Weight saved successfully ")
+            } else {
+                println("Error: \(error)")
+            }
+        })
+    }
+    
+    func initFakeData() {
+//        let stepUnit = HKSample(coder: <#NSCoder#>)
+    }
 }
