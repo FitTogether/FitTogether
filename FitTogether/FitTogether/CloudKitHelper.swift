@@ -15,6 +15,7 @@ class CloudKitHelper {
     var container : CKContainer
     var publicDB : CKDatabase
     let privateDB : CKDatabase
+    var error: Bool = false
     
     init() {
         container = CKContainer.defaultContainer()
@@ -29,6 +30,7 @@ class CloudKitHelper {
             return false
         }
     }
+
     
     func saveRecord(record : NSString, tableName : NSString, forKey : NSString, isPrivate: Bool) {
         let todoRecord = CKRecord(recordType: tableName)
@@ -78,7 +80,7 @@ class CloudKitHelper {
         }
     }
     
-    func retriveRecords(sortKey: NSString, queryRecordType: NSString) -> AnyObject {
+    func retriveRecords(sortKey: NSString, queryRecordType: NSString, completionHandler: ([AnyObject] -> Void)) -> AnyObject {
         let predicate = NSPredicate(value: true)
         let sort = NSSortDescriptor(key: sortKey, ascending: false)
         var queryRecord : AnyObject?
@@ -87,22 +89,25 @@ class CloudKitHelper {
         let query = CKQuery(recordType: queryRecordType, predicate: predicate)
         query.sortDescriptors = [sort]
     
-        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: { (record, error) -> Void in
+        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: { (records: [AnyObject]!, error: NSError!) -> Void in
             if error != nil {
                 NSLog("Error \(error)")
                 queryError = error
+                self.error = true
                 return
             } else {
-                NSLog("Retrived \(record)")
-                queryRecord = record
+                completionHandler(records)
                 return
             }
         })
+    
         
         if queryRecord != nil {
+            self.error = false
             return queryRecord!
         }
         if queryError != nil {
+            self.error = true
             return queryError!
         }
         return "Error"

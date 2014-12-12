@@ -7,23 +7,45 @@
 //
 
 import UIKit
+import CloudKit
 
 class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
+
+    var delegate: CloudKitQuery?
+    
+    var teams = [Team]()
 
     var teamData = TeamData()
     var fakeData:[(name: String, amtOfStepsWalked: String)]?
     
+    var ck = CloudKitHelper()
+    var ckData: AnyObject?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fakeData = teamData.passArrayOfData()
-        //var ckHelper = CloudKitHelper()
-        //var userArray: AnyObject = ckHelper.retriveRecords("ID", queryRecordType: "Team")
-        //NSLog("Elements in array: \(userArray)")
-        // Do any additional setup after loading the view.
+        
+        ckData = ck.retriveRecords("Name", queryRecordType: "Team", completionHandler: { (ckData: [AnyObject]!) -> Void in
+            for data: CKRecord in ckData as [CKRecord] {
+                var team = Team(name: "", steps: 0)
+                if let name: String = data.objectForKey("Name") as? String {
+                    team.name = data.objectForKey("Name") as? String
+                }
+                if let steps: Int = data.objectForKey("Steps") as? Int {
+                    team.steps = data.objectForKey("Steps") as? Int
+                }
+                self.teams.append(team)
+                self.tableView.reloadData()
+            }
+        })
+        
+        loadingView.stopAnimating()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,7 +57,7 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return fakeData.count
-        return fakeData!.count
+        return teams.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

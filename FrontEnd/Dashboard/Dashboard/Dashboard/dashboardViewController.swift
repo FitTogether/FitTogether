@@ -61,7 +61,7 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
         initTeamLabels()
         createProgressCircle()
         initProgressBar()
-        println(pickerSelect)
+        hk.queryHealthKitSteps()
     }
 
     override func didReceiveMemoryWarning() {
