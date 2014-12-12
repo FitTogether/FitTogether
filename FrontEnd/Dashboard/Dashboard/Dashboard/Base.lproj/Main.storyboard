@@ -446,7 +446,7 @@
         <!--Profile-->
         <scene sceneID="rfv-YN-iZz">
             <objects>
-                <viewController id="Q37-or-oSm" customClass="profileViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" id="Q37-or-oSm" customClass="profileViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HBs-gz-c3u"/>
                         <viewControllerLayoutGuide type="bottom" id="2BH-8P-bVJ"/>
@@ -3305,9 +3305,9 @@
         <image name="theDude2.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2gr-9S-zLf"/>
-        <segue reference="aOk-IB-dY0"/>
+        <segue reference="Wd7-dF-O0s"/>
         <segue reference="yqg-5h-ykg"/>
+        <segue reference="aOk-IB-dY0"/>
         <segue reference="Cem-VI-By3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

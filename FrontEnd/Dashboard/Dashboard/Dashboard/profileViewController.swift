@@ -22,6 +22,10 @@ class profileViewController: UIViewController {
     let blueColor = UIColor(red: (33/355), green: (150/255), blue: (243/255), alpha: 0.9).CGColor
     //let orangeColor = UIColor(red: 0.90, green: 0.20, blue: 0.15, alpha: 0.8).CGColor
     
+    //insert team data
+    var teamData = TeamData()
+    var fakeData:[(name: String, amtOfStepsWalked: String)]?
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var firstBadgeView: UIView!
     @IBOutlet weak var secondBadgeView: UIView!
@@ -44,6 +48,7 @@ class profileViewController: UIViewController {
         super.viewDidLoad()
         initProfilePic()
         constrainBadgeBoxes()
+        fakeData = teamData.passArrayOfData()//for TeamDataViewController didSelectAtIndex
     }
     
     override func didReceiveMemoryWarning() {
