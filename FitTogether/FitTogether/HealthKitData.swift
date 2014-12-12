@@ -12,12 +12,14 @@ import UIkit
 
 class HealthKitData {
     
+    var weightSamples = [HKQuantitySample]()
+    
     var dailySteps = [HKQuantitySample]()
-    var healthStore = HKHealthStore()
+    var healthStore: HKHealthStore?
     
     init() {
         requestAuthorisationForHealthStore()
-        println("Hey \(dailySteps)")
+        healthStore = HKHealthStore()
     }
     
     private func requestAuthorisationForHealthStore() {
@@ -26,7 +28,7 @@ class HealthKitData {
         ]
         let dataTypesToRead = [HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)]
         
-        self.healthStore.requestAuthorizationToShareTypes(NSSet(array: dataTypesToWrite),
+        self.healthStore?.requestAuthorizationToShareTypes(NSSet(array: dataTypesToWrite),
             readTypes: NSSet(array: dataTypesToRead), completion: {
                 (success, error) in
                 if success {
@@ -39,30 +41,26 @@ class HealthKitData {
     
     func queryHealthKitSteps() {
         let endDate = NSDate()
-        let startDate = NSCalendar.currentCalendar().dateByAddingUnit(.CalendarUnitMonth,
-            value: -1, toDate: endDate, options: nil)
+        let startDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.MonthCalendarUnit,value: -1, toDate: endDate, options: nil)
         
-        let weightSampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)
-        let predicate = HKQuery.predicateForSamplesWithStartDate(startDate,
-            endDate: endDate, options: .None)
+        let stepsSampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)
+        let predicate = HKQuery.predicateForSamplesWithStartDate(startDate, endDate: endDate, options: .None)
         
-        let query = HKSampleQuery(sampleType: weightSampleType, predicate: predicate,
-            limit: 0, sortDescriptors: nil, resultsHandler: {
-                (query, results, error) in
-                if !(results != nil) {
-                    println("There was an error running the query: \(error)")
-                }
-                dispatch_async(dispatch_get_main_queue()) {
-                    self.dailySteps = results as [HKQuantitySample]
-                    println("Hey \(self.dailySteps)")
-                }
+        let query = HKSampleQuery(sampleType: stepsSampleType, predicate: predicate,limit: 100, sortDescriptors: nil, resultsHandler: {(query, results, error) in
+            if results == nil {
+                println("There was an error running the query: \(error)")
+            }
+            dispatch_async(dispatch_get_main_queue()) {
+                self.dailySteps = results as [HKQuantitySample]
+                println("Health Kit Step Counts: \(results)")
+            }
         })
-        healthStore.executeQuery(query)
+        healthStore?.executeQuery(query)
     }
     
     func saveSampleToHealthStore(sample: HKObject) {
         println("Saving weight")
-        self.healthStore.saveObject(sample, withCompletion: {
+        self.healthStore?.saveObject(sample, withCompletion: {
             (success, error) in
             if success {
                 println("Weight saved successfully ")

@@ -80,7 +80,7 @@ class CloudKitHelper {
         }
     }
     
-    func retriveRecords(sortKey: NSString, queryRecordType: NSString) -> AnyObject {
+    func retriveRecords(sortKey: NSString, queryRecordType: NSString, completionHandler: ([AnyObject] -> Void)) -> AnyObject {
         let predicate = NSPredicate(value: true)
         let sort = NSSortDescriptor(key: sortKey, ascending: false)
         var queryRecord : AnyObject?
@@ -89,20 +89,14 @@ class CloudKitHelper {
         let query = CKQuery(recordType: queryRecordType, predicate: predicate)
         query.sortDescriptors = [sort]
     
-        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: {  (records: [AnyObject]!, error: NSError!) -> Void in
+        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: { (records: [AnyObject]!, error: NSError!) -> Void in
             if error != nil {
                 NSLog("Error \(error)")
                 queryError = error
                 self.error = true
                 return
             } else {
-                //NSLog("Retrived \(records)")
-                
-//                for record in records as [CKRecord] {
-//                    println(record)
-//                }
-                
-                queryRecord = records
+                completionHandler(records)
                 return
             }
         })

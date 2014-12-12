@@ -12,6 +12,12 @@ import CloudKit
 class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
+
+    var delegate: CloudKitQuery?
+    
+    var teams = [Team]()
 
     var teamData = TeamData()
     var fakeData:[(name: String, amtOfStepsWalked: String)]?
@@ -23,18 +29,23 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
         super.viewDidLoad()
         fakeData = teamData.passArrayOfData()
         
-        ckData = ck.retriveRecords("ID", queryRecordType: "Team")
+        ckData = ck.retriveRecords("Name", queryRecordType: "Team", completionHandler: { (ckData: [AnyObject]!) -> Void in
+            for data: CKRecord in ckData as [CKRecord] {
+                var team = Team(name: "", steps: 0)
+                if let name: String = data.objectForKey("Name") as? String {
+                    team.name = data.objectForKey("Name") as? String
+                }
+                if let steps: Int = data.objectForKey("Steps") as? Int {
+                    team.steps = data.objectForKey("Steps") as? Int
+                }
+                self.teams.append(team)
+                self.tableView.reloadData()
+            }
+        })
         
-        
-        
-        for data: CKRecord in ckData as [CKRecord] {
-            println(data.objectForKey("Name"))
-        }
-        
-        //println(ckData)
-        
+        loadingView.stopAnimating()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,15 +57,15 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return fakeData.count
-        return fakeData!.count
+        return teams.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("teamCell") as UITableViewCell
         
-        let item = self.fakeData![indexPath.row]
+        let item = self.teams[indexPath.row]
         cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = item.amtOfStepsWalked
+        cell.detailTextLabel?.text = "\(item.steps!)"
         
         // var imageName = UIImage(named: fakeData[indexPath.row])
         var imageName = UIImage(named: "theDude.png")

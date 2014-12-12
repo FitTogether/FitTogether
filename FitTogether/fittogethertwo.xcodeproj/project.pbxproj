@@ -14,6 +14,7 @@
 		232BEBC21A1EDBDF00075DC7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */; };
 		567AF6F71A3624B00029FB55 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F61A3624B00029FB55 /* TeamData.swift */; };
 		567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F81A3625130029FB55 /* TeamDataViewController.swift */; };
+		F2090B411A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */; };
 		F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */; };
 		F243548B1A3775E800AD26CC /* badgeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F243548A1A3775E800AD26CC /* badgeIcon.png */; };
 		F243548D1A37BF4900AD26CC /* theDude2.png in Resources */ = {isa = PBXBuildFile; fileRef = F243548C1A37BF4900AD26CC /* theDude2.png */; };
@@ -54,6 +55,7 @@
 		232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		567AF6F61A3624B00029FB55 /* TeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
 		567AF6F81A3625130029FB55 /* TeamDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataViewController.swift; sourceTree = "<group>"; };
+		F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelperDelegate.swift; sourceTree = "<group>"; };
 		F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		F243548A1A3775E800AD26CC /* badgeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon.png; sourceTree = "<group>"; };
 		F243548C1A37BF4900AD26CC /* theDude2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theDude2.png; sourceTree = "<group>"; };
@@ -102,6 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2090B421A3A8F0300BA0E6E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		F256BF851A35EAB300C75418 /* Badges */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +163,7 @@
 		F28B00831A0A833800A5891F /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				F2090B421A3A8F0300BA0E6E /* Utilities */,
 				F267EFB81A3613F8004CCE9F /* Models */,
 				F2F614B31A34E6F400CB65E6 /* Assets */,
 				F2F614B11A34E6B700CB65E6 /* ViewControllers */,
@@ -195,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */,
+				F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -345,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
+				F2090B411A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift in Sources */,
 				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,
 				F2D9CAEF1A3A112700609476 /* Team.swift in Sources */,
 				F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */,
