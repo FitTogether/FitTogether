@@ -39,9 +39,9 @@ class HealthKitData {
         })
     }
     
-    func queryHealthKitSteps() {
+    func queryYesterdaysHealthKitSteps(completionHandler: ([AnyObject] -> Void)) {
         let endDate = NSDate()
-        let startDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.MonthCalendarUnit,value: -1, toDate: endDate, options: nil)
+        let startDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.DayCalendarUnit,value: -1, toDate: endDate, options: nil)
         
         let stepsSampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)
         let predicate = HKQuery.predicateForSamplesWithStartDate(startDate, endDate: endDate, options: .None)
@@ -51,11 +51,27 @@ class HealthKitData {
                 println("There was an error running the query: \(error)")
             }
             dispatch_async(dispatch_get_main_queue()) {
-                self.dailySteps = results as [HKQuantitySample]
-                println("Health Kit Step Counts: \(results)")
+                completionHandler(results)
             }
         })
         healthStore?.executeQuery(query)
+    }
+    
+    func queryHealthKitSteps(startDate: NSDate, endDate: NSDate) -> Int {
+        let stepsSampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)
+        let predicate = HKQuery.predicateForSamplesWithStartDate(startDate, endDate: endDate, options: .None)
+        
+        let query = HKSampleQuery(sampleType: stepsSampleType, predicate: predicate,limit: 1, sortDescriptors: nil, resultsHandler: {(query, results, error) in
+            if results == nil {
+                println("There was an error running the query: \(error)")
+            }
+            dispatch_async(dispatch_get_main_queue()) {
+                self.dailySteps = results as [HKQuantitySample]
+
+            }
+        })
+        healthStore?.executeQuery(query)
+        return dailySteps.count
     }
     
     func saveSampleToHealthStore(sample: HKObject) {
