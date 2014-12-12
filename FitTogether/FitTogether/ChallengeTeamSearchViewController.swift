@@ -9,6 +9,7 @@
 import UIKit
 import CloudKit
 
+<<<<<<< Updated upstream
 class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate, UISearchDisplayController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -22,6 +23,13 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
 
     var teamData = TeamData()
     var filteredTeamData = [Team]()
+=======
+class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+
+    var teamData = TeamData()
+>>>>>>> Stashed changes
     var fakeData:[(name: String, amtOfStepsWalked: String)]?
     
     var ck = CloudKitHelper()
@@ -29,15 +37,33 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< Updated upstream
         //fakeData = teamData.passArrayOfData()
         loadDataFromCloudKit()
     }
 
+=======
+        fakeData = teamData.passArrayOfData()
+        
+        ckData = ck.retriveRecords("ID", queryRecordType: "Team")
+        
+        
+        
+        for data: CKRecord in ckData as [CKRecord] {
+            println(data.objectForKey("Name"))
+        }
+        
+        //println(ckData)
+        
+    }
+    
+>>>>>>> Stashed changes
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+<<<<<<< Updated upstream
     func loadDataFromCloudKit() {
         self.activityBar.startAnimating()
         ckData = ck.retriveRecords("Name", queryRecordType: "Team", completionHandler: { (ckData: [AnyObject]!) -> Void in
@@ -59,11 +85,14 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
         })
     }
     
+=======
+>>>>>>> Stashed changes
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+<<<<<<< Updated upstream
         if tableView == self.searchDisplayController!.searchResultsTableView {
             return self.filteredTeamData.count
         } else {
@@ -88,6 +117,22 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
         //var imageName = UIImage(named: fakeData[indexPath.row])
         //var imageName = UIImage(named: "theDude.png")
         //cell.imageView?.image = imageName
+=======
+        //return fakeData.count
+        return fakeData!.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("teamCell") as UITableViewCell
+        
+        let item = self.fakeData![indexPath.row]
+        cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = item.amtOfStepsWalked
+        
+        // var imageName = UIImage(named: fakeData[indexPath.row])
+        var imageName = UIImage(named: "theDude.png")
+        cell.imageView?.image = imageName
+>>>>>>> Stashed changes
         
         return cell
     }
@@ -95,6 +140,7 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //load profile
     }
+<<<<<<< Updated upstream
     
     func filterContentForSearchText(searchText: String) {
         // Filter the array using the filter method
@@ -108,4 +154,6 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
         self.filterContentForSearchText(searchString)
         return true
     }
+=======
+>>>>>>> Stashed changes
 }

@@ -89,14 +89,28 @@ class CloudKitHelper {
         let query = CKQuery(recordType: queryRecordType, predicate: predicate)
         query.sortDescriptors = [sort]
     
+<<<<<<< Updated upstream
         publicDB.performQuery(query, inZoneWithID: nil, completionHandler: { (records: [AnyObject]!, error: NSError!) -> Void in
+=======
+        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: {  (records: [AnyObject]!, error: NSError!) -> Void in
+>>>>>>> Stashed changes
             if error != nil {
                 NSLog("Error \(error)")
                 queryError = error
                 self.error = true
                 return
             } else {
+<<<<<<< Updated upstream
                 completionHandler(records)
+=======
+                //NSLog("Retrived \(records)")
+                
+//                for record in records as [CKRecord] {
+//                    println(record)
+//                }
+                
+                queryRecord = records
+>>>>>>> Stashed changes
                 return
             }
         })
