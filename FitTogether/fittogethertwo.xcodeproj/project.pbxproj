@@ -28,22 +28,12 @@
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-		F28B00931A0A833800A5891F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28B00911A0A833800A5891F /* LaunchScreen.xib */; };
-=======
->>>>>>> Stashed changes
 		F2D9CAEF1A3A112700609476 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CAEE1A3A112700609476 /* Team.swift */; };
 		F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615B1A38F0AA00A5277C /* TabBarController.swift */; };
 		F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615D1A38F27000A5277C /* HealthKitData.swift */; };
 		F2ED61601A38F44400A5277C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ED615F1A38F44400A5277C /* HealthKit.framework */; };
 		F2ED61621A393A7800A5277C /* DailyStepGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */; };
 		F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */; };
-<<<<<<< Updated upstream
-=======
->>>>>>> stayFrosty
->>>>>>> Stashed changes
 		F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2F614B61A34E76800CB65E6 /* Settings.bundle */; };
 		F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */; };
 		F2F614BB1A34ED0300CB65E6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BA1A34ED0300CB65E6 /* logo.png */; };
@@ -83,21 +73,12 @@
 		F28B008F1A0A833800A5891F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 		F2D9CAEE1A3A112700609476 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		F2ED615B1A38F0AA00A5277C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F2ED615D1A38F27000A5277C /* HealthKitData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitData.swift; sourceTree = "<group>"; };
 		F2ED615F1A38F44400A5277C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStepGoalViewController.swift; sourceTree = "<group>"; };
 		F2ED61641A394DCB00A5277C /* StepGoalProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepGoalProtocol.swift; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-=======
->>>>>>> stayFrosty
->>>>>>> Stashed changes
 		F2F614B61A34E76800CB65E6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2F614BA1A34ED0300CB65E6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -152,18 +133,9 @@
 			children = (
 				F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */,
 				F273C90E1A33988300D7B908 /* User.swift */,
-<<<<<<< Updated upstream
 				567AF6F61A3624B00029FB55 /* TeamData.swift */,
 				F2ED615D1A38F27000A5277C /* HealthKitData.swift */,
 				F2D9CAEE1A3A112700609476 /* Team.swift */,
-=======
-<<<<<<< HEAD
-=======
-				567AF6F61A3624B00029FB55 /* TeamData.swift */,
-				F2ED615D1A38F27000A5277C /* HealthKitData.swift */,
-				F2D9CAEE1A3A112700609476 /* Team.swift */,
->>>>>>> stayFrosty
->>>>>>> Stashed changes
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -384,19 +356,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
-<<<<<<< Updated upstream
 				F2090B411A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift in Sources */,
 				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,
 				F2D9CAEF1A3A112700609476 /* Team.swift in Sources */,
 				F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */,
-=======
-<<<<<<< HEAD
-=======
-				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,
-				F2D9CAEF1A3A112700609476 /* Team.swift in Sources */,
-				F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */,
->>>>>>> stayFrosty
->>>>>>> Stashed changes
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
 				F24E2AD11A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift in Sources */,
