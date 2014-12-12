@@ -59,10 +59,10 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
         let teamMember = self.fakeData![indexPath.row]
         
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        
         let teamMemberProfile = storyboard.instantiateViewControllerWithIdentifier("profile") as profileViewController
         
         let teamMemberData = fakeData
-        
         teamMemberProfile.fakeData = teamMemberData
         
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
