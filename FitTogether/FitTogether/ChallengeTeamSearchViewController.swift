@@ -63,19 +63,13 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("teamCell") as UITableViewCell
         
-<<<<<<< HEAD
-        let item = self.teams[indexPath.row]
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "\(item.steps!)"
-=======
         let item = self.fakeData![indexPath.row]
-        cell.textLabel.text = item.name
+        cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = item.amtOfStepsWalked
->>>>>>> stayFrosty-TeamData
         
         // var imageName = UIImage(named: fakeData[indexPath.row])
         var imageName = UIImage(named: "theDude.png")
-        cell.imageView.image = imageName
+        cell.imageView?.image = imageName
         
         return cell
     }
