@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -2983,54 +2983,51 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="173.5" width="400" height="382.5"/>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="BTZ-RG-6Kz" id="CUa-Bx-Nbu"/>
                                     <outlet property="delegate" destination="BTZ-RG-6Kz" id="76r-5r-wsG"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search: Team Name" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4x-ml-Zj8">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
-                            </textField>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="DhQ-s4-cfO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="111" width="400" height="44"/>
+                                </variation>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="sQY-Po-uNg" secondAttribute="trailing" id="7Cg-vM-2Wn"/>
-                            <constraint firstItem="r4x-ml-Zj8" firstAttribute="leading" secondItem="sfI-UX-uqZ" secondAttribute="leadingMargin" id="Arb-RK-oll"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="r4x-ml-Zj8" secondAttribute="trailing" id="Ftd-1i-G0t"/>
-                            <constraint firstItem="r4x-ml-Zj8" firstAttribute="top" secondItem="sQY-Po-uNg" secondAttribute="bottom" constant="47.5" id="Nvi-y5-EiB">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
+                            <constraint firstItem="Rch-40-KtF" firstAttribute="top" secondItem="DhQ-s4-cfO" secondAttribute="bottom" constant="18.5" id="Fzf-tx-UEC"/>
                             <constraint firstItem="sQY-Po-uNg" firstAttribute="leading" secondItem="sfI-UX-uqZ" secondAttribute="leadingMargin" id="RXb-Cm-DFs"/>
-                            <constraint firstItem="Rch-40-KtF" firstAttribute="top" secondItem="r4x-ml-Zj8" secondAttribute="bottom" constant="33.5" id="WZA-mq-Q5H">
-                                <variation key="widthClass=compact" constant="20"/>
+                            <constraint firstItem="kum-BI-sQn" firstAttribute="top" secondItem="DhQ-s4-cfO" secondAttribute="bottom" constant="396" id="X0f-o1-h8d">
+                                <variation key="widthClass=compact" constant="10"/>
                             </constraint>
                             <constraint firstItem="kum-BI-sQn" firstAttribute="top" secondItem="Rch-40-KtF" secondAttribute="bottom" id="ecK-Hz-yR4"/>
                             <constraint firstItem="sQY-Po-uNg" firstAttribute="top" secondItem="nqM-gB-eXb" secondAttribute="bottom" constant="29" id="fcZ-a2-gd6">
                                 <variation key="widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="Rch-40-KtF" firstAttribute="leading" secondItem="sfI-UX-uqZ" secondAttribute="leading" id="pd0-tG-ghf"/>
+                            <constraint firstItem="DhQ-s4-cfO" firstAttribute="top" secondItem="sQY-Po-uNg" secondAttribute="bottom" constant="7.5" id="qOs-aj-if3">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="Rch-40-KtF" secondAttribute="trailing" id="u1c-bl-QtS"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="sQY-Po-uNg"/>
                                 <exclude reference="Rch-40-KtF"/>
-                                <exclude reference="r4x-ml-Zj8"/>
+                                <exclude reference="DhQ-s4-cfO"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="X0f-o1-h8d"/>
                                 <exclude reference="ecK-Hz-yR4"/>
-                                <exclude reference="Arb-RK-oll"/>
-                                <exclude reference="Ftd-1i-G0t"/>
-                                <exclude reference="Nvi-y5-EiB"/>
                                 <exclude reference="7Cg-vM-2Wn"/>
                                 <exclude reference="RXb-Cm-DFs"/>
                                 <exclude reference="fcZ-a2-gd6"/>
-                                <exclude reference="WZA-mq-Q5H"/>
+                                <exclude reference="qOs-aj-if3"/>
+                                <exclude reference="Fzf-tx-UEC"/>
                                 <exclude reference="pd0-tG-ghf"/>
                                 <exclude reference="u1c-bl-QtS"/>
                             </mask>
@@ -3039,17 +3036,16 @@
                             <mask key="subviews">
                                 <include reference="sQY-Po-uNg"/>
                                 <include reference="Rch-40-KtF"/>
-                                <include reference="r4x-ml-Zj8"/>
+                                <include reference="DhQ-s4-cfO"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="X0f-o1-h8d"/>
                                 <include reference="ecK-Hz-yR4"/>
-                                <include reference="Arb-RK-oll"/>
-                                <include reference="Ftd-1i-G0t"/>
-                                <include reference="Nvi-y5-EiB"/>
                                 <include reference="7Cg-vM-2Wn"/>
                                 <include reference="RXb-Cm-DFs"/>
                                 <include reference="fcZ-a2-gd6"/>
-                                <include reference="WZA-mq-Q5H"/>
+                                <include reference="qOs-aj-if3"/>
+                                <include reference="Fzf-tx-UEC"/>
                                 <include reference="pd0-tG-ghf"/>
                                 <include reference="u1c-bl-QtS"/>
                             </mask>

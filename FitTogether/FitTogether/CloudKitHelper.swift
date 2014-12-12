@@ -30,6 +30,7 @@ class CloudKitHelper {
             return false
         }
     }
+
     
     func saveRecord(record : NSString, tableName : NSString, forKey : NSString, isPrivate: Bool) {
         let todoRecord = CKRecord(recordType: tableName)
@@ -88,15 +89,20 @@ class CloudKitHelper {
         let query = CKQuery(recordType: queryRecordType, predicate: predicate)
         query.sortDescriptors = [sort]
     
-        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: { (results, error) -> Void in
+        publicDB.performQuery(query, inZoneWithID: nil, completionHandler: {  (records: [AnyObject]!, error: NSError!) -> Void in
             if error != nil {
                 NSLog("Error \(error)")
                 queryError = error
                 self.error = true
                 return
             } else {
-                NSLog("Retrived \(results)")
-                queryRecord = results
+                //NSLog("Retrived \(records)")
+                
+//                for record in records as [CKRecord] {
+//                    println(record)
+//                }
+                
+                queryRecord = records
                 return
             }
         })

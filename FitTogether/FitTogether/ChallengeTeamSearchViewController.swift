@@ -24,12 +24,10 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
         fakeData = teamData.passArrayOfData()
         
         ckData = ck.retriveRecords("ID", queryRecordType: "Team")
-
-        if ck.error {
-            println("Nah")
-        }
-
-        for data: CKRecord in ckData as Array {
+        
+        
+        
+        for data: CKRecord in ckData as [CKRecord] {
             println(data.objectForKey("Name"))
         }
         
