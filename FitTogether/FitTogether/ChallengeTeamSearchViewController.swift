@@ -12,12 +12,15 @@ import CloudKit
 class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+<<<<<<< Updated upstream
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
 
     var delegate: CloudKitQuery?
     
     var teams = [Team]()
+=======
+>>>>>>> Stashed changes
 
     var teamData = TeamData()
     var fakeData:[(name: String, amtOfStepsWalked: String)]?
@@ -29,6 +32,7 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
         super.viewDidLoad()
         fakeData = teamData.passArrayOfData()
         
+<<<<<<< Updated upstream
         ckData = ck.retriveRecords("Name", queryRecordType: "Team", completionHandler: { (ckData: [AnyObject]!) -> Void in
             for data: CKRecord in ckData as [CKRecord] {
                 var team = Team(name: "", steps: 0)
@@ -46,6 +50,20 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
         loadingView.stopAnimating()
     }
 
+=======
+        ckData = ck.retriveRecords("ID", queryRecordType: "Team")
+        
+        
+        
+        for data: CKRecord in ckData as [CKRecord] {
+            println(data.objectForKey("Name"))
+        }
+        
+        //println(ckData)
+        
+    }
+    
+>>>>>>> Stashed changes
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,7 +75,11 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return fakeData.count
+<<<<<<< Updated upstream
         return teams.count
+=======
+        return fakeData!.count
+>>>>>>> Stashed changes
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

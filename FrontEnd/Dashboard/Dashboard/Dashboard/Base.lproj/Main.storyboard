@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+=======
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EfR-Wy-0gB">
+>>>>>>> Stashed changes
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+>>>>>>> stayFrosty
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -2254,6 +2264,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter team code to join: " borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v66-cW-efL">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <constraints>
@@ -2272,6 +2287,10 @@
                                     </mask>
                                 </variation>
                             </textField>
+<<<<<<< Updated upstream
+=======
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2330,18 +2349,47 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="UJk-yo-4x7"/>
+<<<<<<< Updated upstream
                                 <exclude reference="6OS-fW-L8t"/>
                                 <exclude reference="738-W6-bKZ"/>
                                 <exclude reference="ANh-uH-MPQ"/>
                                 <exclude reference="dmb-Yg-bZH"/>
                                 <exclude reference="ekz-2T-TI8"/>
                                 <exclude reference="vgj-GP-c3K"/>
+=======
+<<<<<<< HEAD
+                                <exclude reference="PQK-cN-aeI"/>
+                                <exclude reference="ekz-2T-TI8"/>
+                                <exclude reference="vgj-GP-c3K"/>
+                                <exclude reference="B3t-FM-nES"/>
+                                <exclude reference="Txi-Co-94c"/>
+                                <exclude reference="Uxi-wh-byl"/>
+                                <exclude reference="Xo5-0t-iXZ"/>
+=======
+                                <exclude reference="6OS-fW-L8t"/>
+                                <exclude reference="738-W6-bKZ"/>
+                                <exclude reference="ANh-uH-MPQ"/>
+                                <exclude reference="dmb-Yg-bZH"/>
+                                <exclude reference="ekz-2T-TI8"/>
+                                <exclude reference="vgj-GP-c3K"/>
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
                                 <exclude reference="ArG-L7-rjd"/>
                                 <exclude reference="C1s-hf-Hmx"/>
                                 <exclude reference="Vk5-aC-bON"/>
                                 <exclude reference="m4m-N5-1eL"/>
+<<<<<<< Updated upstream
                                 <exclude reference="1EZ-Rd-uqO"/>
                                 <exclude reference="SPi-uO-bZM"/>
+=======
+<<<<<<< HEAD
+                                <exclude reference="3XC-lF-5II"/>
+                                <exclude reference="YOi-wd-zMB"/>
+=======
+                                <exclude reference="1EZ-Rd-uqO"/>
+                                <exclude reference="SPi-uO-bZM"/>
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
                                 <exclude reference="mKv-aG-pII"/>
                                 <exclude reference="piS-Fc-38s"/>
                                 <exclude reference="yob-Mp-TAx"/>
@@ -2365,6 +2413,28 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="UJk-yo-4x7"/>
+<<<<<<< Updated upstream
+                                <exclude reference="6OS-fW-L8t"/>
+                                <exclude reference="738-W6-bKZ"/>
+                                <exclude reference="ANh-uH-MPQ"/>
+                                <include reference="dmb-Yg-bZH"/>
+=======
+<<<<<<< HEAD
+                                <include reference="PQK-cN-aeI"/>
+>>>>>>> Stashed changes
+                                <include reference="ekz-2T-TI8"/>
+                                <exclude reference="vgj-GP-c3K"/>
+                                <include reference="ArG-L7-rjd"/>
+                                <exclude reference="C1s-hf-Hmx"/>
+                                <exclude reference="Vk5-aC-bON"/>
+                                <include reference="m4m-N5-1eL"/>
+<<<<<<< Updated upstream
+                                <include reference="1EZ-Rd-uqO"/>
+                                <exclude reference="SPi-uO-bZM"/>
+=======
+                                <include reference="3XC-lF-5II"/>
+                                <include reference="YOi-wd-zMB"/>
+=======
                                 <exclude reference="6OS-fW-L8t"/>
                                 <exclude reference="738-W6-bKZ"/>
                                 <exclude reference="ANh-uH-MPQ"/>
@@ -2377,6 +2447,8 @@
                                 <include reference="m4m-N5-1eL"/>
                                 <include reference="1EZ-Rd-uqO"/>
                                 <exclude reference="SPi-uO-bZM"/>
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
                                 <include reference="mKv-aG-pII"/>
                                 <include reference="piS-Fc-38s"/>
                                 <exclude reference="yob-Mp-TAx"/>
@@ -2460,6 +2532,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a team name and description. The name will be used by other teams to challenge you." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbP-53-QYq">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2478,6 +2555,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< Updated upstream
+=======
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2520,6 +2601,11 @@
                                 <exclude reference="Bcj-XO-Mj9"/>
                             </mask>
                             <mask key="constraints">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+                                <exclude reference="0RR-OP-5tn"/>
+>>>>>>> Stashed changes
                                 <exclude reference="eXK-C8-vTg"/>
                                 <exclude reference="lvU-V1-2cG"/>
                                 <exclude reference="voV-Yb-9Sg"/>
@@ -2529,6 +2615,19 @@
                                 <exclude reference="SfY-Hu-PiB"/>
                                 <exclude reference="SpE-2c-Iji"/>
                                 <exclude reference="l6e-AF-uNb"/>
+<<<<<<< Updated upstream
+=======
+=======
+                                <exclude reference="eXK-C8-vTg"/>
+                                <exclude reference="lvU-V1-2cG"/>
+                                <exclude reference="voV-Yb-9Sg"/>
+                                <exclude reference="Bu2-oh-E04"/>
+                                <exclude reference="Vq6-Dw-BmV"/>
+                                <exclude reference="d8R-Wq-r4P"/>
+                                <exclude reference="SfY-Hu-PiB"/>
+                                <exclude reference="SpE-2c-Iji"/>
+                                <exclude reference="l6e-AF-uNb"/>
+>>>>>>> Stashed changes
                                 <exclude reference="JGY-Ly-7f7"/>
                                 <exclude reference="PNw-OO-iAh"/>
                                 <exclude reference="Ymd-eH-dmD"/>
@@ -2537,6 +2636,10 @@
                                 <exclude reference="hvD-av-I8S"/>
                                 <exclude reference="mii-Da-2xp"/>
                                 <exclude reference="IX8-57-vgS"/>
+<<<<<<< Updated upstream
+=======
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
                                 <exclude reference="0dD-dV-KWd"/>
                                 <exclude reference="AMK-hx-rUW"/>
                                 <exclude reference="Uiq-Ry-KhM"/>
@@ -2554,6 +2657,11 @@
                                 <include reference="Bcj-XO-Mj9"/>
                             </mask>
                             <mask key="constraints">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+                                <include reference="0RR-OP-5tn"/>
+>>>>>>> Stashed changes
                                 <include reference="eXK-C8-vTg"/>
                                 <include reference="lvU-V1-2cG"/>
                                 <include reference="voV-Yb-9Sg"/>
@@ -2563,6 +2671,19 @@
                                 <exclude reference="SfY-Hu-PiB"/>
                                 <include reference="SpE-2c-Iji"/>
                                 <include reference="l6e-AF-uNb"/>
+<<<<<<< Updated upstream
+=======
+=======
+                                <include reference="eXK-C8-vTg"/>
+                                <include reference="lvU-V1-2cG"/>
+                                <include reference="voV-Yb-9Sg"/>
+                                <include reference="Bu2-oh-E04"/>
+                                <include reference="Vq6-Dw-BmV"/>
+                                <include reference="d8R-Wq-r4P"/>
+                                <exclude reference="SfY-Hu-PiB"/>
+                                <include reference="SpE-2c-Iji"/>
+                                <include reference="l6e-AF-uNb"/>
+>>>>>>> Stashed changes
                                 <include reference="JGY-Ly-7f7"/>
                                 <include reference="PNw-OO-iAh"/>
                                 <include reference="Ymd-eH-dmD"/>
@@ -2571,6 +2692,10 @@
                                 <include reference="hvD-av-I8S"/>
                                 <include reference="mii-Da-2xp"/>
                                 <exclude reference="IX8-57-vgS"/>
+<<<<<<< Updated upstream
+=======
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
                                 <include reference="0dD-dV-KWd"/>
                                 <include reference="AMK-hx-rUW"/>
                                 <include reference="Uiq-Ry-KhM"/>
@@ -2783,6 +2908,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swL-hI-ENd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+            <point key="canvasLocation" x="1212" y="938"/>
+=======
+>>>>>>> Stashed changes
             <point key="canvasLocation" x="1263" y="192"/>
         </scene>
         <!--Team-->
@@ -2797,7 +2928,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< Updated upstream
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="McX-xx-4sc">
+=======
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="McX-xx-4sc">
+>>>>>>> Stashed changes
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
                                 <segments>
                                     <segment title="A to Z"/>
@@ -3053,7 +3188,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Challenge Team" id="aif-HH-QAH"/>
                     <connections>
+<<<<<<< Updated upstream
                         <outlet property="searchBar" destination="DhQ-s4-cfO" id="6p5-Bl-BOy"/>
+=======
+>>>>>>> Stashed changes
                         <outlet property="tableView" destination="Rch-40-KtF" id="CJ8-hc-oxw"/>
                     </connections>
                 </viewController>
@@ -3294,6 +3432,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJq-IL-moY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2992.5" y="1977"/>
+<<<<<<< Updated upstream
+=======
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
         </scene>
     </scenes>
     <resources>
@@ -3306,8 +3448,17 @@
         <image name="theDude2.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< Updated upstream
         <segue reference="2gr-9S-zLf"/>
         <segue reference="yqg-5h-ykg"/>
+=======
+<<<<<<< HEAD
+        <segue reference="pue-c2-M8N"/>
+        <segue reference="srM-Ki-F7v"/>
+=======
+        <segue reference="2gr-9S-zLf"/>
+>>>>>>> stayFrosty
+>>>>>>> Stashed changes
         <segue reference="aOk-IB-dY0"/>
         <segue reference="Cem-VI-By3"/>
     </inferredMetricsTieBreakers>

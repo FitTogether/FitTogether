@@ -10,10 +10,18 @@ import Foundation
 
 class Team {
     var name: String?
+<<<<<<< Updated upstream
     var steps: Int?
     
     init(name: String, steps: Int) {
         self.name = name
         self.steps = steps
+=======
+    var steps: Int64?
+    
+    init() {
+        name = String()
+        steps = Int64()
+>>>>>>> Stashed changes
     }
 }
