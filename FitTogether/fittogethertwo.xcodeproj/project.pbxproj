@@ -25,6 +25,7 @@
 		F24E2AD11A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */; };
 		F256BF891A35F39500C75418 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F256BF881A35F39500C75418 /* SettingsTableViewController.swift */; };
 		F265796F1A38DB1B00E7E643 /* ChallengeTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F265796E1A38DB1B00E7E643 /* ChallengeTeamViewController.swift */; };
+		F270E3CA1A3B73DA00027B59 /* NavUISearchDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F270E3C91A3B73DA00027B59 /* NavUISearchDisplayController.swift */; };
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
@@ -66,6 +67,7 @@
 		F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTeamSearchViewController.swift; sourceTree = "<group>"; };
 		F256BF881A35F39500C75418 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		F265796E1A38DB1B00E7E643 /* ChallengeTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTeamViewController.swift; sourceTree = "<group>"; };
+		F270E3C91A3B73DA00027B59 /* NavUISearchDisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavUISearchDisplayController.swift; sourceTree = "<group>"; };
 		F273C90E1A33988300D7B908 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F28B00811A0A833800A5891F /* fittogethertwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fittogethertwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28B00851A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		F2090B421A3A8F0300BA0E6E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F270E3C91A3B73DA00027B59 /* NavUISearchDisplayController.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,
 				F2D9CAEF1A3A112700609476 /* Team.swift in Sources */,
 				F2ED61651A394DCB00A5277C /* StepGoalProtocol.swift in Sources */,
+				F270E3CA1A3B73DA00027B59 /* NavUISearchDisplayController.swift in Sources */,
 				F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */,
 				232BEBBA1A1ED5D500075DC7 /* dashboardViewController.swift in Sources */,
 				F24E2AD11A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift in Sources */,

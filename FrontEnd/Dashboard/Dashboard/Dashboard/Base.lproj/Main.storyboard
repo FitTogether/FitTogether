@@ -3041,18 +3041,18 @@
                                 <exclude reference="IGV-s8-iCp"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="ecK-Hz-yR4"/>
                                 <exclude reference="7Cg-vM-2Wn"/>
                                 <exclude reference="RXb-Cm-DFs"/>
                                 <exclude reference="fcZ-a2-gd6"/>
+                                <exclude reference="3LR-Mc-Xzt"/>
+                                <exclude reference="F2x-oH-chW"/>
                                 <exclude reference="5qA-ZL-iQG"/>
                                 <exclude reference="E6O-Qf-ePE"/>
                                 <exclude reference="b30-cI-rKT"/>
                                 <exclude reference="jjL-Nb-BeX"/>
                                 <exclude reference="pd0-tG-ghf"/>
                                 <exclude reference="u1c-bl-QtS"/>
-                                <exclude reference="3LR-Mc-Xzt"/>
-                                <exclude reference="F2x-oH-chW"/>
-                                <exclude reference="ecK-Hz-yR4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -3063,18 +3063,18 @@
                                 <include reference="IGV-s8-iCp"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="ecK-Hz-yR4"/>
                                 <include reference="7Cg-vM-2Wn"/>
                                 <include reference="RXb-Cm-DFs"/>
                                 <include reference="fcZ-a2-gd6"/>
+                                <include reference="3LR-Mc-Xzt"/>
+                                <include reference="F2x-oH-chW"/>
                                 <include reference="5qA-ZL-iQG"/>
                                 <include reference="E6O-Qf-ePE"/>
                                 <include reference="b30-cI-rKT"/>
                                 <include reference="jjL-Nb-BeX"/>
                                 <include reference="pd0-tG-ghf"/>
                                 <include reference="u1c-bl-QtS"/>
-                                <include reference="3LR-Mc-Xzt"/>
-                                <include reference="F2x-oH-chW"/>
-                                <include reference="ecK-Hz-yR4"/>
                             </mask>
                         </variation>
                     </view>
@@ -3087,7 +3087,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9F-iI-3bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="Wbw-SQ-aKh">
+                <searchDisplayController id="Wbw-SQ-aKh" customClass="NavUISearchDisplayController" customModule="fittogethertwo" customModuleProvider="target">
                     <connections>
                         <outlet property="delegate" destination="BTZ-RG-6Kz" id="CpS-yg-6ww"/>
                         <outlet property="searchBar" destination="fTW-a1-m5g" id="383-N8-9oq"/>
