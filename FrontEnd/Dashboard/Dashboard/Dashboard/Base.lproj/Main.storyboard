@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -50,7 +50,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
                                 <rect key="frame" x="-1" y="99" width="601" height="173"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASS-Ei-5rG" userLabel="teamDaysWon">
@@ -222,7 +222,7 @@
                                     <rect key="frame" x="-1" y="99" width="401" height="170.5"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
                                 <rect key="frame" x="0.0" y="271" width="600" height="285"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khl-bs-IvO">
@@ -274,7 +274,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="50" y="244" width="300" height="30"/>
+                                            <rect key="frame" x="50" y="243" width="300" height="30"/>
                                             <mask key="constraints">
                                                 <include reference="jEt-AQ-YRc"/>
                                             </mask>
@@ -446,7 +446,7 @@
         <!--Profile-->
         <scene sceneID="rfv-YN-iZz">
             <objects>
-                <viewController id="Q37-or-oSm" customClass="profileViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" id="Q37-or-oSm" customClass="profileViewController" customModule="fittogethertwo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HBs-gz-c3u"/>
                         <viewControllerLayoutGuide type="bottom" id="2BH-8P-bVJ"/>
@@ -2797,7 +2797,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="McX-xx-4sc">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="McX-xx-4sc">
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
                                 <segments>
                                     <segment title="A to Z"/>
@@ -3021,6 +3021,8 @@
                                 <exclude reference="DhQ-s4-cfO"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="X0f-o1-h8d"/>
+                                <exclude reference="ecK-Hz-yR4"/>
                                 <exclude reference="7Cg-vM-2Wn"/>
                                 <exclude reference="RXb-Cm-DFs"/>
                                 <exclude reference="fcZ-a2-gd6"/>
@@ -3028,8 +3030,6 @@
                                 <exclude reference="Fzf-tx-UEC"/>
                                 <exclude reference="pd0-tG-ghf"/>
                                 <exclude reference="u1c-bl-QtS"/>
-                                <exclude reference="X0f-o1-h8d"/>
-                                <exclude reference="ecK-Hz-yR4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -3039,6 +3039,8 @@
                                 <include reference="DhQ-s4-cfO"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="X0f-o1-h8d"/>
+                                <include reference="ecK-Hz-yR4"/>
                                 <include reference="7Cg-vM-2Wn"/>
                                 <include reference="RXb-Cm-DFs"/>
                                 <include reference="fcZ-a2-gd6"/>
@@ -3046,8 +3048,6 @@
                                 <include reference="Fzf-tx-UEC"/>
                                 <include reference="pd0-tG-ghf"/>
                                 <include reference="u1c-bl-QtS"/>
-                                <exclude reference="X0f-o1-h8d"/>
-                                <include reference="ecK-Hz-yR4"/>
                             </mask>
                         </variation>
                     </view>
@@ -3307,8 +3307,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2gr-9S-zLf"/>
-        <segue reference="aOk-IB-dY0"/>
         <segue reference="yqg-5h-ykg"/>
+        <segue reference="aOk-IB-dY0"/>
         <segue reference="Cem-VI-By3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -44,19 +44,30 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         
         let item = self.fakeData![indexPath.row]
-        cell.textLabel?.text = item.name
+        cell.textLabel.text = item.name
         cell.detailTextLabel?.text = item.amtOfStepsWalked
         
         // var imageName = UIImage(named: fakeData[indexPath.row])
         var imageName = UIImage(named: "theDude.png")
-        cell.imageView?.image = imageName
-        
+        cell.imageView.image = imageName
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //load profile
+        let teamMember = self.fakeData![indexPath.row]
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        
+        let teamMemberProfile = storyboard.instantiateViewControllerWithIdentifier("profile") as profileViewController
+        
+        let teamMemberData = fakeData
+        teamMemberProfile.fakeData = teamMemberData
+        
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        self.navigationController?.pushViewController(teamMemberProfile, animated: true)
     }
 
     @IBAction func segmentedControl_Tapped(sender: AnyObject) {
