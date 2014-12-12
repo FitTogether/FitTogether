@@ -2992,14 +2992,35 @@
                                     <outlet property="delegate" destination="BTZ-RG-6Kz" id="76r-5r-wsG"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="IGV-s8-iCp">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="cyL-5l-hcK"/>
+                                    <constraint firstAttribute="height" constant="20" id="hq0-Qs-fGT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cyL-5l-hcK"/>
+                                        <exclude reference="hq0-Qs-fGT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cyL-5l-hcK"/>
+                                        <include reference="hq0-Qs-fGT"/>
+                                    </mask>
+                                </variation>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="IGV-s8-iCp" firstAttribute="trailing" secondItem="sfI-UX-uqZ" secondAttribute="trailingMargin" id="3LR-Mc-Xzt"/>
                             <constraint firstAttribute="trailing" secondItem="fTW-a1-m5g" secondAttribute="trailing" id="5qA-ZL-iQG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sQY-Po-uNg" secondAttribute="trailing" id="7Cg-vM-2Wn"/>
                             <constraint firstItem="fTW-a1-m5g" firstAttribute="top" secondItem="sQY-Po-uNg" secondAttribute="bottom" constant="4.5" id="E6O-Qf-ePE">
                                 <variation key="widthClass=compact" constant="10"/>
                             </constraint>
+                            <constraint firstItem="IGV-s8-iCp" firstAttribute="top" secondItem="nqM-gB-eXb" secondAttribute="bottom" constant="20" id="F2x-oH-chW"/>
                             <constraint firstItem="sQY-Po-uNg" firstAttribute="leading" secondItem="sfI-UX-uqZ" secondAttribute="leadingMargin" id="RXb-Cm-DFs"/>
                             <constraint firstItem="fTW-a1-m5g" firstAttribute="leading" secondItem="sfI-UX-uqZ" secondAttribute="leading" id="b30-cI-rKT"/>
                             <constraint firstItem="kum-BI-sQn" firstAttribute="top" secondItem="Rch-40-KtF" secondAttribute="bottom" id="ecK-Hz-yR4"/>
@@ -3017,6 +3038,7 @@
                                 <exclude reference="sQY-Po-uNg"/>
                                 <exclude reference="fTW-a1-m5g"/>
                                 <exclude reference="Rch-40-KtF"/>
+                                <exclude reference="IGV-s8-iCp"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7Cg-vM-2Wn"/>
@@ -3028,6 +3050,8 @@
                                 <exclude reference="jjL-Nb-BeX"/>
                                 <exclude reference="pd0-tG-ghf"/>
                                 <exclude reference="u1c-bl-QtS"/>
+                                <exclude reference="3LR-Mc-Xzt"/>
+                                <exclude reference="F2x-oH-chW"/>
                                 <exclude reference="ecK-Hz-yR4"/>
                             </mask>
                         </variation>
@@ -3036,6 +3060,7 @@
                                 <include reference="sQY-Po-uNg"/>
                                 <include reference="fTW-a1-m5g"/>
                                 <include reference="Rch-40-KtF"/>
+                                <include reference="IGV-s8-iCp"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="7Cg-vM-2Wn"/>
@@ -3047,12 +3072,15 @@
                                 <include reference="jjL-Nb-BeX"/>
                                 <include reference="pd0-tG-ghf"/>
                                 <include reference="u1c-bl-QtS"/>
+                                <include reference="3LR-Mc-Xzt"/>
+                                <include reference="F2x-oH-chW"/>
                                 <include reference="ecK-Hz-yR4"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Challenge Team" id="aif-HH-QAH"/>
                     <connections>
+                        <outlet property="activityBar" destination="IGV-s8-iCp" id="aJu-IG-QqD"/>
                         <outlet property="searchBar" destination="fTW-a1-m5g" id="F8K-fF-vSF"/>
                         <outlet property="searchDisplayController" destination="Wbw-SQ-aKh" id="qLk-DJ-Jft"/>
                         <outlet property="tableView" destination="Rch-40-KtF" id="CJ8-hc-oxw"/>

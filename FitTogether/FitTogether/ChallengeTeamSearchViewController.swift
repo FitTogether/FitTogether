@@ -14,6 +14,7 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var activityBar: UIActivityIndicatorView!
 
     var delegate: CloudKitQuery?
     
@@ -28,8 +29,17 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fakeData = teamData.passArrayOfData()
-        
+        //fakeData = teamData.passArrayOfData()
+        loadDataFromCloudKit()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func loadDataFromCloudKit() {
+        self.activityBar.startAnimating()
         ckData = ck.retriveRecords("Name", queryRecordType: "Team", completionHandler: { (ckData: [AnyObject]!) -> Void in
             for data: CKRecord in ckData as [CKRecord] {
                 var team = Team(name: "", steps: 0)
@@ -43,15 +53,10 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
                 self.teams.append(team)
                 dispatch_sync(dispatch_get_main_queue(), {
                     self.tableView.reloadData()
+                    self.activityBar.stopAnimating()
                 });
             }
         })
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
