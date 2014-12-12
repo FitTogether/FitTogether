@@ -31,10 +31,10 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     
     //Health Kit Stuff
     var hk = HealthKitData()
-    let steps = 4000
+    var steps = 4000
     var dailyGoal = 6000
-    let daysCompleted = 25
-    let daysTotal = 30
+    var daysCompleted = 25
+    var daysTotal = 30
     
     //Top Half Outlets
     @IBOutlet weak var opponetName: UILabel!
@@ -59,14 +59,26 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         initTeamLabels()
-        createProgressCircle()
-        initProgressBar()
-        hk.queryHealthKitSteps()
+        initStats()
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initStats() {
+        hk.queryYesterdaysHealthKitSteps({ (ckData: [AnyObject]!) -> Void in
+            var stepsYesterday = 0.0
+            for dataPoint: HKQuantitySample in ckData as [HKQuantitySample]{
+                let quantity: Double = dataPoint.quantity.doubleValueForUnit(HKUnit.countUnit())
+                stepsYesterday = stepsYesterday + quantity
+            }
+            self.steps = Int(stepsYesterday)
+            self.createProgressCircle()
+            self.initProgressBar()
+        })
     }
     
     func initTeamLabels() {
