@@ -12,10 +12,12 @@ import CloudKit
 
 class CloudKitHelper {
    
-    var container : CKContainer
-    var publicDB : CKDatabase
+    let container : CKContainer
+    let publicDB : CKDatabase
     let privateDB : CKDatabase
+    let handle : NSString?
     var error: Bool = false
+    
     
     init() {
         container = CKContainer.defaultContainer()
@@ -30,7 +32,20 @@ class CloudKitHelper {
             return false
         }
     }
-
+    
+    func getUserName() -> String {
+        var name = ""
+        container.fetchUserRecordIDWithCompletionHandler({ (recordId, error) in
+            self.container.requestApplicationPermission(CKApplicationPermissions.PermissionUserDiscoverability, completionHandler: { (status, error2) in
+                if status == CKApplicationPermissionStatus.Granted {
+                    self.container.discoverUserInfoWithUserRecordID(recordId, completionHandler: { (info, error3) in
+                        name = "\(info.firstName) \(info.lastName)"
+                    })
+                }
+            })
+        })
+        return name
+    }
     
     func saveRecord(record : NSString, tableName : NSString, forKey : NSString, isPrivate: Bool) {
         let todoRecord = CKRecord(recordType: tableName)

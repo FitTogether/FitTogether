@@ -12,25 +12,14 @@ import Foundation
 
 class User {
     
-    var cKit: CloudKitHelper = CloudKitHelper()
+    var name: String?
+    var steps: Int?
+    var pic: UIImage?
     
-    init() {
-        let predicate = NSPredicate(value: true)
-        let query = CKQuery(recordType: "User", predicate: predicate)
-        let sort = NSSortDescriptor(key: "Name", ascending: false)
-
-        cKit.privateDB.performQuery(query, inZoneWithID: nil, completionHandler: { (record, error) -> Void in
-            if error != nil {
-                NSLog("Error \(error)")
-            } else {
-                NSLog("Got Record \(record)")
-//                if let team = {
-//                    println("Cool")
-//                }
-                let records: [NSString : NSString] = ["Name": "DudeBrah", "Team": "No Team"]
-                self.cKit.saveRecord(records, tableName: "User", forKey: "Team", isPrivate: true)
-            }
-        })
+    init(name: String, steps: Int, pic: UIImage?) {
+        self.name = name
+        self.steps = steps
+        self.pic = pic
     }
     
 }
