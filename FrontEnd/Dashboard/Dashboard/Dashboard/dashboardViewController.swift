@@ -76,6 +76,7 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
                 stepsYesterday = stepsYesterday + quantity
             }
             self.steps = Int(stepsYesterday)
+            if self.steps <= 0 { self.steps = 1 }
             self.createProgressCircle()
             self.initProgressBar()
         })
