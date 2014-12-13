@@ -109,8 +109,10 @@ class profileViewController: UIViewController {
     func loadCloudKitData() {
         activityIndicator.startAnimating()
         ck.getUserName({ (name: String) -> Void in
+            var guestCheck = true
             if self.me.name == "" {
                 self.me.name = name
+                guestCheck = false
             }
             self.ck.retriveRecords("Name", queryRecordType: "User", completionHandler: { (ckData: [AnyObject]!) -> Void in
                 var check = false
@@ -135,18 +137,26 @@ class profileViewController: UIViewController {
                     }
                     if user.name == self.me.name {
                         check = true
-                        self.hk.queryLastMonthsHealthKitSteps({ (ckData: [AnyObject]!) -> Void in
-                            var stepsYesterday = 0.0
-                            for dataPoint: HKQuantitySample in ckData as [HKQuantitySample]{
-                                let quantity: Double = dataPoint.quantity.doubleValueForUnit(HKUnit.countUnit())
-                                stepsYesterday = stepsYesterday + quantity
-                            }
-                            self.me.steps = Int(stepsYesterday)
+                        if guestCheck == false {
+                            self.hk.queryLastMonthsHealthKitSteps({ (ckData: [AnyObject]!) -> Void in
+                                var stepsYesterday = 0.0
+                                for dataPoint: HKQuantitySample in ckData as [HKQuantitySample]{
+                                    let quantity: Double = dataPoint.quantity.doubleValueForUnit(HKUnit.countUnit())
+                                    stepsYesterday = stepsYesterday + quantity
+                                }
+                                self.me.steps = Int(stepsYesterday)
+                                self.me.pic = user.pic
+                                self.me.team = user.team!
+                                self.initProfilePic()
+                                self.activityIndicator.stopAnimating()
+                            })
+                        } else {
+                            self.me.steps = user.steps
                             self.me.pic = user.pic
                             self.me.team = user.team!
                             self.initProfilePic()
                             self.activityIndicator.stopAnimating()
-                        })
+                        }
                     }
                 }
                 if check == false {
