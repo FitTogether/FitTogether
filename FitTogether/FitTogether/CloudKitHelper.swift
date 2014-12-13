@@ -18,7 +18,6 @@ class CloudKitHelper {
     let handle : NSString?
     var error: Bool = false
     
-    
     init() {
         container = CKContainer.defaultContainer()
         publicDB = container.publicCloudDatabase
@@ -33,18 +32,16 @@ class CloudKitHelper {
         }
     }
     
-    func getUserName() -> String {
-        var name = ""
+    func getUserName(completionHandler: (String -> Void)) {
         container.fetchUserRecordIDWithCompletionHandler({ (recordId, error) in
             self.container.requestApplicationPermission(CKApplicationPermissions.PermissionUserDiscoverability, completionHandler: { (status, error2) in
                 if status == CKApplicationPermissionStatus.Granted {
                     self.container.discoverUserInfoWithUserRecordID(recordId, completionHandler: { (info, error3) in
-                        name = "\(info.firstName) \(info.lastName)"
+                         completionHandler("\(info.firstName) \(info.lastName)")
                     })
                 }
             })
         })
-        return name
     }
     
     func saveRecord(record : NSString, tableName : NSString, forKey : NSString, isPrivate: Bool) {

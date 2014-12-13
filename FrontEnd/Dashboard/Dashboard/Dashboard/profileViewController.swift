@@ -16,6 +16,8 @@
 // TEST COMMETIRWJO
 
 import UIKit
+import CloudKit
+import HealthKit
 
 class profileViewController: UIViewController {
     
@@ -24,8 +26,13 @@ class profileViewController: UIViewController {
     
     //insert team data
     var teamData = TeamData()
+    let ck = CloudKitHelper()
+    let hk = HealthKitData()
+    var me = User(name: "", steps: 0, pic: nil)
     var fakeData:[(name: String, amtOfStepsWalked: String)]?
     
+    
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var firstBadgeView: UIView!
     @IBOutlet weak var secondBadgeView: UIView!
@@ -33,6 +40,8 @@ class profileViewController: UIViewController {
     @IBOutlet weak var fourthBadgeView: UIView!
     
     @IBOutlet weak var teamLabel: UILabel!
+    @IBOutlet weak var stepsLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var firstBadge: UIImageView!
     @IBOutlet weak var secondBadge: UIImageView!
@@ -46,7 +55,7 @@ class profileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        initProfilePic()
+        loadCloudKitData()
         constrainBadgeBoxes()
         fakeData = teamData.passArrayOfData()//for TeamDataViewController didSelectAtIndex
     }
@@ -59,6 +68,12 @@ class profileViewController: UIViewController {
     //Creates Circle and mask around profile pic
     func initProfilePic() {
         //Rounded Border
+        nameLabel.text = me.name!
+        teamLabel.text = me.team!
+        stepsLabel.text = "\(me.steps!)"
+        if let image = me.pic? {
+            imageView.image = me.pic!
+        }
         imageView.backgroundColor = UIColor.clearColor()
         imageView.layer.cornerRadius = (imageView.frame.height/2)
         imageView.layer.borderWidth = 3.0
@@ -88,5 +103,63 @@ class profileViewController: UIViewController {
         
         presentViewController(controller, animated: true, completion: nil)
         
+    }
+    
+    //Load Cloud Kit Data For Given User
+    func loadCloudKitData() {
+        activityIndicator.startAnimating()
+        ck.getUserName({ (name: String) -> Void in
+            if self.me.name == "" {
+                self.me.name = name
+            }
+            self.ck.retriveRecords("Name", queryRecordType: "User", completionHandler: { (ckData: [AnyObject]!) -> Void in
+                var check = false
+                for data: CKRecord in ckData as [CKRecord] {
+                    var user = User(name: "", steps: 0, pic: nil)
+                    if let name: String = data.objectForKey("Name") as? String {
+                        user.name = data.objectForKey("Name") as? String
+                    }
+                    if let team: String = data.objectForKey("Team") as? String {
+                        user.team = data.objectForKey("Team") as? String
+                    }
+                    if let steps: Int = data.objectForKey("Steps") as? Int {
+                        user.steps = data.objectForKey("Steps") as? Int
+                    }
+                    
+                    let pic = data.objectForKey("Picture") as CKAsset!
+                    if let asset = pic {
+                        if let url = asset.fileURL {
+                            let imageData = NSData(contentsOfFile: url.path!)!
+                            user.pic = UIImage(data: imageData)
+                        }
+                    }
+                    if user.name == self.me.name {
+                        check = true
+                        self.hk.queryLastMonthsHealthKitSteps({ (ckData: [AnyObject]!) -> Void in
+                            var stepsYesterday = 0.0
+                            for dataPoint: HKQuantitySample in ckData as [HKQuantitySample]{
+                                let quantity: Double = dataPoint.quantity.doubleValueForUnit(HKUnit.countUnit())
+                                stepsYesterday = stepsYesterday + quantity
+                            }
+                            self.me.steps = Int(stepsYesterday)
+                            self.me.pic = user.pic
+                            self.me.team = user.team!
+                            self.initProfilePic()
+                            self.activityIndicator.stopAnimating()
+                        })
+                    }
+                }
+                if check == false {
+                    self.ck.saveRecord(self.me.name!, tableName: "User", forKey: "Name", isPrivate: false)
+                    self.me.steps = 0
+                    self.me.team = "Flying Solo"
+                    self.initProfilePic()
+                    self.activityIndicator.stopAnimating()
+                }
+            })
+            
+        })
+
+
     }
 }

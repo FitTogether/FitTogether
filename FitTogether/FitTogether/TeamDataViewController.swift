@@ -41,7 +41,6 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
                 var user = User(name: "", steps: 0, pic: nil)
                 if let name: String = data.objectForKey("Name") as? String {
                     user.name = data.objectForKey("Name") as? String
-                    println(user.name?)
                 }
                 if let steps: Int = data.objectForKey("Steps") as? Int {
                     user.steps = data.objectForKey("Steps") as? Int
@@ -90,14 +89,16 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //load profile
-        let teamMember = self.fakeData![indexPath.row]
+        let teamMember = self.users[indexPath.row]
         
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         
         let teamMemberProfile = storyboard.instantiateViewControllerWithIdentifier("profile") as profileViewController
         
-        let teamMemberData = fakeData
-        teamMemberProfile.fakeData = teamMemberData
+        teamMemberProfile.me.pic = teamMember.pic
+        teamMemberProfile.me.name = teamMember.name
+        teamMemberProfile.me.steps = teamMember.steps
+        teamMemberProfile.me.team = teamMember.team
         
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
@@ -109,20 +110,45 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
         switch sender.selectedSegmentIndex {
         case 0:
             //List users by A - Z
-            fakeData = teamData.AtoZ()
+            users = AtoZ()
             self.tableView.reloadData()
             
         case 1:
             //List users by Most Steps
-            fakeData = teamData.HighToLow()
+            users = HighToLow()
             tableView.reloadData()
         case 2:
             //List users by Least Steps
-            fakeData = teamData.LowToHigh()
+            users = LowToHigh()
             tableView.reloadData()
         default:
             break
             
         }
     }
+    
+    //func to sort team members by A - Z
+    //func will return array of sorted team members to be used by controller
+    func AtoZ() -> [User] {
+        var anArray = users
+        anArray.sort {$0.name != $1.name ? $0.name < $1.name : $0.name > $1.name}
+        return anArray
+    }
+    
+    //func to sort team members by steps high - low
+    //func will return array of sorted team members to be used by controller
+    func HighToLow() -> [User] {
+        var anArray = users
+        anArray.sort {$0.steps != $1.steps ? $0.steps > $1.steps : $0.steps < $1.steps}
+        return anArray
+    }
+    
+    //func to sort team members by steps low - high
+    //func will return array of sorted team members to be used by controller
+    func LowToHigh() -> [User] {
+        var anArray = users
+        anArray.sort {$0.steps != $1.steps ? $0.steps < $1.steps : $0.steps < $1.steps}
+        return anArray
+    }
+    
 }
