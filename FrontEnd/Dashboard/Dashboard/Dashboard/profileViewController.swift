@@ -55,9 +55,16 @@ class profileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCloudKitData()
+        if me.team == nil {
+            me.team = ""
+        }
+        if me.name == "" && me.steps == 0 && me.pic == nil {
+            loadCloudKitData()
+        } else {
+            initProfilePic()
+        }
         constrainBadgeBoxes()
-        fakeData = teamData.passArrayOfData()//for TeamDataViewController didSelectAtIndex
+        //fakeData = teamData.passArrayOfData()//for TeamDataViewController didSelectAtIndex
     }
     
     override func didReceiveMemoryWarning() {

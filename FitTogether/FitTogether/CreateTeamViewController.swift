@@ -15,11 +15,12 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var teamCreatedLabel: UILabel!
     @IBOutlet weak var teamCreatedDescription: UILabel!
     
+    let ck = CloudKitHelper()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         teamCreatedLabel.text = ""
         teamCreatedDescription.text = ""
-        
         // Do any additional setup after loading the view.
     }
     
