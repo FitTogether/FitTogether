@@ -27,8 +27,9 @@ class TeamData: NSObject {
         super.init()
     }
 
+
     var teamDataArray:[(name: String, amtOfStepsWalked: String)] = [(name: "Bart", amtOfStepsWalked: "2000"), (name: "Adam", amtOfStepsWalked: "3000"), (name: "Chris", amtOfStepsWalked: "1000"), (name: "Dave", amtOfStepsWalked: "5000"), (name: "Justin", amtOfStepsWalked: "4000"), (name: "Scott", amtOfStepsWalked: "9000"), (name: "Pete", amtOfStepsWalked: "8000"), (name: "Matt", amtOfStepsWalked: "9000"), (name: "Tyler", amtOfStepsWalked: "0"), (name: "Aaron", amtOfStepsWalked: "7500"), (name: "Jill", amtOfStepsWalked: "6000"), (name: "Jack", amtOfStepsWalked: "4000"), (name: "Frank", amtOfStepsWalked: "1000"), (name: "Tim", amtOfStepsWalked: "4000")]
-    
+
     
     func passArrayOfData()-> [(name: String, amtOfStepsWalked: String)]{
         

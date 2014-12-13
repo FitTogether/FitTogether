@@ -34,6 +34,7 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
+    /*need to move to TeamData.swift*/
     func loadDataFromCloudKit() {
         self.activityBar.startAnimating()
         ckData = ck.retriveRecords("Name", queryRecordType: "User", completionHandler: { (ckData: [AnyObject]!) -> Void in
