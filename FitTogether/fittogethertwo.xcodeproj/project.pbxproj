@@ -29,6 +29,7 @@
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
+		F2A1894D1A3CC2B700763575 /* blankProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A1894C1A3CC2B700763575 /* blankProfile.png */; };
 		F2D9CAEF1A3A112700609476 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CAEE1A3A112700609476 /* Team.swift */; };
 		F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615B1A38F0AA00A5277C /* TabBarController.swift */; };
 		F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615D1A38F27000A5277C /* HealthKitData.swift */; };
@@ -75,6 +76,7 @@
 		F28B008F1A0A833800A5891F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
+		F2A1894C1A3CC2B700763575 /* blankProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blankProfile.png; sourceTree = "<group>"; };
 		F2D9CAEE1A3A112700609476 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		F2ED615B1A38F0AA00A5277C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F2ED615D1A38F27000A5277C /* HealthKitData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitData.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		F2F614B41A34E70D00CB65E6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F2A1894C1A3CC2B700763575 /* blankProfile.png */,
 				F243548C1A37BF4900AD26CC /* theDude2.png */,
 				F2F614CE1A351F1F00CB65E6 /* theDude.png */,
 				F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */,
@@ -345,6 +348,7 @@
 				F243548F1A37D2E300AD26CC /* badgeIcon2.png in Resources */,
 				F2F614B71A34E76800CB65E6 /* Settings.bundle in Resources */,
 				F28B00901A0A833800A5891F /* Images.xcassets in Resources */,
+				F2A1894D1A3CC2B700763575 /* blankProfile.png in Resources */,
 				F243549F1A37E8F900AD26CC /* team_grey.png in Resources */,
 				232BEBBF1A1ED61A00075DC7 /* Main.storyboard in Resources */,
 				F2F614BF1A34EFE800CB65E6 /* threeRunningMen.png in Resources */,

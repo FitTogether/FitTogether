@@ -15,6 +15,7 @@ class User {
     var name: String?
     var steps: Int?
     var pic: UIImage?
+    var team: String?
     
     init(name: String, steps: Int, pic: UIImage?) {
         self.name = name

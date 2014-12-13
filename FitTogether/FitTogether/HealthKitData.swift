@@ -57,21 +57,38 @@ class HealthKitData {
         healthStore?.executeQuery(query)
     }
     
-    func queryHealthKitSteps(startDate: NSDate, endDate: NSDate) -> Int {
+    func queryLastMonthsHealthKitSteps(completionHandler: ([AnyObject] -> Void)) {
+        let endDate = NSDate()
+        let startDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.MonthCalendarUnit,value: -1, toDate: endDate, options: nil)
+        
         let stepsSampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)
         let predicate = HKQuery.predicateForSamplesWithStartDate(startDate, endDate: endDate, options: .None)
         
-        let query = HKSampleQuery(sampleType: stepsSampleType, predicate: predicate,limit: 1, sortDescriptors: nil, resultsHandler: {(query, results, error) in
+        let query = HKSampleQuery(sampleType: stepsSampleType, predicate: predicate,limit: 100, sortDescriptors: nil, resultsHandler: {(query, results, error) in
             if results == nil {
                 println("There was an error running the query: \(error)")
             }
             dispatch_async(dispatch_get_main_queue()) {
-                self.dailySteps = results as [HKQuantitySample]
-
+                
+                completionHandler(results)
             }
         })
         healthStore?.executeQuery(query)
-        return dailySteps.count
+    }
+    
+    func queryHealthKitSteps(startDate: NSDate, endDate: NSDate, completionHandler: ([AnyObject] -> Void)) {
+        let stepsSampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)
+        let predicate = HKQuery.predicateForSamplesWithStartDate(startDate, endDate: endDate, options: .None)
+        
+        let query = HKSampleQuery(sampleType: stepsSampleType, predicate: predicate,limit: 100, sortDescriptors: nil, resultsHandler: {(query, results, error) in
+            if results == nil {
+                println("There was an error running the query: \(error)")
+            }
+            dispatch_async(dispatch_get_main_queue()) {
+                completionHandler(results)
+            }
+        })
+        healthStore?.executeQuery(query)
     }
     
     func saveSampleToHealthStore(sample: HKObject) {
