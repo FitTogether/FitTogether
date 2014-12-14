@@ -34,32 +34,47 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     /*need to move to TeamData.swift*/
+    
+    
     func loadDataFromCloudKit() {
         self.activityBar.startAnimating()
-        ckData = ck.retriveRecords("Name", queryRecordType: "User", completionHandler: { (ckData: [AnyObject]!) -> Void in
-            for data: CKRecord in ckData as [CKRecord] {
-                var user = User(name: "", steps: 0, pic: nil)
-                if let name: String = data.objectForKey("Name") as? String {
-                    user.name = data.objectForKey("Name") as? String
+        
+        ck.getUserName( { (userName) -> Void in
+            self.ck.retriveRecords(userName, completionHandler: { (record) -> Void in
+                if let myTeam = record.objectForKey("Team") as? String {
+                    self.teamNameLabel.text = myTeam
+                    self.ckData = self.ck.retriveRecords("Name", queryRecordType: "User", completionHandler: { (ckData: [AnyObject]!) -> Void in
+                        for data: CKRecord in ckData as [CKRecord] {
+                            var user = User(name: "", steps: 0, pic: nil)
+                            var onMyTeam = ""
+                            if let name: String = data.objectForKey("Name") as? String {
+                                user.name = name
+                            }
+                            if let steps: Int = data.objectForKey("Steps") as? Int {
+                                user.steps = steps
+                            }
+                            if let team: String = data.objectForKey("Team") as? String {
+                                onMyTeam = team
+                            }
+                            let pic = data.objectForKey("Picture") as CKAsset!
+                            if let asset = pic {
+                                if let url = asset.fileURL {
+                                    let imageData = NSData(contentsOfFile: url.path!)!
+                                    user.pic = UIImage(data: imageData)
+                                }
+                            }
+                            
+                            if myTeam == onMyTeam {
+                                self.users.append(user)
+                            }
+                            dispatch_sync(dispatch_get_main_queue(), {
+                                self.tableView.reloadData()
+                                self.activityBar.stopAnimating()
+                            });
+                        }
+                    })
                 }
-                if let steps: Int = data.objectForKey("Steps") as? Int {
-                    user.steps = data.objectForKey("Steps") as? Int
-                }
-                
-                let pic = data.objectForKey("Picture") as CKAsset!
-                if let asset = pic {
-                    if let url = asset.fileURL {
-                        let imageData = NSData(contentsOfFile: url.path!)!
-                        user.pic = UIImage(data: imageData)
-                    }
-                }
-
-                self.users.append(user)
-                dispatch_sync(dispatch_get_main_queue(), {
-                    self.tableView.reloadData()
-                    self.activityBar.stopAnimating()
-                });
-            }
+            })
         })
     }
     

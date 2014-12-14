@@ -16,6 +16,7 @@
 
 import UIKit
 import HealthKit
+import CloudKit
 
 class dashboardViewController: UIViewController, writeValueBackDelegate {
 
@@ -30,11 +31,12 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     
     
     //Health Kit Stuff
-    var hk = HealthKitData()
+    let hk = HealthKitData()
+    let ck = CloudKitHelper()
     var steps = 4000
     var dailyGoal = 6000
-    var daysCompleted = 25
-    var daysTotal = 30
+    var daysCompleted = 3
+    var daysTotal = 31
     
     //Top Half Outlets
     @IBOutlet weak var opponetName: UILabel!
@@ -43,6 +45,8 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     @IBOutlet weak var teamAvgSteps: UILabel!
     @IBOutlet weak var opponetDaysWon: UILabel!
     @IBOutlet weak var opponetAvgSteps: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var daysCompletedLabel: UILabel!
     
     
     //Bottom Half Outlets
@@ -60,12 +64,57 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
         super.viewDidLoad()
         initTeamLabels()
         initStats()
-
+        initSelfAndTeamStats()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initSelfAndTeamStats() {
+        self.activityIndicator.startAnimating()
+        
+        ck.getUserName( { (userName) -> Void in
+            self.ck.retriveRecords(userName, completionHandler: { (record: CKRecord) -> Void in
+                var myTeam: String = ""
+                if let team: String = record.objectForKey("Team") as? String {
+                    myTeam = team
+                    self.teamName.text = "\(team)"
+                }
+                
+                self.ck.retriveRecords(myTeam, completionHandler: { (record: CKRecord) -> Void in
+                    var mySteps = 0
+                    var myOpponent = ""
+                    if let steps: Int = record.objectForKey("Steps") as? Int {
+                        mySteps = steps
+                        self.teamAvgSteps.text = "\(steps)"
+                    }
+                    if let opponent: String = record.objectForKey("Opponent") as? String {
+                        myOpponent = opponent
+                        self.opponetName.text = "\(opponent)"
+                    }
+                    self.ck.retriveRecords(myOpponent, completionHandler: { (record: CKRecord) -> Void in
+                        var opSteps = 0
+                        if let steps: Int = record.objectForKey("Steps") as? Int {
+                            opSteps = steps
+                            self.opponetAvgSteps.text = "\(steps)"
+                        }
+                        self.teamDaysWon.text = "\(0)"
+                        self.opponetDaysWon.text = "\(0)"
+                        self.activityIndicator.stopAnimating()
+                    })
+                })
+                
+            })
+        })
+        
+//        if let name: String = data.objectForKey("Name") as? String {
+//            user.name = data.objectForKey("Name") as? String
+//        }
+
+        
+
     }
     
     func initStats() {
@@ -80,18 +129,19 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
             self.createProgressCircle()
             self.initProgressBar()
         })
+        daysCompletedLabel.text = "\(daysCompleted)/\(daysTotal) Days Completed"
     }
     
     func initTeamLabels() {
         //Todo Health Kit 
-        teamName.text = "Team Zulu"
-        opponetName.text = "Columbia College CS"
+        teamName.text = "..."
+        opponetName.text = "..."
         
-        teamDaysWon.text = "15"
-        opponetDaysWon.text = "7"
+        teamDaysWon.text = "..."
+        opponetDaysWon.text = "..."
         
-        teamAvgSteps.text = "4431"
-        opponetAvgSteps.text = "3338"
+        teamAvgSteps.text = "..."
+        opponetAvgSteps.text = "..."
     }
     
     override func viewDidDisappear(animated: Bool) {

@@ -387,12 +387,34 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="5B2-Rl-Ahq">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="4Ln-94-rqS"/>
+                                    <constraint firstAttribute="width" constant="20" id="p1L-sX-Op3"/>
+                                </constraints>
+                                <color key="color" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Ln-94-rqS"/>
+                                        <exclude reference="p1L-sX-Op3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4Ln-94-rqS"/>
+                                        <include reference="p1L-sX-Op3"/>
+                                    </mask>
+                                </variation>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sWD-0j-koX" firstAttribute="top" secondItem="gmd-o2-T0U" secondAttribute="bottom" constant="6" id="7pU-Yp-dx8"/>
+                            <constraint firstAttribute="centerX" secondItem="5B2-Rl-Ahq" secondAttribute="centerX" id="91o-Oe-Nb6"/>
                             <constraint firstItem="gmd-o2-T0U" firstAttribute="leading" secondItem="h9x-Ns-JGt" secondAttribute="leadingMargin" id="B9B-ZT-i1W"/>
                             <constraint firstItem="sWD-0j-koX" firstAttribute="leading" secondItem="h9x-Ns-JGt" secondAttribute="leading" constant="-1" id="FZ2-ch-SIr"/>
+                            <constraint firstItem="gmd-o2-T0U" firstAttribute="top" secondItem="5B2-Rl-Ahq" secondAttribute="bottom" constant="-19" id="JzH-zp-Q8X"/>
                             <constraint firstItem="AIn-PS-Skg" firstAttribute="top" secondItem="WbN-65-pzs" secondAttribute="bottom" id="Otp-au-7JP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gmd-o2-T0U" secondAttribute="centerX" id="R1t-CO-1I9"/>
                             <constraint firstItem="gmd-o2-T0U" firstAttribute="top" secondItem="72V-ok-dRc" secondAttribute="bottom" constant="8" id="Tz7-0b-WHi"/>
@@ -408,8 +430,22 @@
                             <constraint firstItem="WbN-65-pzs" firstAttribute="leading" secondItem="h9x-Ns-JGt" secondAttribute="leading" id="sgC-6e-GgD"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5B2-Rl-Ahq"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="JzH-zp-Q8X"/>
                                 <exclude reference="cMm-36-tX6"/>
+                                <exclude reference="91o-Oe-Nb6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5B2-Rl-Ahq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JzH-zp-Q8X"/>
+                                <include reference="91o-Oe-Nb6"/>
                             </mask>
                         </variation>
                     </view>
@@ -423,9 +459,11 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="5B2-Rl-Ahq" id="soY-My-wi9"/>
                         <outlet property="circleView" destination="WbN-65-pzs" id="otx-ED-TeH"/>
                         <outlet property="dailyGoalHiddenButton" destination="8Fe-2x-G8J" id="T9P-LM-jOW"/>
                         <outlet property="dailyGoalLabel" destination="LbB-MR-B7F" id="w4O-G6-RfP"/>
+                        <outlet property="daysCompletedLabel" destination="CEI-Pd-Orw" id="gGK-dl-2d5"/>
                         <outlet property="opponetAvgSteps" destination="E4I-ae-YZx" id="ngr-HV-05f"/>
                         <outlet property="opponetDaysWon" destination="uNO-Nf-nKy" id="7iV-w1-pNf"/>
                         <outlet property="opponetName" destination="jaS-cC-7jB" id="CJf-cG-lin"/>
@@ -2888,7 +2926,7 @@
                                     <action selector="segmentedControl_Tapped:" destination="6Q7-04-ZlQ" eventType="valueChanged" id="6Rk-oA-bBa"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Bravo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-Ud-oG5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-Ud-oG5">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

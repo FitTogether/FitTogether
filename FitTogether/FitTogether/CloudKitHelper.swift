@@ -166,4 +166,17 @@ class CloudKitHelper {
         }
         return "Error"
     }
+   
+    func retriveRecords(recordId: NSString, completionHandler: (CKRecord -> Void)) {
+        let ckRecordId = CKRecordID(recordName: recordId)
+        
+        publicDB.fetchRecordWithID(ckRecordId, completionHandler: { (record, error) -> Void in
+            if error != nil {
+                completionHandler(CKRecord(recordType: "Error"))
+                println(error)
+            } else {
+                completionHandler(record)
+            }
+        })
+    }
 }
