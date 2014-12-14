@@ -127,11 +127,25 @@ class CloudKitHelper {
         }
     }
     
-    func modifyRecord(record : NSString, tableName : NSString, forKey : NSString, recordId: NSString, isPrivate: Bool) {
-        let ckRecordId = CKRecordID(recordName: recordId)
-        let todoRecord = CKRecord(recordType: tableName, recordID: ckRecordId)
-        let operation = CKModifyRecordsOperation(recordsToSave: [todoRecord], recordIDsToDelete: nil)
-        publicDB.addOperation(operation)
+    func updateRecord(rec: CKRecord, callback:((success: Bool) -> ())?) {
+        let updateOperation = CKModifyRecordsOperation(recordsToSave: [rec], recordIDsToDelete: nil)
+        updateOperation.perRecordCompletionBlock = { record, error in
+            if error != nil {
+                // Really important to handle this here
+                println("Unable to modify record: \(record). Error: \(error)")
+            }
+        }
+        updateOperation.modifyRecordsCompletionBlock = { saved, _, error in
+            if error != nil {
+                if error.code == CKErrorCode.PartialFailure.rawValue {
+                    println("There was a problem completing the operation. The following records had problems: \(error.userInfo?[CKPartialErrorsByItemIDKey])")
+                }
+                callback?(success: false)
+            } else {
+                callback?(success: true)
+            }
+        }
+        publicDB.addOperation(updateOperation)
     }
     
     func retriveRecords(sortKey: NSString, queryRecordType: NSString, completionHandler: ([AnyObject] -> Void)) -> AnyObject {
