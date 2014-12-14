@@ -41,9 +41,15 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
     @IBAction func createTeamPressed(sender: AnyObject) {
         teamNameTextField.resignFirstResponder()
         descriptionTextField.resignFirstResponder()
+        
+        //save record with cloudkit
+        ck.saveRecord(teamNameTextField, tableName: "Team", forKey: "Name", isPrivate: "false", completionHandler:)
+        
         teamCreatedLabel.text = "Team Created!"
         teamCreatedDescription.text = "Welcome to your new team, \(teamNameTextField.text)."
     }
+    
+    
     /*
     // MARK: - Navigation
     
