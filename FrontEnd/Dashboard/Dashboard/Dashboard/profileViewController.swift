@@ -165,7 +165,10 @@ class profileViewController: UIViewController {
                     }
                 }
                 if check == false {
-                    self.ck.saveRecord(self.me.name!, tableName: "User", forKey: "Name", isPrivate: false)
+//                    self.ck.saveRecord(self.me.name!, tableName: "User", forKey: "Name", recordId: self.me.name!, isPrivate: false)
+                    self.ck.saveRecord(self.me.name!, tableName: "User", forKey: "Name", recordId: self.me.name!, isPrivate: false, completionHandler: { (record) -> Void in
+                        println("Good")
+                    })
                     self.me.steps = 0
                     self.me.team = "Flying Solo"
                     self.initProfilePic()
