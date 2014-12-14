@@ -102,6 +102,9 @@ class CloudKitHelper {
                     NSLog("Saved to cloud kit \(record)")
                     if let testRecord = record {
                         completionHandler(testRecord)
+                    } else {
+                        println("Error Saving Record")
+                        completionHandler(CKRecord(recordType: "Error"))
                     }
                 }
             })

@@ -15,6 +15,8 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var teamCreatedLabel: UILabel!
     @IBOutlet weak var teamCreatedDescription: UILabel!
     
+    @IBOutlet weak var teamCreatedAcitivityIcon: UIActivityIndicatorView!
+    
     let ck = CloudKitHelper()
     
     override func viewDidLoad() {
@@ -43,10 +45,12 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         descriptionTextField.resignFirstResponder()
         
         //save record with cloudkit
-        ck.saveRecord(teamNameTextField, tableName: "Team", forKey: "Name", recordId: "Name", isPrivate: false, completionHandler: )
-        
-        teamCreatedLabel.text = "Team Created!"
-        teamCreatedDescription.text = "Welcome to your new team, \(teamNameTextField.text)."
+        self.teamCreatedAcitivityIcon.startAnimating()
+        ck.saveRecord(self.teamNameTextField.text, tableName: "Team", forKey: "Name", recordId: self.teamNameTextField.text, isPrivate: false, completionHandler: {(record) -> Void in
+                self.teamCreatedLabel.text = "Team Created!"
+                self.teamCreatedDescription.text = "Welcome to your new team, \(self.teamNameTextField.text)."
+                self.teamCreatedAcitivityIcon.stopAnimating()
+        })
     }
     
     
