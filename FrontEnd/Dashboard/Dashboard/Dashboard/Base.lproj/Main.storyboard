@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -50,7 +50,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
                                 <rect key="frame" x="-1" y="99" width="601" height="173"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASS-Ei-5rG" userLabel="teamDaysWon">
@@ -219,7 +219,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
                                 <rect key="frame" x="0.0" y="271" width="600" height="285"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khl-bs-IvO">
@@ -3642,23 +3642,23 @@
                                 <exclude reference="zBV-yu-0Gi"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="MkW-tD-vds"/>
-                                <exclude reference="90t-fe-fld"/>
+                                <exclude reference="hek-Tk-Of8"/>
+                                <exclude reference="tTY-ax-ZMF"/>
                                 <exclude reference="2lS-80-GbZ"/>
                                 <exclude reference="NbG-oN-TZm"/>
                                 <exclude reference="V3X-EV-REg"/>
-                                <exclude reference="EHI-9I-9f1"/>
-                                <exclude reference="241-Uu-q1R"/>
-                                <exclude reference="RQ9-v5-pIG"/>
-                                <exclude reference="xn6-mL-IQ9"/>
-                                <exclude reference="gdj-wR-3tX"/>
                                 <exclude reference="Qs4-UW-g4A"/>
+                                <exclude reference="gdj-wR-3tX"/>
                                 <exclude reference="mrn-mi-q8l"/>
+                                <exclude reference="xn6-mL-IQ9"/>
+                                <exclude reference="90t-fe-fld"/>
+                                <exclude reference="MkW-tD-vds"/>
                                 <exclude reference="0YB-v8-8rw"/>
                                 <exclude reference="H96-Ti-vYG"/>
                                 <exclude reference="ggX-PF-ZwU"/>
-                                <exclude reference="tTY-ax-ZMF"/>
-                                <exclude reference="hek-Tk-Of8"/>
+                                <exclude reference="241-Uu-q1R"/>
+                                <exclude reference="EHI-9I-9f1"/>
+                                <exclude reference="RQ9-v5-pIG"/>
                                 <exclude reference="DVo-rd-2Ec"/>
                                 <exclude reference="RAR-NS-8PP"/>
                                 <exclude reference="rZ2-wD-Qno"/>
@@ -3675,23 +3675,23 @@
                                 <include reference="zBV-yu-0Gi"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="MkW-tD-vds"/>
-                                <include reference="90t-fe-fld"/>
+                                <include reference="hek-Tk-Of8"/>
+                                <include reference="tTY-ax-ZMF"/>
                                 <include reference="2lS-80-GbZ"/>
                                 <exclude reference="NbG-oN-TZm"/>
                                 <include reference="V3X-EV-REg"/>
-                                <include reference="EHI-9I-9f1"/>
-                                <include reference="241-Uu-q1R"/>
-                                <include reference="RQ9-v5-pIG"/>
-                                <include reference="xn6-mL-IQ9"/>
-                                <include reference="gdj-wR-3tX"/>
                                 <include reference="Qs4-UW-g4A"/>
+                                <include reference="gdj-wR-3tX"/>
                                 <include reference="mrn-mi-q8l"/>
+                                <include reference="xn6-mL-IQ9"/>
+                                <include reference="90t-fe-fld"/>
+                                <include reference="MkW-tD-vds"/>
                                 <include reference="0YB-v8-8rw"/>
                                 <include reference="H96-Ti-vYG"/>
                                 <include reference="ggX-PF-ZwU"/>
-                                <include reference="tTY-ax-ZMF"/>
-                                <include reference="hek-Tk-Of8"/>
+                                <include reference="241-Uu-q1R"/>
+                                <include reference="EHI-9I-9f1"/>
+                                <include reference="RQ9-v5-pIG"/>
                                 <include reference="DVo-rd-2Ec"/>
                                 <include reference="RAR-NS-8PP"/>
                                 <include reference="rZ2-wD-Qno"/>
