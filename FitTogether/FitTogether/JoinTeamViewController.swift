@@ -11,6 +11,8 @@ import UIKit
 class JoinTeamViewController: UIViewController {
     
     let ck = CloudKitHelper()
+    @IBOutlet weak var teamCodeInputBox: UITextField!
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,9 @@ class JoinTeamViewController: UIViewController {
     }
     
     @IBAction func goButtonPressed(sender: AnyObject) {
-        
+        ck.getUserName({ (name) -> Void in
+            self.ck.modifyRecord(self.teamCodeInputBox.text, tableName: "User", forKey: "Team", recordId: name, isPrivate: false)
+        })
     }
     /*
     // MARK: - Navigation

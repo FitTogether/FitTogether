@@ -250,11 +250,14 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Goal: 60000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-MR-B7F">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Goal: 6000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-MR-B7F">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="151" y="144" width="99" height="30"/>
+                                        </variation>
                                     </label>
                                     <progressView opaque="NO" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-zo-7gB">
                                         <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
@@ -288,6 +291,9 @@
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="151" y="139" width="99" height="30"/>
+                                        </variation>
                                         <connections>
                                             <segue destination="z8H-mk-FPl" kind="show" identifier="dailyStepCountSegue" id="jMy-jT-WyU"/>
                                         </connections>
@@ -2251,11 +2257,14 @@
                                     <action selector="goButtonPressed:" destination="Ktn-mV-A6Y" eventType="touchUpInside" id="oMk-YS-J97"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mizzou IT4500 Team Zulu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abS-Dx-t3m">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abS-Dx-t3m">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.11372549019607843" green="0.34901960784313724" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="184" width="368" height="21"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGe-Oz-gCp">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -2277,12 +2286,15 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="We are the team of Mizzou students in Mobile App Dev IT4500. Columbia, MO." translatesAutoresizingMaskIntoConstraints="NO" id="0Z4-qj-TTL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Z4-qj-TTL">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.13725490196078433" green="0.42352941176470588" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="225" width="368" height="172"/>
+                                </variation>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter team code to join: " borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v66-cW-efL">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -2306,6 +2318,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AoM-YF-gsm" firstAttribute="leading" secondItem="v66-cW-efL" secondAttribute="trailing" constant="-30" id="1EZ-Rd-uqO">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="abS-Dx-t3m" secondAttribute="trailing" constant="172" id="3m1-9n-eaR">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="abS-Dx-t3m" firstAttribute="centerX" secondItem="v66-cW-efL" secondAttribute="centerX" id="6OS-fW-L8t"/>
@@ -2359,17 +2374,20 @@
                                 <exclude reference="v66-cW-efL"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="UJk-yo-4x7"/>
+                                <exclude reference="ArG-L7-rjd"/>
+                                <exclude reference="C1s-hf-Hmx"/>
+                                <exclude reference="Vk5-aC-bON"/>
+                                <exclude reference="m4m-N5-1eL"/>
+                                <exclude reference="3m1-9n-eaR"/>
                                 <exclude reference="6OS-fW-L8t"/>
                                 <exclude reference="738-W6-bKZ"/>
                                 <exclude reference="ANh-uH-MPQ"/>
                                 <exclude reference="dmb-Yg-bZH"/>
                                 <exclude reference="ekz-2T-TI8"/>
                                 <exclude reference="vgj-GP-c3K"/>
-                                <exclude reference="ArG-L7-rjd"/>
-                                <exclude reference="C1s-hf-Hmx"/>
-                                <exclude reference="Vk5-aC-bON"/>
-                                <exclude reference="m4m-N5-1eL"/>
+                                <exclude reference="AJx-4O-Uuq"/>
+                                <exclude reference="mUk-oJ-NFN"/>
+                                <exclude reference="zmq-Ai-OYj"/>
                                 <exclude reference="1EZ-Rd-uqO"/>
                                 <exclude reference="SPi-uO-bZM"/>
                                 <exclude reference="mKv-aG-pII"/>
@@ -2380,9 +2398,7 @@
                                 <exclude reference="fEH-3b-AVD"/>
                                 <exclude reference="rYx-sZ-8lb"/>
                                 <exclude reference="twy-dD-mH9"/>
-                                <exclude reference="AJx-4O-Uuq"/>
-                                <exclude reference="mUk-oJ-NFN"/>
-                                <exclude reference="zmq-Ai-OYj"/>
+                                <exclude reference="UJk-yo-4x7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -2394,17 +2410,20 @@
                                 <include reference="v66-cW-efL"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="UJk-yo-4x7"/>
+                                <include reference="ArG-L7-rjd"/>
+                                <exclude reference="C1s-hf-Hmx"/>
+                                <exclude reference="Vk5-aC-bON"/>
+                                <include reference="m4m-N5-1eL"/>
+                                <include reference="3m1-9n-eaR"/>
                                 <exclude reference="6OS-fW-L8t"/>
                                 <exclude reference="738-W6-bKZ"/>
                                 <exclude reference="ANh-uH-MPQ"/>
                                 <include reference="dmb-Yg-bZH"/>
                                 <include reference="ekz-2T-TI8"/>
                                 <exclude reference="vgj-GP-c3K"/>
-                                <include reference="ArG-L7-rjd"/>
-                                <exclude reference="C1s-hf-Hmx"/>
-                                <exclude reference="Vk5-aC-bON"/>
-                                <include reference="m4m-N5-1eL"/>
+                                <include reference="AJx-4O-Uuq"/>
+                                <include reference="mUk-oJ-NFN"/>
+                                <include reference="zmq-Ai-OYj"/>
                                 <include reference="1EZ-Rd-uqO"/>
                                 <exclude reference="SPi-uO-bZM"/>
                                 <include reference="mKv-aG-pII"/>
@@ -2415,13 +2434,15 @@
                                 <include reference="fEH-3b-AVD"/>
                                 <include reference="rYx-sZ-8lb"/>
                                 <include reference="twy-dD-mH9"/>
-                                <include reference="AJx-4O-Uuq"/>
-                                <include reference="mUk-oJ-NFN"/>
-                                <include reference="zmq-Ai-OYj"/>
+                                <include reference="UJk-yo-4x7"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Join a Team" id="2SD-5i-tex"/>
+                    <connections>
+                        <outlet property="teamCodeInputBox" destination="v66-cW-efL" id="q7R-kP-6Tm"/>
+                        <outlet property="welcomeLabel" destination="abS-Dx-t3m" id="Rz1-nu-hAA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXQ-mm-PRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3411,10 +3432,10 @@
         <image name="team_grey.png" width="40" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cem-VI-By3"/>
-        <segue reference="2gr-9S-zLf"/>
-        <segue reference="aOk-IB-dY0"/>
+        <segue reference="pue-c2-M8N"/>
         <segue reference="yqg-5h-ykg"/>
+        <segue reference="aOk-IB-dY0"/>
+        <segue reference="Cem-VI-By3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
 </document>
