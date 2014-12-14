@@ -66,6 +66,55 @@ class CloudKitHelper {
         }
     }
     
+    func saveRecord(record : NSString, tableName : NSString, forKey : NSString, isPrivate: Bool, completionHandler: (CKRecord, NSError) -> Void) {
+        let todoRecord = CKRecord(recordType: tableName)
+        todoRecord.setValue(record, forKey: forKey)
+        if isPrivate {
+            privateDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
+                if error != nil {
+                    println("There was an error \(error.description)!")
+                } else {
+                    NSLog("Saved to cloud kit \(record)")
+                    completionHandler(record, error)
+                }
+            })
+        } else {
+            publicDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
+                if error != nil {
+                    println("There was an error \(error.description)!")
+                } else {
+                    NSLog("Saved to cloud kit \(record)")
+                    completionHandler(record, error)
+                }
+            })
+        }
+    }
+
+    func saveRecord(record : NSString, tableName : NSString, forKey : NSString, recordId: NSString, isPrivate: Bool, completionHandler: (CKRecord, NSError) -> Void) {
+        let ckRecordId = CKRecordID(recordName: recordId)
+        let todoRecord = CKRecord(recordType: tableName, recordID: ckRecordId)
+        todoRecord.setValue(record, forKey: forKey)
+        if isPrivate {
+            privateDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
+                if error != nil {
+                    println("There was an error \(error.description)!")
+                } else {
+                    NSLog("Saved to cloud kit \(record)")
+                    completionHandler(record, error)
+                }
+            })
+        } else {
+            publicDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
+                if error != nil {
+                    println("There was an error \(error.description)!")
+                } else {
+                    NSLog("Saved to cloud kit \(record)")
+                    completionHandler(record, error)
+                }
+            })
+        }
+    }
+    
     func saveRecord(records : NSDictionary, tableName : NSString, forKey : NSString, isPrivate: Bool) {
         let todoRecord = CKRecord(recordType: tableName)
         

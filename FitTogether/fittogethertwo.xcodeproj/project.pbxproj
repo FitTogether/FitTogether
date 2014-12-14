@@ -29,6 +29,7 @@
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
+		F29ABB221A3D0958009DC328 /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29ABB211A3D0958009DC328 /* JoinTeamViewController.swift */; };
 		F2A1894D1A3CC2B700763575 /* blankProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A1894C1A3CC2B700763575 /* blankProfile.png */; };
 		F2D9CAEF1A3A112700609476 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CAEE1A3A112700609476 /* Team.swift */; };
 		F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615B1A38F0AA00A5277C /* TabBarController.swift */; };
@@ -43,7 +44,6 @@
 		F2F614BF1A34EFE800CB65E6 /* threeRunningMen.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */; };
 		F2F614C51A35020600CB65E6 /* gearIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614C41A35020600CB65E6 /* gearIcon.png */; };
 		F2F614C71A3506D100CB65E6 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C61A3506D100CB65E6 /* TeamViewController.swift */; };
-		F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */; };
 		F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */; };
 		F2F614CF1A351F1F00CB65E6 /* theDude.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F614CE1A351F1F00CB65E6 /* theDude.png */; };
 /* End PBXBuildFile section */
@@ -76,6 +76,7 @@
 		F28B008F1A0A833800A5891F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
+		F29ABB211A3D0958009DC328 /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 		F2A1894C1A3CC2B700763575 /* blankProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blankProfile.png; sourceTree = "<group>"; };
 		F2D9CAEE1A3A112700609476 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		F2ED615B1A38F0AA00A5277C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		F2F614BE1A34EFE800CB65E6 /* threeRunningMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threeRunningMen.png; sourceTree = "<group>"; };
 		F2F614C41A35020600CB65E6 /* gearIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gearIcon.png; sourceTree = "<group>"; };
 		F2F614C61A3506D100CB65E6 /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
-		F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 		F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTeamViewController.swift; sourceTree = "<group>"; };
 		F2F614CE1A351F1F00CB65E6 /* theDude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theDude.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,13 +224,13 @@
 				232BEBB81A1ED5D500075DC7 /* profileViewController.swift */,
 				F2F614B81A34E91C00CB65E6 /* LoginViewController.swift */,
 				F2F614C61A3506D100CB65E6 /* TeamViewController.swift */,
-				F2F614C81A3509AA00CB65E6 /* JoinTeamViewController.swift */,
 				F2F614CA1A3513B100CB65E6 /* CreateTeamViewController.swift */,
 				567AF6F81A3625130029FB55 /* TeamDataViewController.swift */,
 				F265796E1A38DB1B00E7E643 /* ChallengeTeamViewController.swift */,
 				F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */,
 				F2ED615B1A38F0AA00A5277C /* TabBarController.swift */,
 				F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */,
+				F29ABB211A3D0958009DC328 /* JoinTeamViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -374,11 +374,11 @@
 				F265796F1A38DB1B00E7E643 /* ChallengeTeamViewController.swift in Sources */,
 				567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */,
 				F256BF891A35F39500C75418 /* SettingsTableViewController.swift in Sources */,
+				F29ABB221A3D0958009DC328 /* JoinTeamViewController.swift in Sources */,
 				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
 				F2ED61621A393A7800A5277C /* DailyStepGoalViewController.swift in Sources */,
 				F273C90F1A33988300D7B908 /* User.swift in Sources */,
 				F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */,
-				F2F614C91A3509AA00CB65E6 /* JoinTeamViewController.swift in Sources */,
 				F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */,
 				232BEBBB1A1ED5D500075DC7 /* profileViewController.swift in Sources */,
 				567AF6F71A3624B00029FB55 /* TeamData.swift in Sources */,

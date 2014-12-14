@@ -15,7 +15,6 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityBar: UIActivityIndicatorView!
     
-    
     var teamData = TeamData()
     var fakeData:[(name: String, amtOfStepsWalked: String)]?
     
