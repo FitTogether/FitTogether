@@ -14,6 +14,7 @@
 		232BEBC21A1EDBDF00075DC7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */; };
 		567AF6F71A3624B00029FB55 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F61A3624B00029FB55 /* TeamData.swift */; };
 		567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F81A3625130029FB55 /* TeamDataViewController.swift */; };
+		56D531FB1A3E30800099A580 /* TeamCreatedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D531FA1A3E30800099A580 /* TeamCreatedInfoViewController.swift */; };
 		F2090B411A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */; };
 		F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */; };
 		F243548B1A3775E800AD26CC /* badgeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F243548A1A3775E800AD26CC /* badgeIcon.png */; };
@@ -57,6 +58,7 @@
 		232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		567AF6F61A3624B00029FB55 /* TeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
 		567AF6F81A3625130029FB55 /* TeamDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataViewController.swift; sourceTree = "<group>"; };
+		56D531FA1A3E30800099A580 /* TeamCreatedInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCreatedInfoViewController.swift; sourceTree = "<group>"; };
 		F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelperDelegate.swift; sourceTree = "<group>"; };
 		F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		F243548A1A3775E800AD26CC /* badgeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon.png; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				F2ED615B1A38F0AA00A5277C /* TabBarController.swift */,
 				F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */,
 				F29ABB211A3D0958009DC328 /* JoinTeamViewController.swift */,
+				56D531FA1A3E30800099A580 /* TeamCreatedInfoViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D531FB1A3E30800099A580 /* TeamCreatedInfoViewController.swift in Sources */,
 				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
 				F2090B411A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift in Sources */,
 				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,

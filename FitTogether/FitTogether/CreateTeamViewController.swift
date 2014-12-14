@@ -52,17 +52,31 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
             if (record.recordType == "Error") {
                 
                 self.teamCreatedLabel.text = "ERROR"
-                self.teamCreatedDescription.text = "YOU FUCKED UP"
+              //  self.teamCreatedDescription.text = "YOU FUCKED UP"
                 self.teamCreatedAcitivityIcon.stopAnimating()
             } else {
-            
-                self.teamCreatedLabel.text = "Team Created!"
-                self.teamCreatedDescription.text = "Welcome to your new team, \(self.teamNameTextField.text)."
+                /*This loads new view on top of stack
+                let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("TeamDataViewController")
+                self.showViewController(vc as UIViewController, sender: vc)
+                */
+                // Create a variable that you want to send
+                var teamData = Team(name: self.teamNameTextField.text, description: self.descriptionTextField.text)
+                
+                self.performSegueWithIdentifier("TeamInfoSegue", sender: self)
                 self.teamCreatedAcitivityIcon.stopAnimating()
             }
         })
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+        // Create a variable that you want to send
+        var teamData = Team(name: teamNameTextField.text, description: descriptionTextField.text)
+        
+        // Create a new variable to store the instance of TeamCreatedInfo
+        let destinationVC = segue.destinationViewController as TeamCreatedInfoViewController
+        destinationVC.teamData = teamData
+    }
     
     /*
     // MARK: - Navigation
