@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class JoinTeamViewController: UIViewController {
     
@@ -26,8 +27,22 @@ class JoinTeamViewController: UIViewController {
     }
     
     @IBAction func goButtonPressed(sender: AnyObject) {
+        var input = teamCodeInputBox.text!
         ck.getUserName({ (name) -> Void in
-            self.ck.modifyRecord(self.teamCodeInputBox.text, tableName: "User", forKey: "Team", recordId: name, isPrivate: false)
+            self.ck.retriveRecords((input), completionHandler: { (preposedTeamRecord: CKRecord) -> Void in
+                if preposedTeamRecord.recordType != "Error" {
+                    self.ck.retriveRecords((name), completionHandler: { (record: CKRecord) -> Void in
+                        record.setValue(input, forKey: "Team")
+                        self.ck.updateRecord(record, callback: { (success) -> () in
+                            if success == true {
+                                self.welcomeLabel.text = "Welcome to team \(name)"
+                            }
+                        })
+                    })
+                } else {
+                    self.welcomeLabel.text = "Sorry Team Does Not Exist"
+                }
+            })
         })
     }
     /*

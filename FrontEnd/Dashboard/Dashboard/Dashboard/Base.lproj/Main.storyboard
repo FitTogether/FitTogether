@@ -2316,13 +2316,6 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Z4-qj-TTL">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter team code to join: " borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v66-cW-efL">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -2354,12 +2347,6 @@
                             </constraint>
                             <constraint firstItem="abS-Dx-t3m" firstAttribute="centerX" secondItem="v66-cW-efL" secondAttribute="centerX" id="6OS-fW-L8t"/>
                             <constraint firstItem="abS-Dx-t3m" firstAttribute="centerX" secondItem="v66-cW-efL" secondAttribute="centerX" constant="30" id="738-W6-bKZ"/>
-                            <constraint firstItem="yGe-Oz-gCp" firstAttribute="leading" secondItem="0Z4-qj-TTL" secondAttribute="trailing" constant="-79" id="8vP-KF-YSw">
-                                <variation key="widthClass=compact" constant="-20"/>
-                            </constraint>
-                            <constraint firstItem="0Z4-qj-TTL" firstAttribute="top" secondItem="abS-Dx-t3m" secondAttribute="bottom" constant="62" id="AJx-4O-Uuq">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
                             <constraint firstItem="abS-Dx-t3m" firstAttribute="centerX" secondItem="v66-cW-efL" secondAttribute="centerX" constant="130.5" id="ANh-uH-MPQ">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
@@ -2380,26 +2367,20 @@
                             <constraint firstItem="yGe-Oz-gCp" firstAttribute="leading" secondItem="Q4a-Tc-wQL" secondAttribute="leadingMargin" id="fEH-3b-AVD"/>
                             <constraint firstItem="v66-cW-efL" firstAttribute="leading" secondItem="Q4a-Tc-wQL" secondAttribute="leadingMargin" id="m4m-N5-1eL"/>
                             <constraint firstItem="AoM-YF-gsm" firstAttribute="trailing" secondItem="Q4a-Tc-wQL" secondAttribute="trailingMargin" id="mKv-aG-pII"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0Z4-qj-TTL" secondAttribute="trailing" id="mUk-oJ-NFN"/>
                             <constraint firstItem="AoM-YF-gsm" firstAttribute="top" secondItem="Ehz-qM-OxP" secondAttribute="bottom" constant="100" id="piS-Fc-38s">
                                 <variation key="widthClass=compact" constant="50"/>
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="yGe-Oz-gCp" secondAttribute="trailing" id="rYx-sZ-8lb"/>
-                            <constraint firstItem="yGe-Oz-gCp" firstAttribute="top" secondItem="0Z4-qj-TTL" secondAttribute="bottom" constant="85" id="twy-dD-mH9">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="abS-Dx-t3m" secondAttribute="trailing" id="vgj-GP-c3K"/>
                             <constraint firstItem="AoM-YF-gsm" firstAttribute="leading" secondItem="v66-cW-efL" secondAttribute="trailing" constant="185" id="yob-Mp-TAx">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="0Z4-qj-TTL" firstAttribute="leading" secondItem="Q4a-Tc-wQL" secondAttribute="leadingMargin" id="zmq-Ai-OYj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="AoM-YF-gsm"/>
                                 <exclude reference="abS-Dx-t3m"/>
                                 <exclude reference="yGe-Oz-gCp"/>
-                                <exclude reference="0Z4-qj-TTL"/>
                                 <exclude reference="v66-cW-efL"/>
                             </mask>
                             <mask key="constraints">
@@ -2420,14 +2401,9 @@
                                 <exclude reference="mKv-aG-pII"/>
                                 <exclude reference="piS-Fc-38s"/>
                                 <exclude reference="yob-Mp-TAx"/>
-                                <exclude reference="8vP-KF-YSw"/>
                                 <exclude reference="RLa-Qd-nr0"/>
                                 <exclude reference="fEH-3b-AVD"/>
                                 <exclude reference="rYx-sZ-8lb"/>
-                                <exclude reference="twy-dD-mH9"/>
-                                <exclude reference="AJx-4O-Uuq"/>
-                                <exclude reference="mUk-oJ-NFN"/>
-                                <exclude reference="zmq-Ai-OYj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -2435,7 +2411,6 @@
                                 <include reference="AoM-YF-gsm"/>
                                 <include reference="abS-Dx-t3m"/>
                                 <include reference="yGe-Oz-gCp"/>
-                                <include reference="0Z4-qj-TTL"/>
                                 <include reference="v66-cW-efL"/>
                             </mask>
                             <mask key="constraints">
@@ -2456,14 +2431,9 @@
                                 <include reference="mKv-aG-pII"/>
                                 <include reference="piS-Fc-38s"/>
                                 <exclude reference="yob-Mp-TAx"/>
-                                <exclude reference="8vP-KF-YSw"/>
                                 <include reference="RLa-Qd-nr0"/>
                                 <include reference="fEH-3b-AVD"/>
                                 <include reference="rYx-sZ-8lb"/>
-                                <include reference="twy-dD-mH9"/>
-                                <include reference="AJx-4O-Uuq"/>
-                                <include reference="mUk-oJ-NFN"/>
-                                <include reference="zmq-Ai-OYj"/>
                             </mask>
                         </variation>
                     </view>
