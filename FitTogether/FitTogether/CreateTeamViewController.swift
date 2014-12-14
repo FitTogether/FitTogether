@@ -41,6 +41,16 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+        // Create a variable that you want to send
+        var teamData = Team(name: teamNameTextField.text, description: descriptionTextField.text)
+        
+        // Create a new variable to store the instance of TeamCreatedInfo
+        let destinationVC = segue.destinationViewController as TeamCreatedInfoViewController
+        destinationVC.teamData = teamData
+    }
+    
     @IBAction func createTeamPressed(sender: AnyObject) {
         teamNameTextField.resignFirstResponder()
         descriptionTextField.resignFirstResponder()
@@ -48,20 +58,18 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         //save record with cloudkit
         self.teamCreatedAcitivityIcon.startAnimating()
         ck.saveRecord(self.teamNameTextField.text, tableName: "Team", forKey: "Name", recordId: self.teamNameTextField.text, isPrivate: false, completionHandler: {(record : CKRecord) -> Void in
-          //  if let testRecord : CKRecord = record as CKRecord? {
             if (record.recordType == "Error") {
                 
                 self.teamCreatedLabel.text = "ERROR"
-                self.teamCreatedDescription.text = "YOU FUCKED UP"
                 self.teamCreatedAcitivityIcon.stopAnimating()
             } else {
-            
-                self.teamCreatedLabel.text = "Team Created!"
-                self.teamCreatedDescription.text = "Welcome to your new team, \(self.teamNameTextField.text)."
+                // Create a variable that you want to send
                 self.teamCreatedAcitivityIcon.stopAnimating()
+               // self.performSegueWithIdentifier("TeamInfoSegue", sender: self)
             }
         })
     }
+    
     
     
     /*
