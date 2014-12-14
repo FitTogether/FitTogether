@@ -118,36 +118,20 @@ class CloudKitHelper {
                     NSLog("Saved to cloud kit \(record)")
                     if let testRecord = record {
                         completionHandler(testRecord)
+                    } else {
+                        println("Error Saving Record")
+                        completionHandler(CKRecord(recordType: "Error"))
                     }
                 }
             })
         }
     }
     
-    func saveRecord(records : NSDictionary, tableName : NSString, forKey : NSString, isPrivate: Bool) {
-        let todoRecord = CKRecord(recordType: tableName)
-        
-        for record in records {
-            todoRecord.setValue(record.value, forKey: record.key as NSString)
-        }
-        
-        if isPrivate {
-            privateDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
-                if error != nil {
-                    println("There was an error \(error.description)!")
-                } else {
-                    NSLog("Saved to cloud kit \(record)")
-                }
-            })
-        } else {
-            publicDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
-                if error != nil {
-                    println("There was an error \(error.description)!")
-                } else {
-                    NSLog("Saved to cloud kit \(record)")
-                }
-            })
-        }
+    func modifyRecord(record : NSString, tableName : NSString, forKey : NSString, recordId: NSString, isPrivate: Bool) {
+        let ckRecordId = CKRecordID(recordName: recordId)
+        let todoRecord = CKRecord(recordType: tableName, recordID: ckRecordId)
+        let operation = CKModifyRecordsOperation(recordsToSave: [todoRecord], recordIDsToDelete: nil)
+        publicDB.addOperation(operation)
     }
     
     func retriveRecords(sortKey: NSString, queryRecordType: NSString, completionHandler: ([AnyObject] -> Void)) -> AnyObject {
@@ -181,5 +165,18 @@ class CloudKitHelper {
             return queryError!
         }
         return "Error"
+    }
+   
+    func retriveRecords(recordId: NSString, completionHandler: (CKRecord -> Void)) {
+        let ckRecordId = CKRecordID(recordName: recordId)
+        
+        publicDB.fetchRecordWithID(ckRecordId, completionHandler: { (record, error) -> Void in
+            if error != nil {
+                completionHandler(CKRecord(recordType: "Error"))
+                println(error)
+            } else {
+                completionHandler(record)
+            }
+        })
     }
 }

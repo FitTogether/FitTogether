@@ -147,6 +147,13 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		F287D9311A3E1CDC0000DEC4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		F28B00781A0A833800A5891F = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +177,7 @@
 		F28B00831A0A833800A5891F /* FitTogether */ = {
 			isa = PBXGroup;
 			children = (
+				F287D9311A3E1CDC0000DEC4 /* Images */,
 				F2090B421A3A8F0300BA0E6E /* Utilities */,
 				F267EFB81A3613F8004CCE9F /* Models */,
 				F2F614B31A34E6F400CB65E6 /* Assets */,
@@ -486,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FitTogether/FitTogether.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -500,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FitTogether/FitTogether.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

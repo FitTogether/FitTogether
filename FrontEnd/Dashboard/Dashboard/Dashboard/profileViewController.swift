@@ -166,8 +166,10 @@ class profileViewController: UIViewController {
                 }
                 if check == false {
 //                    self.ck.saveRecord(self.me.name!, tableName: "User", forKey: "Name", recordId: self.me.name!, isPrivate: false)
-                    self.ck.saveRecord(self.me.name!, tableName: "User", forKey: "Name", recordId: self.me.name!, isPrivate: false, completionHandler: { (record) -> Void in
+                    self.ck.saveRecord(self.me.name!, tableName: "User", forKey: "Name", recordId: self.me.name!, isPrivate: false, completionHandler: { (record: CKRecord) -> Void in
                         println("Good")
+                        println(record.recordType)
+
                     })
                     self.me.steps = 0
                     self.me.team = "Flying Solo"
