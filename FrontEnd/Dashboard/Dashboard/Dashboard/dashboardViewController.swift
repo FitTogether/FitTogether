@@ -76,44 +76,53 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
         self.activityIndicator.startAnimating()
         
         ck.getUserName( { (userName) -> Void in
+            println(userName)
             self.ck.retriveRecords(userName, completionHandler: { (record: CKRecord) -> Void in
                 var myTeam: String = ""
                 if let team: String = record.objectForKey("Team") as? String {
                     myTeam = team
                     self.teamName.text = "\(team)"
-                }
-                
-                self.ck.retriveRecords(myTeam, completionHandler: { (record: CKRecord) -> Void in
-                    var mySteps = 0
-                    var myOpponent = ""
-                    if let steps: Int = record.objectForKey("Steps") as? Int {
-                        mySteps = steps
-                        self.teamAvgSteps.text = "\(steps)"
-                    } else {
-                        self.teamAvgSteps.text = "0"
-                    }
-                    if let opponent: String = record.objectForKey("Opponent") as? String {
-                        myOpponent = opponent
-                        self.opponetName.text = "\(opponent)"
-                        self.ck.retriveRecords(myOpponent, completionHandler: { (record: CKRecord) -> Void in
-                            var opSteps = 0
-                            if let steps: Int = record.objectForKey("Steps") as? Int {
-                                opSteps = steps
-                                self.opponetAvgSteps.text = "\(steps)"
-                            }
+                    self.ck.retriveRecords(myTeam, completionHandler: { (record: CKRecord) -> Void in
+                        var mySteps = 0
+                        var myOpponent = ""
+                        if let steps: Int = record.objectForKey("Steps") as? Int {
+                            mySteps = steps
+                            self.teamAvgSteps.text = "\(steps)"
+                        } else {
+                            mySteps = 0
+                            self.teamAvgSteps.text = "0"
+                        }
+                        if let opponent: String = record.objectForKey("Opponent") as? String {
+                            myOpponent = opponent
+                            self.opponetName.text = "\(opponent)"
+                            self.ck.retriveRecords(myOpponent, completionHandler: { (record: CKRecord) -> Void in
+                                var opSteps = 0
+                                if let steps: Int = record.objectForKey("Steps") as? Int {
+                                    opSteps = steps
+                                    self.opponetAvgSteps.text = "\(steps)"
+                                }
+                                self.teamDaysWon.text = "\(0)"
+                                self.opponetDaysWon.text = "\(0)"
+                                self.activityIndicator.stopAnimating()
+                            })
+                        } else {
+                            self.opponetAvgSteps.text = "0"
+                            self.opponetName.text = "None"
                             self.teamDaysWon.text = "\(0)"
                             self.opponetDaysWon.text = "\(0)"
                             self.activityIndicator.stopAnimating()
-                        })
-                    } else {
-                        self.opponetAvgSteps.text = "0"
-                        self.opponetName.text = "None"
-                        self.teamDaysWon.text = "\(0)"
-                        self.opponetDaysWon.text = "\(0)"
-                        self.activityIndicator.stopAnimating()
-                    }
-                })
-                
+                        }
+                    })
+                } else {
+                    self.opponetAvgSteps.text = "0"
+                    self.opponetName.text = "None"
+                    self.teamDaysWon.text = "\(0)"
+                    self.opponetDaysWon.text = "\(0)"
+                    self.activityIndicator.stopAnimating()
+                    self.teamAvgSteps.text = "\(0)"
+                    self.teamName.text = "None"
+                    self.activityIndicator.stopAnimating()
+                }
             })
         })
         
