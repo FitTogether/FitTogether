@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class CreateTeamViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var teamNameTextField: UITextField!
@@ -14,6 +15,8 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var teamCreatedLabel: UILabel!
     @IBOutlet weak var teamCreatedDescription: UILabel!
+    
+    @IBOutlet weak var teamCreatedAcitivityIcon: UIActivityIndicatorView!
     
     let ck = CloudKitHelper()
     
@@ -42,8 +45,27 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         teamNameTextField.resignFirstResponder()
         descriptionTextField.resignFirstResponder()
         
+<<<<<<< HEAD
         teamCreatedLabel.text = "Team Created!"
         teamCreatedDescription.text = "Welcome to your new team, \(teamNameTextField.text)."
+=======
+        //save record with cloudkit
+        self.teamCreatedAcitivityIcon.startAnimating()
+        ck.saveRecord(self.teamNameTextField.text, tableName: "Team", forKey: "Name", recordId: self.teamNameTextField.text, isPrivate: false, completionHandler: {(record : CKRecord) -> Void in
+          //  if let testRecord : CKRecord = record as CKRecord? {
+            if (record.recordType == "Error") {
+                
+                self.teamCreatedLabel.text = "ERROR"
+                self.teamCreatedDescription.text = "YOU FUCKED UP"
+                self.teamCreatedAcitivityIcon.stopAnimating()
+            } else {
+            
+                self.teamCreatedLabel.text = "Team Created!"
+                self.teamCreatedDescription.text = "Welcome to your new team, \(self.teamNameTextField.text)."
+                self.teamCreatedAcitivityIcon.stopAnimating()
+            }
+        })
+>>>>>>> create-team-cloud
     }
     
     
