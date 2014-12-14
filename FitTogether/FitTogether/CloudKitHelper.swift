@@ -98,6 +98,7 @@ class CloudKitHelper {
             privateDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
                 if error != nil {
                     println("There was an error \(error.description)!")
+                    completionHandler(CKRecord(recordType: "Error"))
                 } else {
                     NSLog("Saved to cloud kit \(record)")
                     if let testRecord = record {
@@ -112,6 +113,7 @@ class CloudKitHelper {
             publicDB.saveRecord(todoRecord, completionHandler: { (record, error) -> Void in
                 if error != nil {
                     println("There was an error \(error.description)!")
+                    completionHandler(CKRecord(recordType: "Error"))
                 } else {
                     NSLog("Saved to cloud kit \(record)")
                     if let testRecord = record {

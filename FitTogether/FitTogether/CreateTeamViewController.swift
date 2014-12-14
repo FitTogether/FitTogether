@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class CreateTeamViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var teamNameTextField: UITextField!
@@ -46,10 +47,19 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         
         //save record with cloudkit
         self.teamCreatedAcitivityIcon.startAnimating()
-        ck.saveRecord(self.teamNameTextField.text, tableName: "Team", forKey: "Name", recordId: self.teamNameTextField.text, isPrivate: false, completionHandler: {(record) -> Void in
+        ck.saveRecord(self.teamNameTextField.text, tableName: "Team", forKey: "Name", recordId: self.teamNameTextField.text, isPrivate: false, completionHandler: {(record : CKRecord) -> Void in
+          //  if let testRecord : CKRecord = record as CKRecord? {
+            if (record.recordType == "Error") {
+                
+                self.teamCreatedLabel.text = "ERROR"
+                self.teamCreatedDescription.text = "YOU FUCKED UP"
+                self.teamCreatedAcitivityIcon.stopAnimating()
+            } else {
+            
                 self.teamCreatedLabel.text = "Team Created!"
                 self.teamCreatedDescription.text = "Welcome to your new team, \(self.teamNameTextField.text)."
                 self.teamCreatedAcitivityIcon.stopAnimating()
+            }
         })
     }
     
