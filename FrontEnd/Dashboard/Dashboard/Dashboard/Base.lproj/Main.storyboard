@@ -219,7 +219,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-1" y="99" width="401" height="170.5"/>
+                                    <rect key="frame" x="-1" y="99" width="401" height="171"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
@@ -360,7 +360,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="270" width="400" height="285.5"/>
+                                    <rect key="frame" x="0.0" y="270" width="400" height="286"/>
                                     <mask key="subviews">
                                         <include reference="Khl-bs-IvO"/>
                                         <include reference="H5V-g0-H7Z"/>
@@ -469,7 +469,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="72" width="368" height="28.5"/>
+                                    <rect key="frame" x="16" y="72" width="368" height="29"/>
                                     <mask key="constraints">
                                         <include reference="LDL-zL-r7Z"/>
                                     </mask>
@@ -742,7 +742,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="28" y="105" width="42" height="20.5"/>
+                                            <rect key="frame" x="28" y="105" width="42" height="21"/>
                                             <mask key="constraints">
                                                 <include reference="a8s-A3-Jqi"/>
                                             </mask>
@@ -988,7 +988,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="29" y="105" width="42" height="20.5"/>
+                                            <rect key="frame" x="29" y="105" width="42" height="21"/>
                                             <mask key="constraints">
                                                 <include reference="sZR-H4-uWe"/>
                                             </mask>
@@ -2083,7 +2083,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnH-1D-szw">
@@ -2250,6 +2250,9 @@
                                         <include reference="FdR-Sp-m1U"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="Ktn-mV-A6Y" eventType="touchUpInside" id="oMk-YS-J97"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mizzou IT4500 Team Zulu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abS-Dx-t3m">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -3212,7 +3215,7 @@
                                 <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
                                 <color key="tintColor" red="0.98431372549999996" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="-1" y="374.5" width="400" height="216"/>
+                                    <rect key="frame" x="-1" y="375" width="400" height="216"/>
                                 </variation>
                             </pickerView>
                         </subviews>
