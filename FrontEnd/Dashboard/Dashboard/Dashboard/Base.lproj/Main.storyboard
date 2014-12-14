@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -50,7 +50,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
                                 <rect key="frame" x="-1" y="99" width="601" height="173"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASS-Ei-5rG" userLabel="teamDaysWon">
@@ -219,7 +219,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
                                 <rect key="frame" x="0.0" y="271" width="600" height="285"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khl-bs-IvO">
@@ -271,11 +271,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact" misplaced="YES">
-<<<<<<< HEAD
-                                            <rect key="frame" x="50" y="243" width="300" height="30"/>
-=======
                                             <rect key="frame" x="50" y="244.5" width="300" height="30"/>
->>>>>>> stylingDashAndIconsAndStuff
                                             <mask key="constraints">
                                                 <include reference="jEt-AQ-YRc"/>
                                             </mask>
@@ -2532,6 +2528,7 @@
                                     <constraint firstAttribute="width" constant="20" id="5wC-3K-GJJ"/>
                                     <constraint firstAttribute="height" constant="20" id="lgt-eb-mRR"/>
                                 </constraints>
+                                <color key="color" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="5wC-3K-GJJ"/>
@@ -2592,32 +2589,32 @@
                                 <exclude reference="jwc-Dd-3vD"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="eXK-C8-vTg"/>
+                                <exclude reference="lvU-V1-2cG"/>
+                                <exclude reference="voV-Yb-9Sg"/>
+                                <exclude reference="Bu2-oh-E04"/>
+                                <exclude reference="Vq6-Dw-BmV"/>
+                                <exclude reference="d8R-Wq-r4P"/>
+                                <exclude reference="SfY-Hu-PiB"/>
+                                <exclude reference="SpE-2c-Iji"/>
+                                <exclude reference="l6e-AF-uNb"/>
                                 <exclude reference="JGY-Ly-7f7"/>
                                 <exclude reference="PNw-OO-iAh"/>
                                 <exclude reference="Ymd-eH-dmD"/>
                                 <exclude reference="oJ7-YO-cMn"/>
-                                <exclude reference="SfY-Hu-PiB"/>
-                                <exclude reference="SpE-2c-Iji"/>
-                                <exclude reference="l6e-AF-uNb"/>
-                                <exclude reference="eXK-C8-vTg"/>
-                                <exclude reference="lvU-V1-2cG"/>
-                                <exclude reference="voV-Yb-9Sg"/>
+                                <exclude reference="4qy-OM-5Ak"/>
+                                <exclude reference="hvD-av-I8S"/>
+                                <exclude reference="mii-Da-2xp"/>
+                                <exclude reference="IX8-57-vgS"/>
+                                <exclude reference="S7X-cc-hJK"/>
+                                <exclude reference="a8l-XX-ms1"/>
+                                <exclude reference="jst-RP-t8a"/>
+                                <exclude reference="kVq-F3-Wfh"/>
                                 <exclude reference="0dD-dV-KWd"/>
                                 <exclude reference="AMK-hx-rUW"/>
                                 <exclude reference="Uiq-Ry-KhM"/>
                                 <exclude reference="knd-sg-F8J"/>
                                 <exclude reference="yod-3d-YQF"/>
-                                <exclude reference="4qy-OM-5Ak"/>
-                                <exclude reference="hvD-av-I8S"/>
-                                <exclude reference="mii-Da-2xp"/>
-                                <exclude reference="Bu2-oh-E04"/>
-                                <exclude reference="Vq6-Dw-BmV"/>
-                                <exclude reference="d8R-Wq-r4P"/>
-                                <exclude reference="S7X-cc-hJK"/>
-                                <exclude reference="a8l-XX-ms1"/>
-                                <exclude reference="jst-RP-t8a"/>
-                                <exclude reference="kVq-F3-Wfh"/>
-                                <exclude reference="IX8-57-vgS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -2631,32 +2628,32 @@
                                 <include reference="jwc-Dd-3vD"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="eXK-C8-vTg"/>
+                                <include reference="lvU-V1-2cG"/>
+                                <include reference="voV-Yb-9Sg"/>
+                                <include reference="Bu2-oh-E04"/>
+                                <include reference="Vq6-Dw-BmV"/>
+                                <include reference="d8R-Wq-r4P"/>
+                                <exclude reference="SfY-Hu-PiB"/>
+                                <include reference="SpE-2c-Iji"/>
+                                <include reference="l6e-AF-uNb"/>
                                 <include reference="JGY-Ly-7f7"/>
                                 <include reference="PNw-OO-iAh"/>
                                 <include reference="Ymd-eH-dmD"/>
                                 <include reference="oJ7-YO-cMn"/>
-                                <exclude reference="SfY-Hu-PiB"/>
-                                <include reference="SpE-2c-Iji"/>
-                                <include reference="l6e-AF-uNb"/>
-                                <include reference="eXK-C8-vTg"/>
-                                <include reference="lvU-V1-2cG"/>
-                                <include reference="voV-Yb-9Sg"/>
+                                <include reference="4qy-OM-5Ak"/>
+                                <include reference="hvD-av-I8S"/>
+                                <include reference="mii-Da-2xp"/>
+                                <exclude reference="IX8-57-vgS"/>
+                                <include reference="S7X-cc-hJK"/>
+                                <include reference="a8l-XX-ms1"/>
+                                <include reference="jst-RP-t8a"/>
+                                <include reference="kVq-F3-Wfh"/>
                                 <include reference="0dD-dV-KWd"/>
                                 <include reference="AMK-hx-rUW"/>
                                 <include reference="Uiq-Ry-KhM"/>
                                 <include reference="knd-sg-F8J"/>
                                 <include reference="yod-3d-YQF"/>
-                                <include reference="4qy-OM-5Ak"/>
-                                <include reference="hvD-av-I8S"/>
-                                <include reference="mii-Da-2xp"/>
-                                <include reference="Bu2-oh-E04"/>
-                                <include reference="Vq6-Dw-BmV"/>
-                                <include reference="d8R-Wq-r4P"/>
-                                <include reference="S7X-cc-hJK"/>
-                                <include reference="a8l-XX-ms1"/>
-                                <include reference="jst-RP-t8a"/>
-                                <include reference="kVq-F3-Wfh"/>
-                                <exclude reference="IX8-57-vgS"/>
                             </mask>
                         </variation>
                     </view>
@@ -2940,6 +2937,7 @@
                                     <constraint firstAttribute="width" constant="20" id="oix-L6-A5n"/>
                                     <constraint firstAttribute="height" constant="20" id="tHj-24-6Hm"/>
                                 </constraints>
+                                <color key="color" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="oix-L6-A5n"/>
@@ -3107,9 +3105,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="167.5" width="400" height="388.5"/>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="BTZ-RG-6Kz" id="CUa-Bx-Nbu"/>
                                     <outlet property="delegate" destination="BTZ-RG-6Kz" id="76r-5r-wsG"/>
@@ -3121,6 +3116,7 @@
                                     <constraint firstAttribute="width" constant="20" id="cyL-5l-hcK"/>
                                     <constraint firstAttribute="height" constant="20" id="hq0-Qs-fGT"/>
                                 </constraints>
+                                <color key="color" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="cyL-5l-hcK"/>
@@ -3470,21 +3466,9 @@
         <image name="team_grey.png" width="40" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <segue reference="pue-c2-M8N"/>
-=======
-        <segue reference="Cem-VI-By3"/>
-        <segue reference="Wd7-dF-O0s"/>
-        <segue reference="aOk-IB-dY0"/>
->>>>>>> create-team-cloud
-        <segue reference="yqg-5h-ykg"/>
-        <segue reference="aOk-IB-dY0"/>
-=======
->>>>>>> stylingDashAndIconsAndStuff
         <segue reference="Cem-VI-By3"/>
         <segue reference="3Eu-gx-5lo"/>
-        <segue reference="DfF-Cj-bzE"/>
+        <segue reference="2gr-9S-zLf"/>
         <segue reference="rlJ-YL-Tf0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

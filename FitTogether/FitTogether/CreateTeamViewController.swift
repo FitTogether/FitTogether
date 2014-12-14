@@ -45,10 +45,6 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         teamNameTextField.resignFirstResponder()
         descriptionTextField.resignFirstResponder()
         
-<<<<<<< HEAD
-        teamCreatedLabel.text = "Team Created!"
-        teamCreatedDescription.text = "Welcome to your new team, \(teamNameTextField.text)."
-=======
         //save record with cloudkit
         self.teamCreatedAcitivityIcon.startAnimating()
         ck.saveRecord(self.teamNameTextField.text, tableName: "Team", forKey: "Name", recordId: self.teamNameTextField.text, isPrivate: false, completionHandler: {(record : CKRecord) -> Void in
@@ -65,7 +61,6 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
                 self.teamCreatedAcitivityIcon.stopAnimating()
             }
         })
->>>>>>> create-team-cloud
     }
     
     
