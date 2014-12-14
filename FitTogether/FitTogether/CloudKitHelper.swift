@@ -90,7 +90,7 @@ class CloudKitHelper {
         }
     }
 
-    func saveRecord(record : NSString, tableName : NSString, forKey : NSString, recordId: NSString, isPrivate: Bool, completionHandler: (CKRecord, NSError) -> Void) {
+    func saveRecord(record : NSString, tableName : NSString, forKey : NSString, recordId: NSString, isPrivate: Bool, completionHandler: (CKRecord) -> Void) {
         let ckRecordId = CKRecordID(recordName: recordId)
         let todoRecord = CKRecord(recordType: tableName, recordID: ckRecordId)
         todoRecord.setValue(record, forKey: forKey)
@@ -100,7 +100,9 @@ class CloudKitHelper {
                     println("There was an error \(error.description)!")
                 } else {
                     NSLog("Saved to cloud kit \(record)")
-                    completionHandler(record, error)
+                    if let testRecord = record {
+                        completionHandler(testRecord)
+                    }
                 }
             })
         } else {
@@ -109,7 +111,9 @@ class CloudKitHelper {
                     println("There was an error \(error.description)!")
                 } else {
                     NSLog("Saved to cloud kit \(record)")
-                    completionHandler(record, error)
+                    if let testRecord = record {
+                        completionHandler(testRecord)
+                    }
                 }
             })
         }
