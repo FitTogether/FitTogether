@@ -14,7 +14,6 @@
 		232BEBC21A1EDBDF00075DC7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */; };
 		567AF6F71A3624B00029FB55 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F61A3624B00029FB55 /* TeamData.swift */; };
 		567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F81A3625130029FB55 /* TeamDataViewController.swift */; };
-		56D531FB1A3E30800099A580 /* TeamCreatedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D531FA1A3E30800099A580 /* TeamCreatedInfoViewController.swift */; };
 		F2090B411A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */; };
 		F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */; };
 		F243548B1A3775E800AD26CC /* badgeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F243548A1A3775E800AD26CC /* badgeIcon.png */; };
@@ -30,9 +29,9 @@
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
 		F28B00871A0A833800A5891F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B00861A0A833800A5891F /* AppDelegate.swift */; };
 		F28B00901A0A833800A5891F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28B008F1A0A833800A5891F /* Images.xcassets */; };
+		F29ABB221A3D0958009DC328 /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29ABB211A3D0958009DC328 /* JoinTeamViewController.swift */; };
 		F2A1894D1A3CC2B700763575 /* blankProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A1894C1A3CC2B700763575 /* blankProfile.png */; };
 		F2D9CAEF1A3A112700609476 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9CAEE1A3A112700609476 /* Team.swift */; };
-		F2E00D241A3E82C9000891BC /* JoinTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E00D231A3E82C9000891BC /* JoinTeamViewController.swift */; };
 		F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615B1A38F0AA00A5277C /* TabBarController.swift */; };
 		F2ED615E1A38F27000A5277C /* HealthKitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED615D1A38F27000A5277C /* HealthKitData.swift */; };
 		F2ED61601A38F44400A5277C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ED615F1A38F44400A5277C /* HealthKit.framework */; };
@@ -58,7 +57,6 @@
 		232BEBC11A1EDBDF00075DC7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		567AF6F61A3624B00029FB55 /* TeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
 		567AF6F81A3625130029FB55 /* TeamDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataViewController.swift; sourceTree = "<group>"; };
-		56D531FA1A3E30800099A580 /* TeamCreatedInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCreatedInfoViewController.swift; sourceTree = "<group>"; };
 		F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelperDelegate.swift; sourceTree = "<group>"; };
 		F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		F243548A1A3775E800AD26CC /* badgeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon.png; sourceTree = "<group>"; };
@@ -78,9 +76,9 @@
 		F28B008F1A0A833800A5891F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F28B009D1A0A833800A5891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28B009E1A0A833800A5891F /* FitTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTogetherTests.swift; sourceTree = "<group>"; };
+		F29ABB211A3D0958009DC328 /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 		F2A1894C1A3CC2B700763575 /* blankProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blankProfile.png; sourceTree = "<group>"; };
 		F2D9CAEE1A3A112700609476 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		F2E00D231A3E82C9000891BC /* JoinTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTeamViewController.swift; sourceTree = "<group>"; };
 		F2ED615B1A38F0AA00A5277C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F2ED615D1A38F27000A5277C /* HealthKitData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitData.swift; sourceTree = "<group>"; };
 		F2ED615F1A38F44400A5277C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -240,12 +238,7 @@
 				F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */,
 				F2ED615B1A38F0AA00A5277C /* TabBarController.swift */,
 				F2ED61611A393A7800A5277C /* DailyStepGoalViewController.swift */,
-<<<<<<< HEAD
 				F29ABB211A3D0958009DC328 /* JoinTeamViewController.swift */,
-				56D531FA1A3E30800099A580 /* TeamCreatedInfoViewController.swift */,
-=======
-				F2E00D231A3E82C9000891BC /* JoinTeamViewController.swift */,
->>>>>>> imGonnaGetModifiyingRecords
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -377,7 +370,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D531FB1A3E30800099A580 /* TeamCreatedInfoViewController.swift in Sources */,
 				F2F614B91A34E91C00CB65E6 /* LoginViewController.swift in Sources */,
 				F2090B411A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift in Sources */,
 				F2ED615C1A38F0AA00A5277C /* TabBarController.swift in Sources */,
@@ -390,7 +382,7 @@
 				F265796F1A38DB1B00E7E643 /* ChallengeTeamViewController.swift in Sources */,
 				567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */,
 				F256BF891A35F39500C75418 /* SettingsTableViewController.swift in Sources */,
-				F2E00D241A3E82C9000891BC /* JoinTeamViewController.swift in Sources */,
+				F29ABB221A3D0958009DC328 /* JoinTeamViewController.swift in Sources */,
 				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
 				F2ED61621A393A7800A5277C /* DailyStepGoalViewController.swift in Sources */,
 				F273C90F1A33988300D7B908 /* User.swift in Sources */,
