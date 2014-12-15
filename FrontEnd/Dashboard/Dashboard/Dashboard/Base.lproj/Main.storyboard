@@ -2316,6 +2316,7 @@
                                     </mask>
                                 </variation>
                             </button>
+<<<<<<< HEAD
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="We are the team of Mizzou students in Mobile App Dev IT4500. Columbia, MO." translatesAutoresizingMaskIntoConstraints="NO" id="0Z4-qj-TTL">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2326,6 +2327,8 @@
                                     <rect key="frame" x="16" y="204" width="368" height="191.5"/>
                                 </variation>
                             </textView>
+=======
+>>>>>>> parent of 2f6935d... Getting Storyboard
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter team code to join: " borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v66-cW-efL">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -2346,6 +2349,7 @@
                                     </mask>
                                 </variation>
                             </textField>
+<<<<<<< HEAD
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="mgz-Zw-aHC">
                                 <rect key="frame" x="-10" y="-10" width="20" height="20"/>
                                 <constraints>
@@ -2366,6 +2370,8 @@
                                     </mask>
                                 </variation>
                             </activityIndicatorView>
+=======
+>>>>>>> parent of 2f6935d... Getting Storyboard
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
