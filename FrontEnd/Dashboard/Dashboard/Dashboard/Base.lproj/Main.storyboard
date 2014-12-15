@@ -50,7 +50,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWD-0j-koX">
                                 <rect key="frame" x="-1" y="99" width="601" height="173"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASS-Ei-5rG" userLabel="teamDaysWon">
@@ -219,7 +219,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-65-pzs" userLabel="circleView">
                                 <rect key="frame" x="0.0" y="271" width="600" height="285"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khl-bs-IvO">
@@ -271,7 +271,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="50" y="244.5" width="300" height="30"/>
+                                            <rect key="frame" x="50" y="243" width="300" height="30"/>
                                             <mask key="constraints">
                                                 <include reference="jEt-AQ-YRc"/>
                                             </mask>
@@ -434,9 +434,9 @@
                                 <exclude reference="5B2-Rl-Ahq"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="91o-Oe-Nb6"/>
                                 <exclude reference="JzH-zp-Q8X"/>
                                 <exclude reference="cMm-36-tX6"/>
-                                <exclude reference="91o-Oe-Nb6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -444,8 +444,8 @@
                                 <include reference="5B2-Rl-Ahq"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="JzH-zp-Q8X"/>
                                 <include reference="91o-Oe-Nb6"/>
+                                <include reference="JzH-zp-Q8X"/>
                             </mask>
                         </variation>
                     </view>
@@ -3504,9 +3504,9 @@
         <image name="team_grey.png" width="40" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cem-VI-By3"/>
+        <segue reference="DfF-Cj-bzE"/>
         <segue reference="3Eu-gx-5lo"/>
-        <segue reference="2gr-9S-zLf"/>
+        <segue reference="Cem-VI-By3"/>
         <segue reference="rlJ-YL-Tf0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
