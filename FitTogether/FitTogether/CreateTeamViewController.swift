@@ -41,7 +41,7 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
         // Create a variable that you want to send
         var teamData = Team(name: teamNameTextField.text, description: descriptionTextField.text)
@@ -49,7 +49,7 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
         // Create a new variable to store the instance of TeamCreatedInfo
         let destinationVC = segue.destinationViewController as TeamCreatedInfoViewController
         destinationVC.teamData = teamData
-    }*/
+    }
     
     @IBAction func createTeamPressed(sender: AnyObject) {
         teamNameTextField.resignFirstResponder()
@@ -64,15 +64,37 @@ class CreateTeamViewController: UIViewController, UITextFieldDelegate {
                 self.teamCreatedAcitivityIcon.stopAnimating()
             } else {
                 // Create a variable that you want to send
-                var teamData = Team(name: self.teamNameTextField.text, description: self.descriptionTextField.text)
+               // var teamData = Team(name: self.teamNameTextField.text, description: self.descriptionTextField.text)
                 self.teamCreatedAcitivityIcon.stopAnimating()
-                self.performSegueWithIdentifier("TeamInfoSegue", sender: self)
+                //self.performSegueWithIdentifier("TeamInfoSegue", sender: self)
             }
         })
     }
     
-    
-    
+ /*   @IBAction func createTeamPressed(sender: AnyObject) {
+        teamNameTextField.resignFirstResponder()
+        descriptionTextField.resignFirstResponder()
+        
+        //if team name does not exist{
+        if(ck.retriveRecords(self.teamNameTextField.text, queryRecordType: "Team", completionHandler: {(record : CKRecord) -> Void in
+        
+            if (record.recordType == "Error") {
+                self.teamCreatedLabel.text = "ERROR"
+                self.teamCreatedAcitivityIcon.stopAnimating()
+            } else {
+            //else save record
+            //save record with cloudkit
+                self.teamCreatedAcitivityIcon.startAnimating()
+                ck.saveRecord(self.teamNameTextField.text, tableName: "Team", forKey: "Name", recordId: self.teamNameTextField.text, isPrivate: false, completionHandler: {(record : CKRecord) -> Void in
+                        // Create a variable that you want to send
+                        // var teamData = Team(name: self.teamNameTextField.text, description: self.descriptionTextField.text)
+                        self.teamCreatedAcitivityIcon.stopAnimating()
+                        //self.performSegueWithIdentifier("TeamInfoSegue", sender: self)
+            
+                })
+        }
+        }
+    }*/
     /*
     // MARK: - Navigation
     
