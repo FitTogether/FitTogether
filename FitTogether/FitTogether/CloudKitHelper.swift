@@ -148,6 +148,7 @@ class CloudKitHelper {
         publicDB.addOperation(updateOperation)
     }
     
+    
     func retriveRecords(sortKey: NSString, queryRecordType: NSString, completionHandler: ([AnyObject] -> Void)) -> AnyObject {
         let predicate = NSPredicate(value: true)
         let sort = NSSortDescriptor(key: sortKey, ascending: false)

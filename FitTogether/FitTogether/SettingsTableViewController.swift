@@ -11,7 +11,7 @@ import CloudKit
 
 class SettingsTableViewController: UITableViewController {
 
-  
+  let ck = CloudKitHelper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,26 @@ class SettingsTableViewController: UITableViewController {
         // Create the actions
         var okAction = UIAlertAction(title: "Leave Team", style: UIAlertActionStyle.Default) {
             UIAlertAction in
-            NSLog("OK Pressed")
+            NSLog("Leave Pressed")
+            
+           /* ck.getUserName({ (name) -> Void in
+                self.ck.retriveRecords((name), completionHandler: { (preposedTeamRecord: CKRecord) -> Void in
+                    if preposedTeamRecord.recordType != "Error" {
+                        self.ck.retriveRecords((name), completionHandler: { (record: CKRecord) -> Void in
+                            record.setValue(input, forKey: "Team")
+                            self.ck.updateRecord(record, callback: { (success) -> () in
+                                if success == true {
+                                    NSLog("Leave team success")
+                                }
+                            })
+                        })
+                    } else {
+                        NSLog("Unable to leave team")
+                    }
+                })
+            })*/
+            
+            NSLog("Leave Complete")
         }
         var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
             UIAlertAction in
@@ -40,24 +59,6 @@ class SettingsTableViewController: UITableViewController {
         alertController.addAction(cancelAction)
         
         self.presentViewController(alertController, animated: true, completion: nil)
-        
-        
-       /* ck.getUserName({ (name) -> Void in
-            self.ck.retriveRecords((input), completionHandler: { (preposedTeamRecord: CKRecord) -> Void in
-                if preposedTeamRecord.recordType != "Error" {
-                    self.ck.retriveRecords((name), completionHandler: { (record: CKRecord) -> Void in
-                        record.setValue(input, forKey: "Team")
-                        self.ck.updateRecord(record, callback: { (success) -> () in
-                            if success == true {
-                                self.welcomeLabel.text = "Welcome to team \(name)"
-                            }
-                        })
-                    })
-                } else {
-                    self.welcomeLabel.text = "Sorry Team Does Not Exist"
-                }
-            })
-        })
-*/
+//
     }
 }
