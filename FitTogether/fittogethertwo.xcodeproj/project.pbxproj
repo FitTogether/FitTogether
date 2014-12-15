@@ -15,6 +15,7 @@
 		567AF6F71A3624B00029FB55 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F61A3624B00029FB55 /* TeamData.swift */; };
 		567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AF6F81A3625130029FB55 /* TeamDataViewController.swift */; };
 		56D531FB1A3E30800099A580 /* TeamCreatedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D531FA1A3E30800099A580 /* TeamCreatedInfoViewController.swift */; };
+		56D532031A3E88670099A580 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D532021A3E88670099A580 /* SettingsTableViewController.swift */; };
 		F2090B411A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */; };
 		F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */; };
 		F243548B1A3775E800AD26CC /* badgeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F243548A1A3775E800AD26CC /* badgeIcon.png */; };
@@ -24,7 +25,6 @@
 		F243549F1A37E8F900AD26CC /* team_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = F243549E1A37E8F900AD26CC /* team_grey.png */; };
 		F24354A11A37E94500AD26CC /* profile_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = F24354A01A37E94500AD26CC /* profile_grey.png */; };
 		F24E2AD11A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */; };
-		F256BF891A35F39500C75418 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F256BF881A35F39500C75418 /* SettingsTableViewController.swift */; };
 		F265796F1A38DB1B00E7E643 /* ChallengeTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F265796E1A38DB1B00E7E643 /* ChallengeTeamViewController.swift */; };
 		F270E3CA1A3B73DA00027B59 /* NavUISearchDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F270E3C91A3B73DA00027B59 /* NavUISearchDisplayController.swift */; };
 		F273C90F1A33988300D7B908 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273C90E1A33988300D7B908 /* User.swift */; };
@@ -59,6 +59,7 @@
 		567AF6F61A3624B00029FB55 /* TeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamData.swift; sourceTree = "<group>"; };
 		567AF6F81A3625130029FB55 /* TeamDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataViewController.swift; sourceTree = "<group>"; };
 		56D531FA1A3E30800099A580 /* TeamCreatedInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCreatedInfoViewController.swift; sourceTree = "<group>"; };
+		56D532021A3E88670099A580 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		F2090B401A3A7E0400BA0E6E /* CloudKitHelperDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelperDelegate.swift; sourceTree = "<group>"; };
 		F21804361A2F867C00EEDB9E /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		F243548A1A3775E800AD26CC /* badgeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badgeIcon.png; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		F243549E1A37E8F900AD26CC /* team_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = team_grey.png; sourceTree = "<group>"; };
 		F24354A01A37E94500AD26CC /* profile_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_grey.png; sourceTree = "<group>"; };
 		F24E2AD01A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTeamSearchViewController.swift; sourceTree = "<group>"; };
-		F256BF881A35F39500C75418 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		F265796E1A38DB1B00E7E643 /* ChallengeTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTeamViewController.swift; sourceTree = "<group>"; };
 		F270E3C91A3B73DA00027B59 /* NavUISearchDisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavUISearchDisplayController.swift; sourceTree = "<group>"; };
 		F273C90E1A33988300D7B908 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		F256BF8A1A35F3A500C75418 /* TableViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F256BF881A35F39500C75418 /* SettingsTableViewController.swift */,
+				56D532021A3E88670099A580 /* SettingsTableViewController.swift */,
 			);
 			name = TableViewControllers;
 			sourceTree = "<group>";
@@ -385,9 +385,9 @@
 				F24E2AD11A38E6F5003ECCA2 /* ChallengeTeamSearchViewController.swift in Sources */,
 				F265796F1A38DB1B00E7E643 /* ChallengeTeamViewController.swift in Sources */,
 				567AF6F91A3625130029FB55 /* TeamDataViewController.swift in Sources */,
-				F256BF891A35F39500C75418 /* SettingsTableViewController.swift in Sources */,
 				F29ABB221A3D0958009DC328 /* JoinTeamViewController.swift in Sources */,
 				F21804371A2F867C00EEDB9E /* CloudKitHelper.swift in Sources */,
+				56D532031A3E88670099A580 /* SettingsTableViewController.swift in Sources */,
 				F2ED61621A393A7800A5277C /* DailyStepGoalViewController.swift in Sources */,
 				F273C90F1A33988300D7B908 /* User.swift in Sources */,
 				F2F614CB1A3513B100CB65E6 /* CreateTeamViewController.swift in Sources */,
