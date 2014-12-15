@@ -25,6 +25,9 @@ class TeamDataViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
        //fakeData = teamData.passArrayOfData()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         loadDataFromCloudKit()
     }
     

@@ -14,6 +14,7 @@ class JoinTeamViewController: UIViewController {
     let ck = CloudKitHelper()
     @IBOutlet weak var teamCodeInputBox: UITextField!
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class JoinTeamViewController: UIViewController {
     
     @IBAction func goButtonPressed(sender: AnyObject) {
         var input = teamCodeInputBox.text!
+        activityIndicator.startAnimating()
         ck.getUserName({ (name) -> Void in
             self.ck.retriveRecords((input), completionHandler: { (preposedTeamRecord: CKRecord) -> Void in
                 if preposedTeamRecord.recordType != "Error" {
@@ -35,13 +37,14 @@ class JoinTeamViewController: UIViewController {
                         record.setValue(input, forKey: "Team")
                         self.ck.updateRecord(record, callback: { (success) -> () in
                             if success == true {
-                                self.welcomeLabel.text = "Welcome to team \(name)"
+                                self.welcomeLabel.text = "Welcome to team \(input)"
                             }
                         })
                     })
                 } else {
                     self.welcomeLabel.text = "Sorry Team Does Not Exist"
                 }
+                self.activityIndicator.stopAnimating()
             })
         })
     }
