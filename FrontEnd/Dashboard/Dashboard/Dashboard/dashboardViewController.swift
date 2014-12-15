@@ -62,16 +62,11 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
         initTeamLabels()
         initStats()
         initSelfAndTeamStats()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -231,7 +226,7 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
         //fill in our circle
         circleView.layer.addSublayer(progress)
         
-        animateCircle()
+        animatCircle()
         
         //Label Animation
         let interval = Double(8/steps)
@@ -254,7 +249,7 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
         }
     }
     
-    func animateCircle() {
+    func animatCircle() {
         // Animate the shape change
         //let duration = NSNumber(float: 2.0)
         var newAnimation = CABasicAnimation(keyPath: "strokeEnd")
