@@ -28,6 +28,7 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     //Steps Label and progress bar animation
     var timer: NSTimer?
     var timer2: NSTimer?
+    var healthStore: HKHealthStore?
     
     
     //Health Kit Stuff
@@ -62,6 +63,10 @@ class dashboardViewController: UIViewController, writeValueBackDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ck.checkForICloud()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         initTeamLabels()
         initStats()
         initSelfAndTeamStats()

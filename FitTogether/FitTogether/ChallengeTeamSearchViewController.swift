@@ -45,7 +45,6 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
                 var team = Team(name: "", steps: 0)
                 if let name: String = data.objectForKey("Name") as? String {
                     team.name = data.objectForKey("Name") as? String
-                    println(team.name?)
                 }
                 if let steps: Int = data.objectForKey("Steps") as? Int {
                     team.steps = data.objectForKey("Steps") as? Int
@@ -94,6 +93,16 @@ class ChallengeTeamSearchViewController: UIViewController, UITableViewDelegate, 
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //load profile
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        
+        let challengeTeam = storyboard.instantiateViewControllerWithIdentifier("ChallengeTeamUI") as ChallengeTeamViewController
+        
+        challengeTeam.team = teams[indexPath.row]
+        
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        self.navigationController?.pushViewController(challengeTeam, animated: true)
     }
     
     func filterContentForSearchText(searchText: String) {
