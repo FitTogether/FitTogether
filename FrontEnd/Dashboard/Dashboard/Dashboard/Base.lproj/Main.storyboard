@@ -274,7 +274,7 @@
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="50" y="244" width="300" height="30"/>
+                                            <rect key="frame" x="50" y="243" width="300" height="30"/>
                                             <mask key="constraints">
                                                 <include reference="jEt-AQ-YRc"/>
                                             </mask>
